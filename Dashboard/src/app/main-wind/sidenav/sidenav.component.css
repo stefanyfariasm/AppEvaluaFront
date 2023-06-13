@@ -1,0 +1,434 @@
+.sidenav {
+  background: #051E46;
+  transition: all .5s ease;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 6rem;
+  height: 100vh;
+  padding: 0;
+  box-shadow: 0.063rem 0 1.25rem 0 #8690a3;
+  overflow-y: auto;
+}
+
+.sidenav::-webkit-scrollbar{
+  width: 0; /* Ancho de la barra de desplazamiento */
+  height: 0;
+}
+
+.sidenav::-webkit-scrollbar-thumb{
+  background-color: #bbb;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  padding: 0.938rem 0.938rem 0 0.938rem;
+  width: 100%;
+}
+
+
+.logo {
+  background: #fff;
+  text-align: center;
+  width: 3rem;
+  min-width: 3rem;
+  border-radius: 0.313rem;
+  padding: 0.313rem;
+  font-size: 24px;
+  font-weight: 900;
+  cursor: pointer;
+  border: none;
+}
+
+.logo-text {
+  margin-left: 1.5rem;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.btn-close {
+  margin-left: auto;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+}
+
+.fa-times {
+  color: #fff;
+  font-size: 24px;
+}
+
+
+
+
+.sidenav-collapsed {
+  width: 16.5625rem;
+
+}
+
+.sidenav-collapsed .sidenav-nav {
+  margin-left: 2rem;
+}
+
+
+.sidenav-nav {
+  list-style: none;
+  padding: 0.938rem;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  cursor: pointer;
+}
+
+
+
+
+i.sidenav-link-icon{
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+}
+a.sidenav-nav-link{
+  margin: 0.5rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+.sidenav-nav-item {
+  width: 8vh;
+  height: 5vh;
+  margin-bottom: 0.625rem;
+}
+
+.sidenav-nav-item collapsed{
+  width: 5vh;
+  height: 5vh;
+
+}
+
+.sidenav-nav-item i{
+  color: white;
+}
+
+.sidenav-nav-item span{
+  color: white;
+  font-weight: bold;
+}
+
+.sidenav-nav-link {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  color: #f3f3f3;
+  text-decoration: none;
+  border-radius: 0.625rem;
+  transition: all .3s ease;
+}
+
+.sidenav-link-icon {
+  font-size: 22px;
+  width: 2rem;
+  min-width: 2rem;
+  height: 2rem;
+  margin: 0 0.5rem;
+  text-align: center;
+}
+
+.sidenav-link-text {
+  margin-left: 3rem;
+  font-size: smaller;
+
+}
+
+
+
+.sidenav-nav-item:hover {
+
+  background-color: #051E46;
+}
+
+
+.sidenav-nav-link:hover {
+  background-color: #051E46;
+  color: #000;
+}
+
+
+
+.active {
+  background-color: #051E46;
+}
+
+.sidenav-link-icon,
+.menu-collapse-icon,
+.sidenav-link-text {
+  color: #000;
+}
+
+.menu-collapse-icon {
+  font-size: 25px;
+  width: 2rem;
+  min-width: 2rem;
+  margin: auto 0.5rem auto auto;
+  text-align: center;
+  color: #f3f3f3
+}
+
+.sublevel-nav{
+  list-style: none;
+
+}
+
+
+.sublevel-nav-link{
+  display:flex;
+  align-items: center;
+  height: 2rem;
+  color: #898989;
+  text-decoration: none;
+  border-radius: 0.625rem;
+  transition: all .3s ease;
+}
+
+.sublevel-link-icon{
+  font-size: 2px;
+  width: 0.7rem;
+  min-width: 0.7rem;
+  margin: 0.5rem;
+  text-align: justify;
+}
+
+.sublevel-link-text{
+  margin-left: 0.01rem;
+  text-align: justify;
+}
+
+
+.sublevel-nav-link:hover{
+  color: #f3f3f3;
+}
+
+.sublevel-nav-item{
+  width: 120px;
+}
+
+/*scroll*/
+
+.scrollwrap{
+  overflow-y: auto;
+  visibility: hidden;
+  height: calc(100% - 8.65rem);
+}
+
+.sidenav-nav,
+.scrollwrap:hover,
+.scrollwrap:focus{
+  visibility: visible;
+}
+
+.scrollwrap_delayed{
+  transition: visibility 0.5s 0.2s;
+}
+
+.scrollwrap_delayed:hover{
+  transition: visibility 0.2s 0.2s;
+}
+
+/*Trabaja en chrome, edge, safari*/
+.scrollwrap::-webkit-scrollbar{
+  width: 10px;
+}
+
+.scrollwrap::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+.scrollwrap::-webkit-scrollbar-thumb{
+  background-color: #556268;
+  border-radius: 20px;
+}
+
+/*Trabaja con firefox*/
+.scrollwrap{
+  scrollbar-width: thin;
+  scrollbar-color:#556268 transparent;
+}
+
+.sublevel-link-text{
+  color: white;
+}
+
+
+/*Estilo para que agarre todo de forma dinámica*/
+
+.audita{
+  width: 4vh;
+  height: 4vh;
+  background-image: url('/assets/Img/Audita/Audita_grises_32.png');
+  background-size: cover;
+  transition: background-image 0.5s ease-in-out; /* Agregamos transición para suavizar el cambio de imagen */
+}
+
+.audita:hover{
+  background-image: url('/assets/Img/Audita/Audita_color_32.png');
+}
+
+.analiza{
+  width: 4vh;
+  height: 4vh;
+  background-image: url('/assets/Img/HACCP/HACCP_grises_32.png');
+  background-size: cover;
+  transition: background-image 0.5s ease-in-out; /* Agregamos transición para suavizar el cambio de imagen */
+}
+
+.analiza:hover{
+  background-image: url('/assets/Img/HACCP/HACCP_color_32.png');
+}
+
+.cocina{
+  width: 4vh;
+  height: 4vh;
+  background-image: url('/assets/Img/Cocina/Cocina_grises_32.png');
+  background-size: cover;
+  transition: background-image 0.5s ease-in-out; /* Agregamos transición para suavizar el cambio de imagen */
+}
+
+.cocina:hover{
+  background-image: url('/assets/Img/Cocina/Cocina_color_32.png');
+}
+
+.controla{
+  width: 4vh;
+  height: 4vh;
+  background-image: url('/assets/Img/Controla/Controla_grises_32.png');
+  background-size: cover;
+  transition: background-image 0.5s ease-in-out; /* Agregamos transición para suavizar el cambio de imagen */
+}
+
+.controla:hover{
+  background-image: url('/assets/Img/Controla/Controla_color_32.png');
+}
+
+.documenta{
+  width: 4vh;
+  height: 4vh;
+  background-image: url('/assets/Img/Documenta/Documenta-grises_32.png');
+  background-size: cover;
+  transition: background-image 0.5s ease-in-out; /* Agregamos transición para suavizar el cambio de imagen */
+}
+
+.documenta:hover{
+  background-image: url('/assets/Img/Documenta/Documenta_color_32.png');
+}
+
+.educa{
+  width: 4vh;
+  height: 4vh;
+  background-image: url('/assets/Img/Educa/Educa_grises_32.png');
+  background-size: cover;
+  transition: background-image 0.5s ease-in-out; /* Agregamos transición para suavizar el cambio de imagen */
+}
+
+.educa:hover{
+  background-image: url('/assets/Img/Educa/Educa_color_32.png');
+}
+
+.etiqueta{
+  background-image: url('/assets/Img/Etiqueta/Etiqueta_grises_32.png');
+  background-size: cover;
+  transition: background-image 0.5s ease-in-out; /* Agregamos transición para suavizar el cambio de imagen */
+}
+
+.etiqueta:hover{
+  background-image: url('/assets/Img/Etiqueta/Etiqueta-color_32.png');
+}
+
+.evalua{
+  width: 3vh;
+  height: 4vh;
+  background-image: url('/assets/Img/Evalúa/Evalua_grises_32.png');
+  background-size: cover;
+  transition: background-image 0.5s ease-in-out; /* Agregamos transición para suavizar el cambio de imagen */
+}
+
+.evalua:hover{
+  background-image: url('/assets/Img/Evalúa/Evalua_color_32.png');
+}
+
+.formula{
+  width: 4vh;
+  height: 4vh;
+  background-image: url('/assets/Img/Formula/Formula_grises_32.png');
+  background-size: cover;
+  transition: background-image 0.5s ease-in-out; /* Agregamos transición para suavizar el cambio de imagen */
+}
+
+.formula:hover{
+  background-image: url('/assets/Img/Formula/Formula_color_32.png');
+}
+
+.gestiona{
+  width: 4vh;
+  height: 4vh;
+  background-image: url('/assets/Img/Gestiona/Gestiona_grises_32.png');
+  background-size: cover;
+  transition: background-image 0.5s ease-in-out; /* Agregamos transición para suavizar el cambio de imagen */
+}
+
+.gestiona:hover{
+  background-image: url('/assets/Img/Gestiona/Gestiona_color_32.png');
+}
+
+.limpia{
+  width: 4vh;
+  height: 4vh;
+  background-image: url('/assets/Img/Limpia/Limpia_grises_32.png');
+  background-size: cover;
+  transition: background-image 0.5s ease-in-out; /* Agregamos transición para suavizar el cambio de imagen */
+}
+
+.limpia:hover{
+  background-image: url('/assets/Img/Limpia/Limpia_color_32.png');
+}
+
+.piensa{
+  width: 4vh;
+  height: 4vh;
+
+  background-image: url('/assets/Img/Piensa/Piensa_grises_24.png');
+  background-size: cover;
+  transition: background-image 0.5s ease-in-out; /* Agregamos transición para suavizar el cambio de imagen */
+}
+
+.piensa:hover{
+  background-image: url('/assets/Img/Piensa/Piensa_color_24.png');
+}
+
+
+.perfil{
+  width: 4vh;
+  height: 4vh;
+  background-image: url('/assets/Img/Perfil/usuario_grises_16.png');
+  background-size: cover;
+  transition: background-image 0.5s ease-in-out; /* Agregamos transición para suavizar el cambio de imagen */
+}
+
+.perfil:hover{
+  background-image: url('/assets/Img/Perfil/usuario_color_16.png');
+}
+
+
+
+
+
+
+
+

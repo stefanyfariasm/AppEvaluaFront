@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing Table UI using HTML, CSS and JavaScript - Bytewebster</title>
+  <link rel="stylesheet" href="payplan.component.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div style="margin-top: -15px;">
+      <mat-tab-group style="width: 1650px; margin-left: 250px" [selectedIndex]="selectIndexTab.value" (selectedIndexChange)="onChangeIndexTab($event)">
+        <mat-tab label="Suscripciones" (index)="0">
+          <div class="toggle">
+            <label>Anual </label>
+            <div class="toggle-btn">
+              <input type="checkbox" class="checkbox" id="checkbox" [(ngModel)]="isChecked"
+                (change)="onChangeTypeSub(isChecked?'month':'year')" />
+              <label class="sub" id="sub" for="checkbox">
+                <div class="circle"></div>
+              </label>
+            </div>
+            <label>Mensual</label>
+            &nbsp; &nbsp;&nbsp; &nbsp;
+            <label><button type="button" class="btn__custom btn-outline-success">
+                Cambiar Plan
+              </button></label>
+          </div>
+          &nbsp; &nbsp;
+          <h1>Todas Las Funcionalidades</h1>
+
+          <div class="cards" style="margin-left: -320px;">
+            <div class="card shadow">
+              <ul>
+                <li class="pack">Gratis</li>
+                <li id="basic" class="price bottom-bar">&dollar; 0</li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2092.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Documenta
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2100.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Educa
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2100.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Etiqueta
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2100.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Formula
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2100.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Evalúa
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2100.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Piensa y Diseña
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2100.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Gestiona
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2100.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Analiza
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2100.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Limpia
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2100.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Controla
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2100.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Audita
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2100.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Cocina
+                </li>
+                <li>
+                  <button [disabled]="1 === 1" class="btn__custom"> 
+                    Elegir Ahora
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="card shadow">
+              <ul>
+                <li class="pack">Emprendedor</li>
+                <li id="basic" class="price bottom-bar" *ngIf="isChecked; else elseBlockEmp">&dollar; 15</li>
+                <ng-template #elseBlockEmp>
+                  <li id="basic" class="price bottom-bar">&dollar; 180</li>
+                </ng-template>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2092.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Documenta
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2092.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Educa
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2092.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Etiqueta
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2092.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Formula
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2092.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Evalúa
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2100.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Piensa y Diseña
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2100.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Gestiona
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2100.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Analiza
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2100.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Limpia
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2100.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Controla
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2100.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Audita
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2100.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Cocina
+                </li>
+                <li><button (click)=" onChangeTypePlan('EMPRENDEDOR') " class="btn__custom">Elegir
+                    Ahora</button></li>
+              </ul>
+            </div>
+            <div class="card shadow">
+              <ul>
+                <li class="pack">Microempresario</li>
+                <li id="basic" class="price bottom-bar" *ngIf="isChecked; else elseBlockMic">&dollar; 30</li>
+                <ng-template #elseBlockMic>
+                  <li id="basic" class="price bottom-bar">&dollar; 360</li>
+                </ng-template>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2092.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Documenta
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2092.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Educa
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2092.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Etiqueta
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2092.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Formula
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2092.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Evalúa
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2092.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Piensa y Diseña
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2092.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Gestiona
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2100.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Analiza
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2100.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Limpia
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2100.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Controla
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2100.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Audita
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2100.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Cocina
+                </li>
+                <li><button (click)=" onChangeTypePlan('MICROEMPRESARIO') " class="btn__custom">Elegir
+                    Ahora</button></li>
+              </ul>
+            </div>
+
+            <div class="card shadow">
+              <ul>
+                <li class="pack">Empresa</li>
+                <li id="basic" class="price bottom-bar" *ngIf="isChecked; else elseBlockEmpre">&dollar; 59</li>
+                <ng-template #elseBlockEmpre>
+                  <li id="basic" class="price bottom-bar">&dollar; 708</li>
+                </ng-template>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2092.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Documenta
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2092.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Educa
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2092.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Etiqueta
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2092.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Formula
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2092.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Evalúa
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2092.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Piensa y Diseña
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2092.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Gestiona
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2092.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Analiza
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2092.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Limpia
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2092.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Controla
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2092.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Audita
+                </li>
+                <li class="bottom-bar">
+                  <img src="/assets/Img/Recurso 2092.png" alt="" style="width: 20px; height: 20px" />&nbsp;
+                  &nbsp;Solinal Cocina
+                </li>
+                <li><button (click)=" onChangeTypePlan('EMPRESA') " class="btn__custom">Elegir Ahora</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </mat-tab>
+
+        <mat-tab label="Métodos de pago" (index)="1">
+
+          <div class="container" style="margin-right: 400px; ">
+            <mat-card class="my-3" style="border: none; box-shadow:none">
+              <mat-card-title style="color:#051E46;">
+                <strong>Elegiste: </strong>
+                PLAN {{ typePlan }} con suscripción {{ (typeSub === "year" ? "anual": "mensual").toUpperCase() }}.
+              </mat-card-title>
+            </mat-card>
+          </div>
+          <hr>
+
+          <div class="container" style="height:600px; background-color:#ffffff; margin-right: 400px; overflow-y: none;">
+
+            <div class="container" #pagina2 style="margin-right: 400px; height:190px; background-color:#ffffff">
+              <mat-card style="border: none; box-shadow:none;">
+                <mat-card-header style="margin-left:-10px">
+                  <mat-card-title style="font-size:25px">Añada su primera forma de pago</mat-card-title>
+                  <mat-card-subtitle>No tiene guardada ninguna forma de pago. Puede guardar una
+                    cuando complete su primer pago</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-actions>
+                  <button mat-button style="background-color:#1ED796; font-weight:bold; color:white; margin-left:12px">Añadir nueva forma de pago</button>
+                </mat-card-actions>
+              </mat-card>
+            </div>
+
+            <div class="container" style="margin-right: 400px; background-color:#ffffff; height:200px">
+              <mat-card style="border: none; box-shadow:none;">
+                <mat-card-header style="margin-left:-10px">
+                  <mat-card-title style="font-size:25px">Eliga su forma de pago. </mat-card-title>
+                </mat-card-header>
+                <mat-card-actions>
+
+                  <div class="container d-flex justify-content-start align-items-center gap-3">
+                    <button class="btn"  style="background-color:#1ED796; font-weight:bold; color:white">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-credit-card" viewBox="0 0 16 16">
+                        <path
+                          d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z" />
+                        <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z" />
+                      </svg>
+                      <span class="ps-1" (click)="onChangeStripe()" >Pagar con Tarjeta</span>
+                    </button>
+                    <button class="btn btn-blue">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-paypal" viewBox="0 0 16 16">
+                        <path
+                          d="M14.06 3.713c.12-1.071-.093-1.832-.702-2.526C12.628.356 11.312 0 9.626 0H4.734a.7.7 0 0 0-.691.59L2.005 13.509a.42.42 0 0 0 .415.486h2.756l-.202 1.28a.628.628 0 0 0 .62.726H8.14c.429 0 .793-.31.862-.731l.025-.13.48-3.043.03-.164.001-.007a.351.351 0 0 1 .348-.297h.38c1.266 0 2.425-.256 3.345-.91.379-.27.712-.603.993-1.005a4.942 4.942 0 0 0 .88-2.195c.242-1.246.13-2.356-.57-3.154a2.687 2.687 0 0 0-.76-.59l-.094-.061ZM6.543 8.82a.695.695 0 0 1 .321-.079H8.3c2.82 0 5.027-1.144 5.672-4.456l.003-.016c.217.124.4.27.548.438.546.623.679 1.535.45 2.71-.272 1.397-.866 2.307-1.663 2.874-.802.57-1.842.815-3.043.815h-.38a.873.873 0 0 0-.863.734l-.03.164-.48 3.043-.024.13-.001.004a.352.352 0 0 1-.348.296H5.595a.106.106 0 0 1-.105-.123l.208-1.32.845-5.214Z" />
+                      </svg>
+                      <span class="ps-1">PayPal</span>
+                    </button>
+                  </div>
+
+                </mat-card-actions>
+              </mat-card>
+            </div>
+
+            <div class="container" style="margin-right: 400px; height:200px;">
+              <mat-card class="example-card" style="border: none; box-shadow:none;">
+                <mat-card-header style="margin-left:-10px">
+                  <mat-card-title style="font-size:25px">Ingresa los datos de tu tarjeta de credito o debito.</mat-card-title>
+                </mat-card-header>
+
+                <mat-card-content>
+                  <app-stripecheckout [price]="price.toString()" [typePlan]="typePlan" [typeSub]="typeSub" ></app-stripecheckout>
+                </mat-card-content>
+
+                <mat-card-footer style="margin-left:-28px">
+                  <small style="padding-left: 35px;">Todos los datos estan encriptados.</small>
+                </mat-card-footer>
+              </mat-card>
+            </div>
+
+          </div>
+
+        </mat-tab>
+
+        <mat-tab label="Datos de facturación" (index)="2">
+          <app-datos-facturacion [onChangeTab]="selectIndexTab"></app-datos-facturacion>
+        </mat-tab>
+
+        <!-- <mat-tab label="Realizar Pago" (index)="3">
+          <app-realizar-pago [onChangeTab]="selectIndexTab" [typePlan]="typePlan" [typeSub]="typeSub" [price]="price.toString()"></app-realizar-pago>
+        </mat-tab> -->
+
+        <mat-tab label="Historial de facturación" (index)="4">
+          <app-elegir-plan [onChangeTab]="selectIndexTab"></app-elegir-plan> 
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </header>
+
+</body>

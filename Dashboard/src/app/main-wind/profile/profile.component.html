@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="profile.component.css">
+
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--<title>Responsive Regisration Form </title>-->
+</head>
+<body>
+
+    <div class="container">
+
+      <nav class="navbar bg-body-tertiary" style="background-color:#f2f2fa; border-radius:10px; width:1235px; ">
+        <div class="container-fluid" >
+          <a class="navbar-brand" href="#"><header style="font-weight: bold; ">Mi Perfil</header></a>
+        </div>
+      </nav>
+
+      <form >
+          <div class="form first">
+              <div class="details personal">
+
+                  <nav class="navbar bg-body-tertiary" style="background-color:#f2f2fa; border-radius:10px; width:1220px; border-color: #333;
+                  border-style: solid;
+                  border-width: 1px;">
+                    <div class="container-fluid" >
+                      <a class="navbar-brand" href="#" style="font-weight: bold;">Información De La Cuenta</a>
+                    </div>
+                  </nav>
+
+                  <div class="fields">
+                    <div class="input-field">
+                      <label style="font-weight: bold; font-size:16px">Nombre De La Cuenta</label>
+                      <input type="text" [(ngModel)]="usuario.accountname" name="accountname" placeholder={{accountName}} required style="background-color:#f2f2fa;
+                      border-radius:10px; width:960px; border-color: #333; border-style: solid;">
+                    </div>
+                  </div>
+
+                  <div class="fields" style="display:flex; flex-direction:row;">
+                    <div class="input-field" style="padding-left: 150px; ">
+
+                      <img [src]="imgsrc" alt="" style="width: 100px; height:100px; background-color:#f2f2fa;
+                      border-radius:50px; border: 1px solid #9e9e9e">
+                    </div>
+                    <div class="input-field">
+                      <label style="font-weight: bold; font-size:16px">Foto De Perfil</label>
+                      <!--<button type="file" style="font-weight: bold; background-color:#1ED796" onclick="onFileChange($event)">Cargar Foto</button>-->
+                      <label class="custom-file-input" style="font-weight: bold;"><input type="file" (change)="onFileChange($event)"
+                        accept="image/png, image/jpg, image/jpeg"></label>
+                    </div>
+                    <div class="input-field">
+                      <label style="padding-top: 25px;"></label>
+                      <button style="font-weight: bold; background-color:#1ED796" (click)="delete()">Eliminar Foto</button>
+                    </div>
+                    <label style="font-weight: bold;">La foto debe tener al menos 300 px x 300px y no debe pesar mas de 2 MB.</label>
+                  </div>
+
+
+
+                  <div class="fields">
+                      <div class="input-field">
+                          <label style="font-weight: bold; font-size:16px">Nombre De Perfil</label>
+                          <input type="text" [(ngModel)]="usuario.profilename" name="profilename" placeholder={{profileName}} required style="background-color:rgb(255, 255, 255);
+                          border-radius:10px; width:300px; border-color: #333; border-style: solid;">
+                      </div>
+
+
+
+                      <div class="input-field" style="padding-left:2px;">
+                        <label style="font-weight: bold; font-size:16px">Email De Inicio De Sesión</label>
+                        <input type="text" [(ngModel)]="usuario.correo" name="correo" placeholder={{correo}} required style="background-color:rgb(255, 255, 255);
+                        border-radius:10px; width:300px; border-color: #333; border-style: solid;">
+                        <label>Email de inicio de sesión. Ante cambios no podra iniciar sesión con email anterior.</label>
+                      </div>
+                  </div>
+
+                  <div class="fields">
+                    <div class="input-field">
+                        <label style="font-weight: bold; font-size:16px">Nombre</label>
+                        <input type="text" [(ngModel)]="usuario.nombre" name="nombre" placeholder={{nombre}} required style="background-color:rgb(255, 255, 255);
+                        border-radius:10px; width:300px; border-color: #333; border-style: solid;">
+                    </div>
+
+                    <div class="input-field">
+                      <label style="font-weight: bold; font-size:16px">Apellido</label>
+                      <input type="text" [(ngModel)]="usuario.apellido" name="apellido" placeholder={{apellido}} required style="background-color:rgb(255, 255, 255);
+                      border-radius:10px; width:300px; border-color: #333; border-style: solid;">
+                    </div>
+
+                    <div class="input-field">
+                      <label style="font-weight: bold; font-size:16px">Número Telefonico</label>
+                      <input type="text" [(ngModel)]="usuario.celular" name="celular" placeholder={{celular}} required style="background-color:rgb(255, 255, 255);
+                      border-radius:10px; width:300px; border-color: #333; border-style: solid;">
+                    </div>
+                </div>
+
+
+              </div>
+
+          </div>
+
+          <div class="form first" style="width:1235px; margin-top:535px">
+              <!--rgb(213, 215, 219)-->
+              <nav class="navbar bg-body-tertiary" style="background-color:#f2f2fa; border-radius:10px; width:1220px; border-color: #333;
+              border-style: solid;
+              border-width: 1px;">
+                <div class="container-fluid" >
+                  <a class="navbar-brand" href="#" style="font-weight: bold;">Contraseña</a>
+                </div>
+              </nav>
+
+
+              <div class="fields">
+                  <div class="input-field">
+                      <label style="font-weight: bold; font-size:16px">Contraseña Actual</label>
+                      <input type="text" [(ngModel)]="usuario.actualpassword" name="actualpassword" placeholder="Ingresa tu contraseña" required style="background-color:rgb(255, 255, 255);
+                      border-radius:10px; width:300px; border-color: #333; border-style: solid;">
+                  </div>
+                  <div class="input-field">
+                    <label style="font-weight: bold; font-size:16px">Nueva Contraseña</label>
+                    <input type="text"  [(ngModel)]="usuario.newpassword" name="newpassword" placeholder="Ingresa nueva contraseña" required style="background-color:rgb(255, 255, 255);
+                    border-radius:10px; width:300px; border-color: #333; border-style: solid;">
+                  </div>
+              </div>
+
+
+              <div class="fields">
+                <div class="input-field">
+                  <label style="font-weight: bold;">Requisitos para las contraseña:</label>
+                    <ul>
+                      <li>Mínimo 10 caracteres</li>
+                      <li>Al menos 1 mayúscula</li>
+                      <li>Al menos 1 caracter especial</li>
+                    </ul>
+                </div>
+              </div>
+
+          </div>
+
+          <div class="container-fluid" style="padding-top: 793px; padding-left:3px">
+            <button style="font-weight: bold; background-color:#1ED796" (click)="guardarAjustes()">Guardar Ajustes</button>
+          </div>
+
+      </form>
+
+
+
+
+    </div>
+
+    <!--<script src="script.js"></script>-->
+</body>
+</html>

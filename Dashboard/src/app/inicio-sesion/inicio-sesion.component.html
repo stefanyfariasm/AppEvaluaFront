@@ -1,0 +1,59 @@
+<body class="body">
+  <div *ngIf="isScreenSmall; then smallScreen else largeScreen"></div>
+
+  <ng-template #smallScreen>
+    <!-- Código HTML de la pantalla para pantallas pequeñas -->
+    la pantalla es pequeña, no se puede utilizar en pantallas pequeñas
+  </ng-template>
+
+  <ng-template #largeScreen>
+    <!-- Código HTML de la pantalla para pantallas grandes -->
+    <div class="container">
+      <div class="left-column contenedor">
+        <!-- Aquí va el contenido de la columna izquierda -->
+        <!--<app-login-form class="componente" *ngIf="login_form" (valueChanged)="onValueChanged($event)"></app-login-form>
+        <app-reiniciar-password class="componente" *ngIf="reiniciar_password" (valueChanged)="onValueChanged($event)"></app-reiniciar-password>
+        -->
+        <router-outlet></router-outlet>
+
+
+
+      </div>
+      <div class="right-column">
+        <!-- Aquí va el contenido de la columna derecha -->
+        <h2>Conectamos la inteligencia artificial (AI) con la
+          seguridad, defensa y el fraude alimentario</h2><br>
+
+        <h3>Inspiramos y empoderamos negocios a través del aprendizaje y la tecnología.</h3><br>
+         <div class="mat-card-format">
+          <mat-card class="example-card" *ngFor="let elemento of distintas_apps">
+            <mat-card-header>
+              <mat-card-title >{{elemento.nombre}}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content style="margin-top: 2rem; margin-bottom: 1rem;">
+              <p style="font-size: xx-small;">{{elemento.descripcion}}</p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>Aprende como ></button>
+            </mat-card-actions>
+          </mat-card>
+         </div>
+         <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 5rem;">
+          <h2>Necesitas entrenamiento sobre nuestras plataforma?</h2>
+          <button mat-raised-button color="primary" type="button" class="button-format">Contacte con ventas</button>
+
+
+         </div>
+
+
+      </div>
+    </div>
+
+  </ng-template>
+
+
+
+  </body>
+
+
+

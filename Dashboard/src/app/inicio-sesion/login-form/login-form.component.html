@@ -1,0 +1,71 @@
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+
+<body>
+  <form
+    [formGroup]="form"
+    autocomplete="on"
+    (ngSubmit)="logIn(form)"
+    class="formulario"
+  >
+    <div>
+      <img src="/assets/Img/Recurso 2890.png" alt="Logo Solinal" />
+    </div>
+
+    <div class="inputs-div">
+      <div>
+        <input
+          matInput
+          type="email"
+          name="correo"
+          formControlName="email"
+          placeholder="Your email"
+          class="input-format"
+        />
+      </div>
+
+      <div style="display: flex; align-items: center">
+        <input
+          matInput
+          [type]="flag ? 'password' : 'text'"
+          placeholder="Enter your password"
+          formControlName="password"
+          name="password"
+          class="input-format password"
+        />
+        <mat-icon style="color: white" (click)="flag = !flag" matSuffix>{{
+          flag ? "visibility" : "visibility_off"
+        }}</mat-icon>
+      </div>
+    </div>
+    <p *ngIf="error.err != null" style="color:red">{{error.err}}</p>
+    <div>
+      <button
+        mat-raised-button
+        color="primary"
+        type="submit"
+        ngClick="Submit"
+        [disabled]="!form.valid"
+        class="button-format"
+      >
+        Iniciar Sesión
+      </button>
+    </div>
+  </form>
+
+  <!--
+  <div class="links-box-format2">
+    <asl-google-signin-button *ngIf="!user" style="width:120px; height:40px; cursor:pointer; background-color:blue"></asl-google-signin-button>
+  </div>-->
+  
+  <div class="links-box-format">
+    <div id="buttonDiv" ></div>
+  </div>
+
+  <div class="links-box-format">
+    <a routerLink="/login/recuperar-password">Olvidaste tu contraseña?</a>
+    <a routerLink="/login/registrar">Registrarse</a>
+  </div>
+</body>
+
+
+
