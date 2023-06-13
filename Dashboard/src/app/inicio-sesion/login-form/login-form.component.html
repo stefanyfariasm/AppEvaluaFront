@@ -4,7 +4,6 @@
   <form
     [formGroup]="form"
     autocomplete="on"
-    (ngSubmit)="logIn(form)"
     class="formulario"
   >
     <div>
@@ -43,8 +42,7 @@
         mat-raised-button
         color="primary"
         type="submit"
-        ngClick="Submit"
-        [disabled]="!form.valid"
+     
         class="button-format"
       >
         Iniciar Sesión
@@ -64,6 +62,8 @@
   <div class="links-box-format">
     <a routerLink="/login/recuperar-password">Olvidaste tu contraseña?</a>
     <a routerLink="/login/registrar">Registrarse</a>
+    <a routerLink="/dashboard">EVALUA</a>
+
   </div>
 </body>
 

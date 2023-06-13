@@ -13,14 +13,14 @@ declare var google:any
   styleUrls: ['./login-form.component.css']
 })
 
-export class LoginFormComponent implements OnInit, AfterViewInit {
+export class LoginFormComponent implements OnInit {
 
   @Output() valueChanged = new EventEmitter<boolean>();
 
   u =
     {
-      email: '',
-      password: ''
+      email: 'farias@gmail.com',
+      password: '123456'
     }
 
   form: FormGroup = new FormGroup({});
@@ -48,11 +48,9 @@ export class LoginFormComponent implements OnInit, AfterViewInit {
     });
     if(localStorage.getItem("log")){
       let token = localStorage.getItem("log") as string
-      let user = this.decodificarJwt(token);
       //localStorage.setItem("usuario",user.email)
       let data = {
         token: token,
-        user: user
       }
       this.loginservice.logoogle(data)
       .subscribe(
@@ -64,36 +62,8 @@ export class LoginFormComponent implements OnInit, AfterViewInit {
     
   }
 
-  ngAfterViewInit(): void {
-    google.accounts.id.initialize({
-      client_id: "1073774487806-759tdp8njcndpdl6fghursjtekp7lo4s.apps.googleusercontent.com",
-      callback: this.handleCredentialResponse
-    });
-    google.accounts.id.renderButton(
-      document.getElementById("buttonDiv"),
-      { theme: "outline", size: "large" }  // customization attributes
-    );
-    google.accounts.id.prompt(); // also display the One Tap dialog
-  }
 
-  private decodificarJwt(token:string):any
-  {
-    var base64Url = token.split('.')[1];
-    var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
-    var jsonPayload = decodeURIComponent(window.atob(base64).split('').map(function(c) {
-        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
-    }).join(''));
 
-    return JSON.parse(jsonPayload);
-    
-  }
-
-  handleCredentialResponse(response:any) {
-    if(response.credential){
-      localStorage.setItem("log",response.credential);
-      window.location.reload();
-    }
-  }
 
   logIn(form:any){
     this.u.email=form.value.email
