@@ -1,0 +1,48 @@
+
+<section id="bebida" class="bebida section-bg">
+    <div class="container" data-aos="fade-up">
+        <div class="texto">
+            <h2>Elige el tipo de bebidas que vas a evaluar</h2>
+            <p>
+                Ya sea que desarrolles una competencia o concurso y participes como juez, organizador o personal de apoyo, o si
+            <br>
+                solo deseas analizar de forma personal tu producto, elige entre las siguientes opciones.
+            </p>
+        </div>
+        <div class="contendor">
+
+        <div class="tipos" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+            <img src="../../assets/img/Mesa de trabajo 4.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+
+            <h4>Cerveza</h4>
+
+        </div><!-- End Icon Box -->
+<div class="container">
+    
+  
+   
+    <mat-form-field>
+      <mat-label></mat-label>
+      <p>Titulo: {{ selectedOption }}</p>
+      
+      <input matInput>
+    </mat-form-field>
+  
+    <mat-form-field>
+        <p>Estilo</p>
+      <mat-label></mat-label>
+      
+      <select  [(ngModel)]="selectedOption" matNativeControl [disabled]="disableSelect">
+        <option *ngFor="let item of lista" [value]="item">{{ item }}</option>
+      </select>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label></mat-label>
+      <p>información</p>
+      <textarea matInput placeholder="Escribe aquí..."></textarea>
+    </mat-form-field>
+  </div>
+  
+  
