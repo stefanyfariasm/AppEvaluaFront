@@ -1,15 +1,15 @@
 /* Fonts */
-:root {
-    --font-default:   "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-primary: "Amatic SC", sans-serif;
-    --font-secondary: "Inter", sans-serif;
-  }
-  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
 .content-section {
     display: flex;
     align-items: center;
     padding-top: 10%;
   }
+
+a{
+  text-decoration: none;
+}
   
   .text-block {
     width: 40%;
@@ -25,11 +25,11 @@
   }
 
   .content-section  h2 {
+    font-family: 'Poppins', sans-serif; 
     font-size: 54px;
     font-weight: 700;
     margin-bottom: 20px;
     color: var(--color-secondary);
-    font-family: var(--font-primary);
   }
   
   .content-section  h2 span {
@@ -37,12 +37,14 @@
   }
   
   .content-section  p {
+    font-family: 'Poppins', sans-serif; 
     color: #4f4f5a;
     font-weight: 400;
     margin-bottom: 30px;
   }
   
   .content-section  .btn-book-a-table {
+    font-family: 'Poppins', sans-serif; 
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 1px;
