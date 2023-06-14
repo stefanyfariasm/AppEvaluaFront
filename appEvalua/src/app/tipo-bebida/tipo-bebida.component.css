@@ -1,27 +1,74 @@
-/*--------------------------------------------------------------
-# Why Us Section
---------------------------------------------------------------*/
-.bebida {
-    padding: 30px;
-    background: var(--color-primary);
-    color: #050620;
-    align-items: center;
-  }
-  
-  .bebida .bebida h3 {
-    font-weight: 700;
-    font-size: 34px;
-    margin-bottom: 30px;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
- 
-  
-  .bebida .bebida .more-btn:hover {
-    color: var(--color-primary);
-    background: #0be6c8;
+p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+
+}
+h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #020416;
+}
+
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: #020416;
+}
+
+.tipos{
+  padding-left: 2cm;
+  padding-top: 1cm;
+}
+.why-us .icon-box {
+  text-align: center;
+  background: #fcfffe;
+  padding: 40px 30px;
+  border: 2px solid rgb(8, 5, 46);
+  border-radius: 80px;
+  transition: 0.3s;
+}
+
+.why-us .icon-box p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: #020416;
+}
+
+@media (min-width: 1200px) {
+  .why-us .icon-box:hover {
+    transform: scale(1.1);
   }
-  
-  .bebida .icon-box {
+}
+
+img{
+  width: 3cm;
+}
+
+.texto{
+  text-align: center;
+  padding-bottom: 3cm;
+}
+
+.container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.top-row,
+.bottom-row {
+display: flex;
+}
+
+
+/*
+.box {
     text-align: center;
     background: #f7f6f6;
     padding: 10px 5px;
@@ -30,15 +77,9 @@
   }
   
 
-  .bebida .icon-box p {
-    font-size: 12px;
-    color: #6c757d;
-  }
-  
-  @media (min-width: 1200px) {
-    .bebida .icon-box:hover {
-      transform: scale(1.1);
-    }
+p {
+    font-size: 15px;
+    color: #05062b;
   }
 
   img{
@@ -51,18 +92,33 @@ h2{
   margin-bottom: 20px;
 }
 
-.tipos{
-    float: left;
-    width: calc(20.33% - 10px);
-    height: 80px;
-    background-color: #ffffff;
-    margin: 30px;
-}
-.contenedor{
-    align-items: center;
-    padding-left: 60px;
-}
 
 .texto{
     text-align: center;
+    padding-bottom: 1cm;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.top-row,
+.bottom-row {
+  display: flex;
+}
+
+.box {
+  flex: 1;
+  height: 100px;
+  background-color: #ebf7f1;
+  margin: 5px;
+  height: 300px;
+}
+
+
+*/
+
