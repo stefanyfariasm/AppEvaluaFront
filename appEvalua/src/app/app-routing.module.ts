@@ -5,7 +5,7 @@ import { TipoBebidaComponent } from './tipo-bebida/tipo-bebida.component';
 
 const routes: Routes = [
   {path:"**", redirectTo:"principal"},
-  {path:"principal", component:PrincipalComponent},
+  //{path:"principal", component:PrincipalComponent},
   {path:"tipoBebida", component:TipoBebidaComponent}
 
 
