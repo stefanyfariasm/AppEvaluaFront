@@ -1,0 +1,64 @@
+/* Fonts */
+:root {
+    --font-default:   "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-primary: "Amatic SC", sans-serif;
+    --font-secondary: "Inter", sans-serif;
+  }
+  
+.content-section {
+    display: flex;
+    align-items: center;
+    padding-top: 10%;
+  }
+  
+  .text-block {
+    width: 40%;
+    padding-left: 20%;
+    padding-right: 5%;
+  }
+  
+  .image-principal {
+    margin-left: 30px; 
+  }
+  img{
+    width: 6cm;
+  }
+
+  .content-section  h2 {
+    font-size: 54px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--color-secondary);
+    font-family: var(--font-primary);
+  }
+  
+  .content-section  h2 span {
+    color: var(--color-primary);
+  }
+  
+  .content-section  p {
+    color: #4f4f5a;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  
+  .content-section  .btn-book-a-table {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 36px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: hsl(0, 0%, 100%);
+    background: hsl(152, 66%, 58%);
+    box-shadow: 0 8px 28px rgba(206, 18, 18, 0.2);
+  }
+  
+  .content-section  .btn-book-a-table:hover {
+    background: rgba(103, 243, 213, 0.8);
+    box-shadow: 0 8px 28px rgba(206, 18, 18, 0.45);
+  }
+  
+
+  
