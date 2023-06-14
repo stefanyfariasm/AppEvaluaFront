@@ -49,3 +49,21 @@ h2, h4, p{
   border-radius: 6dvh;
   transition: 0.3s;
 }
+.mat-form-field {
+  position: relative;
+}
+
+.mat-form-field input,
+.mat-form-field textarea,
+.mat-form-field select {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.mat-form-field input:focus,
+.mat-form-field textarea:focus,
+.mat-form-field select:focus {
+  outline: none;
+  border-color: green;
+}
