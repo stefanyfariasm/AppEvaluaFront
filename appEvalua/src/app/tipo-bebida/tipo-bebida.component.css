@@ -41,6 +41,7 @@ h4 {
 @media (min-width: 1200px) {
   .why-us .icon-box:hover {
     transform: scale(1.1);
+    background-color: rgb(220, 253, 242);
   }
 }
 
@@ -50,7 +51,10 @@ img{
 
 .texto{
   text-align: center;
-  padding-bottom: 3cm;
+  padding-bottom: 2cm;
+}
+a{
+  text-decoration: none;
 }
 
 .container {
