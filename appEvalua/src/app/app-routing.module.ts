@@ -4,8 +4,8 @@ import { PrincipalComponent } from './principal/principal.component';
 import { TipoBebidaComponent } from './tipo-bebida/tipo-bebida.component';
 import { EstilosComponent } from './estilos/estilos.component';
 const routes: Routes = [
-  //{path:"**", redirectTo:"principal"},
-  {path:"principal", component:PrincipalComponent},
+  {path:"**", redirectTo:"principal"},
+  {path:"", component:PrincipalComponent},
   {path:"tipoBebida", component:TipoBebidaComponent},
   {path:"estilos",component:EstilosComponent}
 ];
