@@ -20,7 +20,7 @@ h4 {
 }
 
 .tipos{
-  padding-left: 2cm;
+  padding-right: 1cm;
   padding-top: 1cm;
 }
 .why-us .icon-box {
@@ -70,59 +70,4 @@ height: 100vh;
 display: flex;
 }
 
-
-/*
-.box {
-    text-align: center;
-    background: #f7f6f6;
-    padding: 10px 5px;
-    border-radius: 50px ;
-    transition: 0.3s;
-  }
-  
-
-p {
-    font-size: 15px;
-    color: #05062b;
-  }
-
-  img{
-    width: 3cm;
-  }
-
-h2{
-  font-size: 34px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-
-.texto{
-    text-align: center;
-    padding-bottom: 1cm;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.top-row,
-.bottom-row {
-  display: flex;
-}
-
-.box {
-  flex: 1;
-  height: 100px;
-  background-color: #ebf7f1;
-  margin: 5px;
-  height: 300px;
-}
-
-
-*/
 

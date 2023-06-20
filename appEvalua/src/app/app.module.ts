@@ -15,6 +15,9 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 
+import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { BarraSuperiorComponent } from './barra-superior/barra-superior.component';
 
 /////////////////
 @NgModule({
@@ -22,7 +25,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     AppComponent,
     PrincipalComponent,
     TipoBebidaComponent,
-    EstilosComponent
+    EstilosComponent,
+    BarraSuperiorComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +37,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatFormFieldModule,
     MatSelectModule,
     MatInputModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
