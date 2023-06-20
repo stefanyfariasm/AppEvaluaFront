@@ -7,7 +7,9 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class LoginService {
-  private URL = 'http://localhost:3000/login'
+  //private URL = 'http://localhost:3000/login'
+  private URL = 'https://service-name-pbqg.onrender.com/login'
+
   constructor(private http: HttpClient) {}
 
   logoogle(token:any){

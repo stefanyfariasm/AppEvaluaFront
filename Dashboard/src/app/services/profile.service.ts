@@ -6,7 +6,9 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class ProfileService {
-  private URL = 'http://localhost:3000/profile';
+  //private URL = 'http://localhost:3000/profile';
+  private URL = 'https://service-name-pbqg.onrender.com/profile'
+
   constructor(private http: HttpClient) {}
 
   updateImg(user:any){

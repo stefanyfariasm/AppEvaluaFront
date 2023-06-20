@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   stripe_pk: 'pk_test_51MspPzBZeW7In9H8roKVcJUliOPwQEBi4yDspCSDCHGSoAMTPu7KItpnkjeLPVE6fmZaNPsIAB04PTQROH00Irir00OHVxBSjT',
-  api: "http://localhost:3000",
+  //api: "http://localhost:3000",
+  api: "https://service-name-pbqg.onrender.com",
 
   firebaseConfig : {
     apiKey: "AIzaSyDsOEgfOFxDxgL_Gi4p6C5vZY0MX1rU6qQ",
