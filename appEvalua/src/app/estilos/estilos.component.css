@@ -5,7 +5,11 @@ h2, h4, p{
 
 }
 
-
+.seleccion{
+  font-family: 'Poppins', sans-serif;
+  width: 290px;
+  left: 15px;
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -63,6 +67,7 @@ h2, h4, p{
   width: 300px;
 
 }
+
 
 .mat-form-field input:focus,
 .mat-form-field textarea:focus,

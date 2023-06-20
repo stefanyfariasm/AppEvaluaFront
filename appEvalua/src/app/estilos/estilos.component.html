@@ -20,22 +20,23 @@
 
 <div class="container">
 
-    <mat-form-field>
+    <mat-form-field style="width: 270px;">
       <mat-label></mat-label>
       <p>Titulo</p>      
       <input matInput>
+      <p>Estilo</p>
     </mat-form-field>
   
     <mat-form-field>
-        <p>Estilo</p>
+      
       <mat-label></mat-label>
       
-      <select  [(ngModel)]="selectedOption" matNativeControl [disabled]="disableSelect">
+      <select class="seleccion" [(ngModel)]="selectedOption" matNativeControl [disabled]="disableSelect">
         <option *ngFor="let item of lista" [value]="item">{{ item }}</option>
       </select>
     </mat-form-field>
   
-    <mat-form-field>
+    <mat-form-field style="width: 270px;">
       <mat-label></mat-label>
       <p>Información</p>
       <textarea matInput placeholder="Escribe aquí..."></textarea>
