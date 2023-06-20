@@ -1,6 +1,21 @@
 # AppEvaluaFront
+Install Angular, modules necessary to run the app: 
+```
+$ npm install
+```
+Install Angular material
+```
+$ ng add @angular/material
+```
+Run the frontend:
+```
+$ ng serve
+```
 
-## Angular Instructions
+
+
+
+## Angular Instructions Dashboard
 Install Angular, modules necessary to run the app: 
 ```
 $ npm install
