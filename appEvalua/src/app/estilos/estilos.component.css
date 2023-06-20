@@ -22,10 +22,7 @@ h2, h4, p{
     font-family: 'Poppins', sans-serif;
 
   }
-  .contenedor{
-    align-items: center;
-    padding-left: 60px;
-}
+
 
 .green-button {
   position: absolute;
@@ -59,11 +56,22 @@ h2, h4, p{
   border: 2px solid #ccc;
   border-radius: 5px;
   padding: 8px;
+
+}
+
+.mat-form-field {
+  width: 300px;
+
 }
 
 .mat-form-field input:focus,
 .mat-form-field textarea:focus,
 .mat-form-field select:focus {
   outline: none;
-  border-color: green;
+  border-color: rgb(105, 235, 207);
+}
+
+.lista{
+  font-family: 'Poppins', sans-serif;
+
 }
