@@ -18,6 +18,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { BarraSuperiorComponent } from './barra-superior/barra-superior.component';
+import { EvaluacionComponent } from './evaluacion/evaluacion.component';
+import { TituloFlotanteComponent } from './titulo-flotante/titulo-flotante.component';
 
 /////////////////
 @NgModule({
@@ -26,7 +28,9 @@ import { BarraSuperiorComponent } from './barra-superior/barra-superior.componen
     PrincipalComponent,
     TipoBebidaComponent,
     EstilosComponent,
-    BarraSuperiorComponent
+    BarraSuperiorComponent,
+    EvaluacionComponent,
+    TituloFlotanteComponent
   ],
   imports: [
     BrowserModule,
