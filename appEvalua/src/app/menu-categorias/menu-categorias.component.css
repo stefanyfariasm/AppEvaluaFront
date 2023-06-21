@@ -25,4 +25,19 @@
     font-family: 'Poppins', sans-serif;
 
   }
+
+
   
+@media (min-width: 1200px) {
+    .image-wrapper:hover{
+      background-color: rgb(224, 230, 228);
+      border-radius: 20px;
+      
+
+    }
+  }
+  
+
+  a{
+    text-decoration: none;
+  }
