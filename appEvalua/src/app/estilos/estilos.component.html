@@ -23,7 +23,7 @@
     <mat-form-field style="width: 270px;">
       <mat-label></mat-label>
       <p>Titulo</p>      
-      <input matInput>
+      <input matInput [(ngModel)]="titulo">
       <p>Estilo</p>
     </mat-form-field>
   
@@ -39,7 +39,7 @@
     <mat-form-field style="width: 270px;">
       <mat-label></mat-label>
       <p>Información</p>
-      <textarea matInput placeholder="Escribe aquí..."></textarea>
+      <textarea matInput [(ngModel)]="informacion" placeholder="Escribe aquí..."></textarea>
     </mat-form-field>
    
 </div>
