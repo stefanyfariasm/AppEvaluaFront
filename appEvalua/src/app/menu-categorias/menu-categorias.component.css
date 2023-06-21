@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+
+.image-container {
+    display: flex;
+    background-color: rgb(219, 219, 219);
+    border-radius: 40px;
+  }
+  
+  .image-wrapper {
+    width: 6%; /* Para obtener 3 imágenes por fila, puedes ajustar este valor según tus necesidades */
+    padding: 10px;
+    text-align: center;
+    padding-left: 2cm;
+
+  }
+  
+  .image-wrapper img {
+    width: 1cm;
+    height: auto;
+  }
+  
+  .image-text {
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+
+  }
+  

@@ -20,6 +20,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { BarraSuperiorComponent } from './barra-superior/barra-superior.component';
 import { EvaluacionComponent } from './evaluacion/evaluacion.component';
 import { TituloFlotanteComponent } from './titulo-flotante/titulo-flotante.component';
+import { MenuCategoriasComponent } from './menu-categorias/menu-categorias.component';
 
 /////////////////
 @NgModule({
@@ -30,7 +31,8 @@ import { TituloFlotanteComponent } from './titulo-flotante/titulo-flotante.compo
     EstilosComponent,
     BarraSuperiorComponent,
     EvaluacionComponent,
-    TituloFlotanteComponent
+    TituloFlotanteComponent,
+    MenuCategoriasComponent
   ],
   imports: [
     BrowserModule,
