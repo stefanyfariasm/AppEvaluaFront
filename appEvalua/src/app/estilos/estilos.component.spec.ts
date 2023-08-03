@@ -20,4 +20,18 @@ describe('EstilosComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`Revisar titulo`, () => {
+    
+    const check = component.verificarTitulo
+    expect(check).toBeTrue()
+  })
+
+  it(`Revisar Imformacion`, () => {
+    
+    const check = component.verificarInformacion
+    expect(check).toBeTrue()
+  })
+
+
 });
