@@ -21,6 +21,7 @@ import { BarraSuperiorComponent } from './barra-superior/barra-superior.componen
 import { EvaluacionComponent } from './evaluacion/evaluacion.component';
 import { TituloFlotanteComponent } from './titulo-flotante/titulo-flotante.component';
 import { MenuCategoriasComponent } from './menu-categorias/menu-categorias.component';
+import { AromaComponent } from './aroma/aroma.component';
 
 /////////////////
 @NgModule({
@@ -32,7 +33,8 @@ import { MenuCategoriasComponent } from './menu-categorias/menu-categorias.compo
     BarraSuperiorComponent,
     EvaluacionComponent,
     TituloFlotanteComponent,
-    MenuCategoriasComponent
+    MenuCategoriasComponent,
+    AromaComponent
   ],
   imports: [
     BrowserModule,

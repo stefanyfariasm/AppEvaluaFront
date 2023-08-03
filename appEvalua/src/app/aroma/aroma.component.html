@@ -1,0 +1,38 @@
+<section class="aroma">
+
+    <div class="malta">
+        <h1>Malta</h1>
+        <div class="image">
+            <img [src]="currentImageMalta" alt="Imagen">
+        </div>
+        <div>
+            <p class="text bajo" (click)="cambiarImagenMalta('../../assets/img/bajo.jpeg')">Bajo</p>
+            <p class="text medio" (click)="cambiarImagenMalta('../../assets/img/medio.jpeg')">Medio</p>
+            <p class="text alto" (click)="cambiarImagenMalta('../../assets/img/alto.jpeg')">Alto</p>
+        </div>
+    </div>
+
+    <div class="lupulos">
+        <h1>Lúpulos</h1>
+        <div class="image">
+            <img [src]="currentImageLupulos" alt="Imagen">
+        </div>
+        <div>
+            <p class="text bajo" (click)="cambiarImagenLupulos('../../assets/img/bajo.jpeg')">Bajo</p>
+            <p class="text medio" (click)="cambiarImagenLupulos('../../assets/img/medio.jpeg')">Medio</p>
+            <p class="text alto" (click)="cambiarImagenLupulos('../../assets/img/alto.jpeg')">Alto</p>
+        </div>
+    </div>
+
+    <div class="fermentacion">
+        <h1>Fermentación</h1>
+        <div class="image">
+            <img [src]="currentImageFermen" alt="Imagen">
+        </div>
+        <div>
+            <p class="text bajo" (click)="cambiarImagenFermen('../../assets/img/bajo.jpeg')">Bajo</p>
+            <p class="text medio" (click)="cambiarImagenFermen('../../assets/img/medio.jpeg')">Medio</p>
+            <p class="text alto" (click)="cambiarImagenFermen('../../assets/img/alto.jpeg')">Alto</p>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+img{
+    width: 6cm;
+    height: 6cm;
+}
+
+
+.malta, .lupulos, .fermentacion{
+    padding:2cm;
+    position: relative;
+    display: inline-block;
+  }
+  
+  h1{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+  }
+  .text {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    cursor: pointer;
+  }
+  
+  .text.bajo {
+    top: 7cm;
+    left: 1cm;
+  }
+  
+  .text.medio {
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 0.5cm;
+  }
+  
+  .text.alto {
+    bottom: 0;
+    right: 0;
+    left: 8cm;
+    top: 7cm;
+  }
