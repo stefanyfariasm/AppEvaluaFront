@@ -3,10 +3,14 @@
     display: flex;
     align-items: center;
     margin: auto;
-    padding-top: 30px;
+    padding-top: 100px;
 
   }
   .titulo{
     padding-left: 100px;
     padding-right: 60px ;
   }
+  /* titulo-flotante.component.css */
+.narrow-select {
+  width: 100px; /* Puedes ajustar el valor según el ancho deseado */
+}

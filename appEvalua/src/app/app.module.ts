@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { TipoBebidaComponent } from './tipo-bebida/tipo-bebida.component';
 import { EstilosComponent } from './estilos/estilos.component';
+import { SharedDataService } from './serviciosGenerales/shared-data.service';
 
 
 /////////////
@@ -30,6 +31,7 @@ import { AromaComponent } from './aroma/aroma.component';
     PrincipalComponent,
     TipoBebidaComponent,
     EstilosComponent,
+    //SharedDataService,
     BarraSuperiorComponent,
     EvaluacionComponent,
     TituloFlotanteComponent,

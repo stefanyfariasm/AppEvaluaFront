@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SharedDataService } from '../serviciosGenerales/shared-data.service';
 
 @Component({
   selector: 'app-evaluacion',
@@ -7,8 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EvaluacionComponent implements OnInit {
 
-  constructor() { }
 
+  public titulo: string | undefined;
+  public estilo: string | undefined;
+  constructor(private sharedDataService:SharedDataService) { }
+  guardarDatos(): void {
+    this.sharedDataService.titulo = this.titulo;
+    this.sharedDataService.estilo = this.estilo;
+  }
   ngOnInit(): void {
   }
 
