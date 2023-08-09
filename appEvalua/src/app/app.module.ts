@@ -23,6 +23,7 @@ import { EvaluacionComponent } from './evaluacion/evaluacion.component';
 import { TituloFlotanteComponent } from './titulo-flotante/titulo-flotante.component';
 import { MenuCategoriasComponent } from './menu-categorias/menu-categorias.component';
 import { AromaComponent } from './aroma/aroma.component';
+import { AparienciaComponent } from './apariencia/apariencia.component';
 
 /////////////////
 @NgModule({
@@ -36,7 +37,8 @@ import { AromaComponent } from './aroma/aroma.component';
     EvaluacionComponent,
     TituloFlotanteComponent,
     MenuCategoriasComponent,
-    AromaComponent
+    AromaComponent,
+    AparienciaComponent
   ],
   imports: [
     BrowserModule,

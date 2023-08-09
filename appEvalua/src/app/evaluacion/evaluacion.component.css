@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 30px;
 
   }
   .titulo{
@@ -12,5 +12,5 @@
   }
   /* titulo-flotante.component.css */
 .narrow-select {
-  width: 100px; /* Puedes ajustar el valor según el ancho deseado */
+  width: 100px; 
 }
