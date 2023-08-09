@@ -12,12 +12,12 @@ export class SaborComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  currentImageAmargor: string = '../../assets/img/inicial.jpeg';
-  currentImageEquilibrio: string = '../../assets/img/inicial.jpeg';
-  currentImageRetrogusto: string = '../../assets/img/inicial.jpeg';
-  currentImageMalta: string = '../../assets/img/inicial.jpeg';
-  currentImageLupulos: string = '../../assets/img/inicial.jpeg';
-  currentImageFermen: string = '../../assets/img/inicial.jpeg';
+  currentImageAmargor: string = '../../assets/img/grafica/inicial.jpeg';
+  currentImageEquilibrio: string = '../../assets/img/grafica/inicial.jpeg';
+  currentImageRetrogusto: string = '../../assets/img/grafica/inicial.jpeg';
+  currentImageMalta: string = '../../assets/img/grafica/inicial.jpeg';
+  currentImageLupulos: string = '../../assets/img/grafica/inicial.jpeg';
+  currentImageFermen: string = '../../assets/img/grafica/inicial.jpeg';
 
   seleccionAmargor: number = 0;
   seleccionEquilibrio: number = 0;

@@ -11,11 +11,11 @@ export class SensacionComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  currentImageCuerpo: string = '../../assets/img/inicial.jpeg';
-  currentImageCarbonatacion: string = '../../assets/img/inicial.jpeg';
-  currentImageCalentamiento: string = '../../assets/img/inicial.jpeg';
-  currentImageCremosidad: string = '../../assets/img/inicial.jpeg';
-  currentImageAstringencia: string = '../../assets/img/inicial.jpeg';
+  currentImageCuerpo: string = '../../assets/img/grafica/inicial.jpeg';
+  currentImageCarbonatacion: string = '../../assets/img/grafica/inicial.jpeg';
+  currentImageCalentamiento: string = '../../assets/img/grafica/inicial.jpeg';
+  currentImageCremosidad: string = '../../assets/img/grafica/inicial.jpeg';
+  currentImageAstringencia: string = '../../assets/img/grafica/inicial.jpeg';
 
 
   seleccionCuerpo: number = 0;

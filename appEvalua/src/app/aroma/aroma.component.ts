@@ -13,9 +13,9 @@ export class AromaComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  currentImageMalta: string = '../../assets/img/inicial.jpeg';
-  currentImageLupulos: string = '../../assets/img/inicial.jpeg';
-  currentImageFermen: string = '../../assets/img/inicial.jpeg';
+  currentImageMalta: string = '../../assets/img/grafica/inicial.jpeg';
+  currentImageLupulos: string = '../../assets/img/grafica/inicial.jpeg';
+  currentImageFermen: string = '../../assets/img/grafica/inicial.jpeg';
 
   seleccionMalta: number = 0;
   seleccionLupulos: number = 0;
