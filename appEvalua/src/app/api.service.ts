@@ -10,5 +10,8 @@ export class ApiService {
   getAlimentos(){
     return this.http.get<any>(this.URL+'/alimentos/')
   }
+  getEstilos(){
+    return this.http.get<any>(this.URL+'/estilos/')
+  }
   
 }
