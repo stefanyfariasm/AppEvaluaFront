@@ -1,0 +1,26 @@
+#radar {
+    max-width: 450px;
+    margin: 35px auto;
+    left: 10%; /* Ubicación en la parte izquierda */
+    top: 20%;
+    
+    
+  }
+
+#titulo{
+  left: 5%; /* Ubicación en la parte izquierda */
+  top: 15%;
+ 
+
+
+}
+.container {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding-top: 100px;
+
+}
+
+
+  

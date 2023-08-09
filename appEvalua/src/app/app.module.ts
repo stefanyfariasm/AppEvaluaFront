@@ -24,6 +24,10 @@ import { TituloFlotanteComponent } from './titulo-flotante/titulo-flotante.compo
 import { MenuCategoriasComponent } from './menu-categorias/menu-categorias.component';
 import { AromaComponent } from './aroma/aroma.component';
 
+import { NgChartsModule } from 'ng2-charts';
+import { NgApexchartsModule } from 'ng-apexcharts';
+import { RadarChartComponent } from './radar-chart/radar-chart.component';
+
 /////////////////
 @NgModule({
   declarations: [
@@ -36,7 +40,8 @@ import { AromaComponent } from './aroma/aroma.component';
     EvaluacionComponent,
     TituloFlotanteComponent,
     MenuCategoriasComponent,
-    AromaComponent
+    AromaComponent,
+    RadarChartComponent
   ],
   imports: [
     BrowserModule,
@@ -48,6 +53,9 @@ import { AromaComponent } from './aroma/aroma.component';
     MatSelectModule,
     MatInputModule,
     MatIconModule,
+    NgApexchartsModule,
+    NgChartsModule,    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
