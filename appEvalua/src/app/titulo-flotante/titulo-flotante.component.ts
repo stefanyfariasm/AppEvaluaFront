@@ -7,7 +7,12 @@ import { SharedDataService } from '../serviciosGenerales/shared-data.service';
   styleUrls: ['./titulo-flotante.component.css']
 })
 export class TituloFlotanteComponent implements OnInit {
-  
+  showDropdown = false;
+
+  toggleDropdown() {
+    this.showDropdown = !this.showDropdown;
+  }
+
   data2=[
     [
       "Overall Impression",

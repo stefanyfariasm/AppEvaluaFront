@@ -15,7 +15,26 @@
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
   }
-
+  img{
+    width: 50px;
+  }
+  .estilo-seleccion {
+    display: flex;
+    align-items: center;
+  }
+  
+  .imagen-estilo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
   span {
    
     padding: 10px;    

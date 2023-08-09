@@ -10,20 +10,41 @@
     </div>
 
    -->
-   <div>
+   <!-- <div> -->
+
     <!-- <h3>Cata de Prueba:{{ titulo }}</h3>
     <p>Descripcion{{ informacion }}</p> -->
- <h3>Cata de Prueba: </h3><p>{{ titulo }}</p>
- <h3>Estilos de Prueba  </h3><p>{{ estilo }}</p>
- <h3>Descripcion: </h3><p>{{informacion}}</p>
-<div>
+ <!-- <h3>Título de cata :{{ titulo }} </h3> -->
+ <!-- <h3>Estilos de Prueba  </h3><p>{{ estilo }}</p> -->
+ <!-- <h3>Descripcion: </h3><p>{{informacion}}</p> -->
+ <div>
+  <h3>Título de cata: {{ titulo }}</h3>
+  <div *ngIf="informacion">
+    <div class="estilo-seleccion">
+      <h4>Estilo:</h4>
+      <div class="imagen-estilo" (click)="toggleDropdown()">
+        <img src="../../assets/img/boton estilo.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300"><p> {{estilo}}</p>
+        <select class="narrow-select dropdown" *ngIf="showDropdown" [(ngModel)]="selectedOption" (ngModelChange)="onOptionSelect()">
+          <option *ngFor="let item of data1; let i = index" [value]="item">
+            {{ item }}
+          </option>
+        </select>
+      </div>
+    </div>
+    <h4>Nota:</h4>
+  </div>
+</div>
+
+ 
+ <!-- <div>
     <div *ngIf="informacion">
-      <h4>Información:</h4>
+      <h4>Estilo:</h4><img src="../../assets/img/boton estilo.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
       <select class="narrow-select" [(ngModel)]="selectedOption" (ngModelChange)="onOptionSelect()">
         <option *ngFor="let item of data1; let i = index" [value]="item">
           {{ item }}
         </option>
       </select>
+      <h4>Nota:</h4>
       <div *ngIf="descripcionSeleccionada">
         <p>Informacion de cerveza que no esta siendo evaluada</p>
         <h4>Descripción:</h4>
@@ -31,17 +52,4 @@
       </div>
     </div>
   </div>
-  
-  <!-- <mat-form-field>
-    <mat-label>Estilos</mat-label>
-    <mat-select>
-        
-      <mat-option *ngFor="let item of data1; let i = index" [value]="item">{{ item }}</mat-option>
-     
-    </mat-select>
-    <div *ngIf="descripcionSeleccionada">
-        <p>Informacion de cerveza que no esta siendo evaluada</p>
-        <h4>Descripción:</h4>
-        <p>{{ descripcionSeleccionada }}</p>
-      </div>
-  </mat-form-field> -->
+   -->
