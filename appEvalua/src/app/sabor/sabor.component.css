@@ -6,13 +6,13 @@ img{
 }
 
 .container-wrapper {
-  display: flex;
+  /*display: flex;*/
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-.malta, .lupulos, .fermentacion{
+.malta, .lupulos, .fermentacion, .amargor, .equilibrio, .retrogusto{
     padding-right:2cm;
     padding-left:2cm;
     position: relative;

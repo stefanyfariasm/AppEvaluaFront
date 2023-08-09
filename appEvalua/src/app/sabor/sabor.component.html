@@ -1,7 +1,6 @@
 <div class="container-wrapper">
-    <section class="aroma">
-        <h2>Aroma</h2>
-
+    <section class="sabor">
+        <h2>Sabor</h2>
         <div class="malta">
             <h1>Malta</h1>
             <div class="image">
@@ -48,6 +47,52 @@
             </div>
         </div>
 
+        <div class="amargor">
+            <h1>Amargor</h1>
+            <div class="image">
+                <img [src]="currentImageAmargor" alt="Imagen">
+            </div>
+            <div class="textos">
+                <p class="text bajo" (click)="cambiarImagenAmargor('../../assets/img/bajo.jpeg')">Bajo</p>
+                <p class="text medio" (click)="cambiarImagenAmargor('../../assets/img/medio.jpeg')">Medio</p>
+                <p class="text alto" (click)="cambiarImagenAmargor('../../assets/img/alto.jpeg')">Alto</p>
+                <label>
+                    <input type="checkbox" [checked]="valorInapropiadoAmargor" (change)="checkboxChangedAmargor($event)"> Inapropiado
+                </label>
+
+            </div>
+        </div>
+
+        <div class="equilibrio">
+            <h1>Equilibrio</h1>
+            <div class="image">
+                <img [src]="currentImageEquilibrio" alt="Imagen">
+            </div>
+            <div class="textos">
+                <p class="text bajo" (click)="cambiarImagenEquilibrio('../../assets/img/bajo.jpeg')">Bajo</p>
+                <p class="text medio" (click)="cambiarImagenEquilibrio('../../assets/img/medio.jpeg')">Medio</p>
+                <p class="text alto" (click)="cambiarImagenEquilibrio('../../assets/img/alto.jpeg')">Alto</p>
+                <label>
+                    <input type="checkbox" [checked]="valorInapropiadoEquilibrio" (change)="checkboxChangedEquilibrio($event)"> Inapropiado
+                </label>
+            </div>
+        </div>
+
+        <div class="retrogusto">
+            <h1>Retrogusto</h1>
+            <div class="image">
+                <img [src]="currentImageRetrogusto" alt="Imagen">
+            </div>
+            <div class="textos">
+                <p class="text bajo" (click)="cambiarImagenRetrogusto('../../assets/img/bajo.jpeg')">Bajo</p>
+                <p class="text medio" (click)="cambiarImagenRetrogusto('../../assets/img/medio.jpeg')">Medio</p>
+                <p class="text alto" (click)="cambiarImagenRetrogusto('../../assets/img/alto.jpeg')">Alto</p>
+                <label>
+                    <input type="checkbox" [checked]="valorInapropiadoRetrogusto" (change)="checkboxChangedRetrogusto($event)"> Inapropiado
+                </label>
+            </div>
+        </div>
+
         <div class="sum-box">
             <div class="top-row">
             <h3>Descripción</h3>
@@ -59,6 +104,6 @@
             </div>
         </div>
 
-        <button  routerLink="/sabor" class="green-button">Siguiente sección</button>
+        <button  routerLink="/sensacion" class="green-button">Siguiente sección</button>
     </section>
 </div>

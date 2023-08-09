@@ -24,6 +24,8 @@ import { TituloFlotanteComponent } from './titulo-flotante/titulo-flotante.compo
 import { MenuCategoriasComponent } from './menu-categorias/menu-categorias.component';
 import { AromaComponent } from './aroma/aroma.component';
 import { AparienciaComponent } from './apariencia/apariencia.component';
+import { SaborComponent } from './sabor/sabor.component';
+import { SensacionComponent } from './sensacion/sensacion.component';
 
 /////////////////
 @NgModule({
@@ -38,7 +40,9 @@ import { AparienciaComponent } from './apariencia/apariencia.component';
     TituloFlotanteComponent,
     MenuCategoriasComponent,
     AromaComponent,
-    AparienciaComponent
+    AparienciaComponent,
+    SaborComponent,
+    SensacionComponent
   ],
   imports: [
     BrowserModule,
