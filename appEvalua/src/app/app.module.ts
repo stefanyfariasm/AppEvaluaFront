@@ -23,6 +23,7 @@ import { EvaluacionComponent } from './evaluacion/evaluacion.component';
 import { TituloFlotanteComponent } from './titulo-flotante/titulo-flotante.component';
 import { MenuCategoriasComponent } from './menu-categorias/menu-categorias.component';
 import { AromaComponent } from './aroma/aroma.component';
+import { HttpClientModule } from '@angular/common/http';
 
 /////////////////
 @NgModule({
@@ -48,6 +49,7 @@ import { AromaComponent } from './aroma/aroma.component';
     MatSelectModule,
     MatInputModule,
     MatIconModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
