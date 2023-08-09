@@ -3,6 +3,7 @@ import {FormControl, FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 import { SharedDataService } from '../serviciosGenerales/shared-data.service';
+
 @Component({
   selector: 'app-estilos',
   templateUrl: './estilos.component.html',
