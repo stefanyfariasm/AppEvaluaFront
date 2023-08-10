@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+img{
+    width: 6cm;
+    height: 6cm;
+}
+
+.container-wrapper {
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.claridad, .formacion, .retencion, .color, .colorEspuma{
+    padding-right:2cm;
+    padding-left:2cm;
+    position: relative;
+    display: inline-block;
+  }
+  
+  h1, input, label, h3 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+  }
+
+ 
+  h2{
+    font-family: 'Poppins', sans-serif;
+    font-size:xx-large ;
+  }
+  .text{
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    cursor: pointer;
+  }
+  
+  .text.bajo {
+    top: 6cm;
+    left: 1cm;
+  }
+  
+  .text.medio {
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 0.5cm;
+  }
+  
+  .text.alto {
+    left: 8cm;
+    top: 6cm;
+  }
+
+  .textos{
+    padding-left: 1.2cm;
+  }
+
+  .sum-box {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .bottom-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+ 
+  .descripcion{
+    width: 19cm;
+    height: 2.5cm;
+    border-radius: 5px;
+  }
+  
+  .suma {
+    background-color: rgb(250, 248, 248);
+    padding: 1cm 1.5cm ;
+    border-radius: 5px;
+    font-size: x-large;
+    border: 1px solid;
+  }
+  
+
+  .green-button {
+    position: absolute;
+    right: 10px;
+    background-color: rgb(84, 206, 159);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+  }
+
+
+  .text.ambar {
+    top: 7cm;
+    left: 1.5cm;
+  }
+
+  .text.oro {
+    top: 4.5cm;
+    left: 1cm;
+  }
+  
+  .text.amarillo {
+    top: 22%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    padding-top: 0.5cm;
+  }
+  
+  .text.negro {
+    left: 7cm;
+    top: 2cm;
+  }
+
+  .text.marron {
+    left: 8cm;
+    top: 4.5cm;
+  }
+
+    
+  .text.cobre {
+    left: 7cm;
+    top: 7cm;
+  }

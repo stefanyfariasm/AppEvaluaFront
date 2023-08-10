@@ -1,6 +1,24 @@
 <div class="container-wrapper">
     <section class="sensacion">
-        <h2>Sensación en boca</h2>
+        <h2>Apariencia</h2>
+
+        <div class="color">
+            <h1>Color</h1>
+            <div class="image">
+                <img [src]="currentImageColor" alt="Imagen">
+            </div>
+            <div class="textos">
+                <p class="text ambar" (click)="cambiarImagenColor('../../assets/img/grafica/ambar.jpeg')">Ambar</p>
+                <p class="text oro" (click)="cambiarImagenColor('../../assets/img/grafica/oro.jpeg')">Oro</p>
+                <p class="text amarillo" (click)="cambiarImagenColor('../../assets/img/grafica/amarillo.jpeg')">Amarillo</p>
+                <p class="text negro" (click)="cambiarImagenColor('../../assets/img/grafica/negro.jpeg')">Negro</p>
+                <p class="text marron" (click)="cambiarImagenColor('../../assets/img/grafica/marron.jpeg')">Marron</p>
+                <p class="text cobre" (click)="cambiarImagenColor('../../assets/img/grafica/cobre.jpeg')">Cobre</p>
+                <label>
+                    <input type="checkbox" [checked]="valorInapropiadoColor" (change)="checkboxChangedColor($event)"> Inapropiado
+                </label>
+            </div>
+        </div>
 
         <div class="claridad">
             <h1>Claridad</h1>
@@ -32,39 +50,6 @@
             </div>
         </div>
 
-        <div class="retencion">
-            <h1>Retención</h1>
-            <div class="image">
-                <img [src]="currentImageRetencion" alt="Imagen">
-            </div>
-            <div class="textos">
-                <p class="text bajo" (click)="cambiarImagenRetencion('../../assets/img/grafica/bajo.jpeg')">Turbio</p>
-                <p class="text medio" (click)="cambiarImagenRetencion('../../assets/img/grafica/medio.jpeg')">Opaco</p>
-                <p class="text alto" (click)="cambiarImagenRetencion('../../assets/img/grafica/alto.jpeg')">Brillante</p>
-                <label>
-                    <input type="checkbox" [checked]="valorInapropiadoRetencion" (change)="checkboxChangedRetencion($event)"> Inapropiado
-                </label>
-            </div>
-        </div>
-
-        <div class="color">
-            <h1>Color</h1>
-            <div class="image">
-                <img [src]="currentImageColor" alt="Imagen">
-            </div>
-            <div class="textos">
-                <p class="text ambar" (click)="cambiarImagenColor('../../assets/img/grafica/ambar.jpeg')">Ambar</p>
-                <p class="text oro" (click)="cambiarImagenColor('../../assets/img/grafica/oro.jpeg')">Oro</p>
-                <p class="text amarillo" (click)="cambiarImagenColor('../../assets/img/grafica/amarillo.jpeg')">Amarillo</p>
-                <p class="text negro" (click)="cambiarImagenColor('../../assets/img/grafica/negro.jpeg')">Negro</p>
-                <p class="text marron" (click)="cambiarImagenColor('../../assets/img/grafica/marron.jpeg')">Marron</p>
-                <p class="text cobre" (click)="cambiarImagenColor('../../assets/img/grafica/cobre.jpeg')">Cobre</p>
-                <label>
-                    <input type="checkbox" [checked]="valorInapropiadoColor" (change)="checkboxChangedColor($event)"> Inapropiado
-                </label>
-            </div>
-        </div>
-
         <div class="colorEspuma">
             <h1>Color Espuma</h1>
             <div class="image">
@@ -79,6 +64,21 @@
                 <p class="text cobre" (click)="cambiarImagenColorEspuma('../../assets/img/grafica/cobre.jpeg')">Cobre</p>
                 <label>
                     <input type="checkbox" [checked]="valorInapropiadoColorEspuma" (change)="checkboxChangedColorEspuma($event)"> Inapropiado
+                </label>
+            </div>
+        </div>
+
+        <div class="retencion">
+            <h1>Retención</h1>
+            <div class="image">
+                <img [src]="currentImageRetencion" alt="Imagen">
+            </div>
+            <div class="textos">
+                <p class="text bajo" (click)="cambiarImagenRetencion('../../assets/img/grafica/bajo.jpeg')">Turbio</p>
+                <p class="text medio" (click)="cambiarImagenRetencion('../../assets/img/grafica/medio.jpeg')">Opaco</p>
+                <p class="text alto" (click)="cambiarImagenRetencion('../../assets/img/grafica/alto.jpeg')">Brillante</p>
+                <label>
+                    <input type="checkbox" [checked]="valorInapropiadoRetencion" (change)="checkboxChangedRetencion($event)"> Inapropiado
                 </label>
             </div>
         </div>
