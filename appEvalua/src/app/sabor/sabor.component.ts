@@ -131,7 +131,7 @@ export class SaborComponent implements OnInit {
 
 
 
-  sumarSelecciones(): number {
+  sumarSeleccionesSabor(): number {
     return this.seleccionAmargor + this.seleccionEquilibrio + this.seleccionRetrogusto + this.seleccionMalta + this.seleccionLupulos + this.seleccionFermen;
   }
 

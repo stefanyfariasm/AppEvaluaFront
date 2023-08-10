@@ -74,7 +74,7 @@ export class AromaComponent implements OnInit {
     this.valorInapropiadoFerme = event.target.checked;
   }
 
-  sumarSelecciones(): number {
+  sumarSeleccionesAroma(): number {
     return this.seleccionMalta + this.seleccionLupulos + this.seleccionFermen;
   }
 

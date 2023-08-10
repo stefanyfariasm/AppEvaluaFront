@@ -99,7 +99,7 @@ export class SensacionComponent implements OnInit {
     this.valorInapropiadoAstringencia = event.target.checked;
   }
 
-  sumarSelecciones(): number {
+  sumarSeleccionesSensacion(): number {
     return this.seleccionCuerpo + this.seleccionCarbonatacion + this.seleccionCalentamiento + this.seleccionCremosidad +this.seleccionAstringencia;
   }
 
