@@ -50,35 +50,44 @@ ngOnInit(): void {
     }
   );
 }
+formSubmitted = false;
 
+  guardarDatos1(): void {
+    this.formSubmitted = true;
+
+    if (this.formularioValido) {
+      // Realiza la acción correspondiente
+    }
+  }
+
+  get formularioValido(): boolean {
+    return this.titulo && this.selectedOption && this.informacion;
+  }
  
 guardarDatos(): void {
   // Guardar los valores en el servicio
   this.sharedDataService.titulo = this.titulo;
   this.sharedDataService.estilo = this.selectedOption;
-  this.sharedDataService.data1=this.lista;
+  this.sharedDataService.data1=this.lista
 }
 esAlfanumerico(texto: string) {
   var patron = /^[a-zA-Z0-9]+$/;
   return patron.test(texto);
 }
 
-verificarTitulo(): true | false{
-if(this.titulo.length >4 && this.titulo.length< 100 && this.esAlfanumerico(this.titulo)){
-  return true;
-
-}
-return false;
-}
-
-verificarInformacion(): true | false{
-if(this.titulo.length >4 && this.titulo.length< 300){
-  return true;
-
-}
-return false;
+verificarTitulo(): boolean {
+  if (this.titulo.length > 4 && this.titulo.length < 100 && this.esAlfanumerico(this.titulo)) {
+    return true;
+  }
+  return false;
 }
 
+verificarInformacion(): boolean {
+  if (this.informacion.length > 4 && this.informacion.length < 300) {
+    return true;
+  }
+  return false;
+}
 
 
 }
