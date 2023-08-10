@@ -17,33 +17,41 @@
     </div>
   </div>
 
-
-<div class="container">
-
+  <div class="container">
     <mat-form-field style="width: 270px;">
       <mat-label></mat-label>
       <p>Titulo</p>      
-      <input matInput [(ngModel)]="titulo" >
+      <input matInput [(ngModel)]="titulo" [required]="!titulo">
+      
+      <mat-error *ngIf="formSubmitted && !titulo">obligatorio</mat-error>
+      
       <p>Estilo</p>
     </mat-form-field>
   
     <mat-form-field>
-      
+    
       <mat-label></mat-label>
       
-      <select class="seleccion" [(ngModel)]="selectedOption" matNativeControl [disabled]="disableSelect">
-        <option *ngFor="let item of lista" [value]="item">{{ item }}</option>
+      <select *ngIf="lista.length > 0" class="seleccion" [(ngModel)]="selectedOption" matNativeControl [required]="!selectedOption">
+       
+        <option *ngFor="let item of lista" [value]="item">{{item}}</option>
+        <mat-error *ngIf="formSubmitted && !selectedOption">obligatorio</mat-error>
       </select>
+    
     </mat-form-field>
   
     <mat-form-field style="width: 270px;">
       <mat-label></mat-label>
-      <p>Información</p>
-      <textarea matInput [(ngModel)]="informacion" placeholder="Escribe aquí..."></textarea>
+          <p>Información</p>
+      <textarea matInput [(ngModel)]="informacion" placeholder="Escribe aquí..." [required]="!informacion"></textarea>
+      <mat-error *ngIf="formSubmitted && !informacion">Información es obligatoria</mat-error>
     </mat-form-field>
-   
-</div>
-<button (click)="guardarDatos()" routerLink="/evaluacion" class="green-button">Empezar a Catar</button>
+  </div>
+  
+  <button (click)="guardarDatos()" routerLink="/evaluacion" class="green-button" [disabled]="!formularioValido">Empezar a Catar</button>
+  
+
+
   
 
   

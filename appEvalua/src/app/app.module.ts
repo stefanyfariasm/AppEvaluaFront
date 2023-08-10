@@ -23,9 +23,13 @@ import { EvaluacionComponent } from './evaluacion/evaluacion.component';
 import { TituloFlotanteComponent } from './titulo-flotante/titulo-flotante.component';
 import { MenuCategoriasComponent } from './menu-categorias/menu-categorias.component';
 import { AromaComponent } from './aroma/aroma.component';
+
 import { AparienciaComponent } from './apariencia/apariencia.component';
 import { SaborComponent } from './sabor/sabor.component';
 import { SensacionComponent } from './sensacion/sensacion.component';
+
+import { HttpClientModule } from '@angular/common/http';
+
 
 /////////////////
 @NgModule({
@@ -54,6 +58,7 @@ import { SensacionComponent } from './sensacion/sensacion.component';
     MatSelectModule,
     MatInputModule,
     MatIconModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
