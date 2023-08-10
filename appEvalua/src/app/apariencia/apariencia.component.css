@@ -5,12 +5,19 @@ img{
     height: 6cm;
 }
 
+
 .container-wrapper {
-  /*display: flex;*/
+  display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
+
+.otras{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .claridad, .formacion, .retencion, .color, .colorEspuma{
     padding-right:2cm;
@@ -90,18 +97,6 @@ img{
     border: 1px solid;
   }
   
-
-  .green-button {
-    position: absolute;
-    right: 10px;
-    background-color: rgb(84, 206, 159);
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-  }
 
 
   .text.ambar {

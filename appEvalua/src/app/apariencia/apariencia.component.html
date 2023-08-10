@@ -1,7 +1,7 @@
 <div class="container-wrapper">
-    <section class="sensacion">
+    <section class="apariencia">
         <h2>Apariencia</h2>
-
+        <div class="otras">
         <div class="color">
             <h1>Color</h1>
             <div class="image">
@@ -35,21 +35,9 @@
             </div>
         </div>
 
-        <div class="formacion">
-            <h1>Formación de espuma</h1>
-            <div class="image">
-                <img [src]="currentImageFormacion" alt="Imagen">
-            </div>
-            <div class="textos">
-                <p class="text bajo" (click)="cambiarImagenFormacion('../../assets/img/grafica/bajo.jpeg')">Turbio</p>
-                <p class="text medio" (click)="cambiarImagenFormacion('../../assets/img/grafica/medio.jpeg')">Opaco</p>
-                <p class="text alto" (click)="cambiarImagenFormacion('../../assets/img/grafica/alto.jpeg')">Brillante</p>
-                <label>
-                    <input type="checkbox" [checked]="valorInapropiadoFormacion" (change)="checkboxChangedFormacion($event)"> Inapropiado
-                </label>
-            </div>
-        </div>
-
+    </div>
+    <div class="espuma">
+        <h2>Espuma</h2>
         <div class="colorEspuma">
             <h1>Color Espuma</h1>
             <div class="image">
@@ -68,6 +56,22 @@
             </div>
         </div>
 
+        <div class="formacion">
+            <h1>Formación de espuma</h1>
+            <div class="image">
+                <img [src]="currentImageFormacion" alt="Imagen">
+            </div>
+            <div class="textos">
+                <p class="text bajo" (click)="cambiarImagenFormacion('../../assets/img/grafica/bajo.jpeg')">Turbio</p>
+                <p class="text medio" (click)="cambiarImagenFormacion('../../assets/img/grafica/medio.jpeg')">Opaco</p>
+                <p class="text alto" (click)="cambiarImagenFormacion('../../assets/img/grafica/alto.jpeg')">Brillante</p>
+                <label>
+                    <input type="checkbox" [checked]="valorInapropiadoFormacion" (change)="checkboxChangedFormacion($event)"> Inapropiado
+                </label>
+            </div>
+        </div>
+
+
         <div class="retencion">
             <h1>Retención</h1>
             <div class="image">
@@ -82,7 +86,7 @@
                 </label>
             </div>
         </div>
-
+    </div>
         <div class="sum-box">
             <div class="top-row">
             <h3>Descripción</h3>
@@ -94,6 +98,5 @@
             </div>
         </div>
 
-        <button  routerLink="/sabor" class="green-button">Siguiente sección</button>
     </section>
 </div>

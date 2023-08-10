@@ -14,3 +14,16 @@
 .narrow-select {
   width: 100px; 
 }
+
+
+.botonCambiar {
+  position: absolute;
+  right: 10px;
+  background-color: rgb(84, 206, 159);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
