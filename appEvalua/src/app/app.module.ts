@@ -25,6 +25,8 @@ import { MenuCategoriasComponent } from './menu-categorias/menu-categorias.compo
 import { AromaComponent } from './aroma/aroma.component';
 
 import { AparienciaComponent } from './apariencia/apariencia.component';
+import { SaborComponent } from './sabor/sabor.component';
+import { SensacionComponent } from './sensacion/sensacion.component';
 
 import { HttpClientModule } from '@angular/common/http';
 
@@ -42,7 +44,9 @@ import { HttpClientModule } from '@angular/common/http';
     TituloFlotanteComponent,
     MenuCategoriasComponent,
     AromaComponent,
-    AparienciaComponent
+    AparienciaComponent,
+    SaborComponent,
+    SensacionComponent
   ],
   imports: [
     BrowserModule,
