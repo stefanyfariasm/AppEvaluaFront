@@ -19,4 +19,17 @@ export class EvaluacionComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  seccionActual: string = 'aroma'; 
+  
+  siguienteSeccion() {
+
+    if (this.seccionActual === 'aroma') {
+      this.seccionActual = 'apariencia';
+    } else if (this.seccionActual === 'apariencia') {
+      this.seccionActual = 'sabor';
+    } else if (this.seccionActual === 'sabor') {
+      this.seccionActual = 'sensacion';
+    }
+  }
 }

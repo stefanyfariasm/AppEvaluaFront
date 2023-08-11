@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 30px;
 
   }
   .titulo{
@@ -12,5 +12,18 @@
   }
   /* titulo-flotante.component.css */
 .narrow-select {
-  width: 100px; /* Puedes ajustar el valor según el ancho deseado */
+  width: 100px; 
+}
+
+
+.botonCambiar {
+  position: absolute;
+  right: 10px;
+  background-color: rgb(84, 206, 159);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
 }

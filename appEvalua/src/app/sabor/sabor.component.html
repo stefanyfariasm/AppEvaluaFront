@@ -1,7 +1,6 @@
 <div class="container-wrapper">
-    <section class="aroma">
-        <h2>Aroma</h2>
-
+    <section class="sabor">
+        <h2>Sabor</h2>
         <div class="malta">
             <h1>Malta</h1>
             <div class="image">
@@ -25,7 +24,6 @@
                 <p class="text medio" (click)="cambiarImagenLupulos('../../assets/img/grafica/medio.jpeg')">Medio</p>
                 <p class="text alto" (click)="cambiarImagenLupulos('../../assets/img/grafica/alto.jpeg')">Alto</p>
                 <p class="text nulo" (click)="cambiarImagenLupulos('../../assets/img/grafica/inicial.jpeg')">Nulo</p>
-
             </div>
         </div>
 
@@ -39,10 +37,49 @@
                 <p class="text medio" (click)="cambiarImagenFermen('../../assets/img/grafica/medio.jpeg')">Medio</p>
                 <p class="text alto" (click)="cambiarImagenFermen('../../assets/img/grafica/alto.jpeg')">Alto</p>
                 <p class="text nulo" (click)="cambiarImagenFermen('../../assets/img/grafica/inicial.jpeg')">Nulo</p>
-
             </div>
         </div>
 
+        <div class="otras">
+        <div class="amargor">
+            <h1>Amargor</h1>
+            <div class="image">
+                <img [src]="currentImageAmargor" alt="Imagen">
+            </div>
+            <div class="textos">
+                <p class="text bajo" (click)="cambiarImagenAmargor('../../assets/img/grafica/bajo.jpeg')">Bajo</p>
+                <p class="text medio" (click)="cambiarImagenAmargor('../../assets/img/grafica/medio.jpeg')">Medio</p>
+                <p class="text alto" (click)="cambiarImagenAmargor('../../assets/img/grafica/alto.jpeg')">Alto</p>
+                <p class="text nulo" (click)="cambiarImagenAmargor('../../assets/img/grafica/inicial.jpeg')">Nulo</p>
+            </div>
+        </div>
+
+        <div class="equilibrio">
+            <h1>Equilibrio</h1>
+            <div class="image">
+                <img [src]="currentImageEquilibrio" alt="Imagen">
+            </div>
+            <div class="textos">
+                <p class="text bajo" (click)="cambiarImagenEquilibrio('../../assets/img/grafica/bajo.jpeg')">Bajo</p>
+                <p class="text medio" (click)="cambiarImagenEquilibrio('../../assets/img/grafica/medio.jpeg')">Medio</p>
+                <p class="text alto" (click)="cambiarImagenEquilibrio('../../assets/img/grafica/alto.jpeg')">Alto</p>
+                <p class="text nulo" (click)="cambiarImagenEquilibrio('../../assets/img/grafica/inicial.jpeg')">Nulo</p>
+            </div>
+        </div>
+
+        <div class="retrogusto">
+            <h1>Retrogusto</h1>
+            <div class="image">
+                <img [src]="currentImageRetrogusto" alt="Imagen">
+            </div>
+            <div class="textos">
+                <p class="text bajo" (click)="cambiarImagenRetrogusto('../../assets/img/grafica/bajo.jpeg')">Bajo</p>
+                <p class="text medio" (click)="cambiarImagenRetrogusto('../../assets/img/grafica/medio.jpeg')">Medio</p>
+                <p class="text alto" (click)="cambiarImagenRetrogusto('../../assets/img/grafica/alto.jpeg')">Alto</p>
+                <p class="text nulo" (click)="cambiarImagenRetrogusto('../../assets/img/grafica/inicial.jpeg')">Nulo</p>
+            </div>
+        </div>
+    </div>
         <div class="sum-box">
             <div class="top-row">
             <h3>Descripción</h3>
@@ -50,7 +87,7 @@
             </div>
             <div class="bottom-row">
             <input type="text" placeholder="Escribe aquí" class="descripcion">
-            <div class="suma">{{ sumarSeleccionesAroma() }}</div>
+            <div class="suma">{{ sumarSeleccionesSabor() }}</div>
             </div>
         </div>
 

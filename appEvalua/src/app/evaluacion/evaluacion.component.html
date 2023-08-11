@@ -11,6 +11,13 @@
     </div>
 </div>
 
-<div class="aroma">
-<app-aroma></app-aroma>
-</div>
+<div>
+    <app-aroma *ngIf="seccionActual === 'aroma'"></app-aroma>
+    <app-apariencia *ngIf="seccionActual === 'apariencia'"></app-apariencia>
+    <app-sabor *ngIf="seccionActual === 'sabor'"></app-sabor>
+    <app-sensacion *ngIf="seccionActual === 'sensacion'"></app-sensacion>
+    
+  </div>
+
+  <button (click)="siguienteSeccion()" class="botonCambiar">Siguiente Sección</button>
+

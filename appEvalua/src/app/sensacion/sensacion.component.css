@@ -5,14 +5,19 @@ img{
     height: 6cm;
 }
 
+.otras{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .container-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  
 }
 
-.malta, .lupulos, .fermentacion{
+.cuerpo, .carbonatacion, .calentamiento, .cremosidad, .astringencia{
     padding-right:2cm;
     padding-left:2cm;
     position: relative;
@@ -56,7 +61,6 @@ img{
     left: 45%;
     top: 7.5cm;
   }
-
   .textos{
     padding-left: 1.2cm;
   }

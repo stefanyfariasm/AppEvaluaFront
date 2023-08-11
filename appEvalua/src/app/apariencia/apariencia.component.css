@@ -5,14 +5,21 @@ img{
     height: 6cm;
 }
 
+
 .container-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
-.malta, .lupulos, .fermentacion{
+.otras{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.claridad, .formacion, .retencion, .color, .colorEspuma{
     padding-right:2cm;
     padding-left:2cm;
     position: relative;
@@ -47,6 +54,10 @@ img{
     padding-top: 0.5cm;
   }
   
+  .text.alto {
+    left: 8cm;
+    top: 6cm;
+  }
   .text.alto {
     left: 8cm;
     top: 5.5cm;
@@ -95,4 +106,36 @@ img{
     font-size: x-large;
     border: 1px solid;
   }
+
+  .text.ambar {
+    top: 7cm;
+    left: 1.5cm;
+  }
+
+  .text.oro {
+    top: 4.5cm;
+    left: 1cm;
+  }
   
+  .text.amarillo {
+    top: 22%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    padding-top: 0.5cm;
+  }
+  
+  .text.negro {
+    left: 7cm;
+    top: 2cm;
+  }
+
+  .text.marron {
+    left: 8cm;
+    top: 4.5cm;
+  }
+
+    
+  .text.cobre {
+    left: 7cm;
+    top: 7cm;
+  }

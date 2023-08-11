@@ -7,6 +7,10 @@ import { BarraSuperiorComponent } from './barra-superior/barra-superior.componen
 import { EvaluacionComponent } from './evaluacion/evaluacion.component';
 import { RadarChartComponent } from './radar-chart/radar-chart.component';
 import { FallasVistaComponent } from './fallas-vista/fallas-vista.component';
+import { SaborComponent } from './sabor/sabor.component';
+import { AparienciaComponent } from './apariencia/apariencia.component';
+import { SensacionComponent } from './sensacion/sensacion.component';
+
 
 const routes: Routes = [
   {path:"**", redirectTo:"principal"},
@@ -17,6 +21,9 @@ const routes: Routes = [
   {path:"evaluacion", component: EvaluacionComponent},
   {path:"radar-chart", component: RadarChartComponent},
   {path:"fallas", component: FallasVistaComponent},
+  {path: "sabor", component: SaborComponent},
+  {path: "apariencia", component: AparienciaComponent},
+  {path: "sensacion", component: SensacionComponent}
 ];
 
 @NgModule({
