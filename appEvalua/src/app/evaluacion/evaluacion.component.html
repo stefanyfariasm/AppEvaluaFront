@@ -20,5 +20,5 @@
     <app-radar-chart *ngIf="seccionActual === 'general'"></app-radar-chart>
   </div>
 
-  <button (click)="siguienteSeccion()" class="botonCambiar">Siguiente Sección</button>
+  <button *ngIf="seccionActual != 'general'" (click)="siguienteSeccion()" class="botonCambiar">Siguiente Sección</button>
 

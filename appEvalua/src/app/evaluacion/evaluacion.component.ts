@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedDataService } from '../serviciosGenerales/shared-data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-evaluacion',
@@ -15,7 +16,7 @@ export class EvaluacionComponent implements OnInit {
 
   public titulo: string | undefined;
   public estilo: string | undefined;
-  constructor(private sharedDataService:SharedDataService) { }
+  constructor(private sharedDataService:SharedDataService, private router: Router) { }
   guardarDatos(): void {
     this.sharedDataService.titulo = this.titulo;
     this.sharedDataService.estilo = this.estilo;
@@ -38,6 +39,8 @@ export class EvaluacionComponent implements OnInit {
       this.seccionActual = 'fallas';
     } else if (this.seccionActual === 'fallas') {
       this.seccionActual = 'general';
+    } else if (this.seccionActual === 'general') {
+      this.router.navigate(['/myevaluations']);
     }
   }
 }

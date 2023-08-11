@@ -33,6 +33,7 @@ import { SensacionComponent } from './sensacion/sensacion.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { MatMenuModule } from '@angular/material/menu';
+import { MisEvaluacionesComponent } from './mis-evaluaciones/mis-evaluaciones.component';
 
 
 /////////////////
@@ -53,7 +54,8 @@ import { MatMenuModule } from '@angular/material/menu';
     FallasVistaComponent,
     AparienciaComponent,
     SaborComponent,
-    SensacionComponent
+    SensacionComponent,
+    MisEvaluacionesComponent
 
   ],
   imports: [
