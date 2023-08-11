@@ -2,29 +2,44 @@
 
 
 .image-container {
-    display: flex;
-    background-color: rgb(219, 219, 219);
-    border-radius: 40px;
-  }
-  
-  .image-wrapper {
-    width: 6%; /* Para obtener 3 imágenes por fila, puedes ajustar este valor según tus necesidades */
-    padding: 10px;
-    text-align: center;
-    padding-left: 2cm;
+  display: flex;
+  justify-content: space-around;
+  background-color: #f5f5f5; /* Color de fondo de la barra */
+  padding: 10px; /* Espacio interno */
+  border-radius: 20px;
+  box-sizing: border-box; /* Incluye el padding en el ancho total */
+  overflow-x: auto;
+}
 
-  }
-  
-  .image-wrapper img {
-    width: 1cm;
-    height: auto;
-  }
-  
-  .image-text {
-    margin-top: 10px;
-    font-family: 'Poppins', sans-serif;
+.container {
+  width: 950px; /* O ajusta un ancho específico si lo deseas */
+  padding: 10px; /* Ajusta el espacio interior si es necesario */
+}
 
-  }
+.image-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px; /* Espacio interno de cada botón */
+  transition: background-color 0.3s; /* Transición para oscurecer al hacer clic */
+}
+
+.image-wrapper a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.image-wrapper:hover {
+  background-color: #d5d5d5; /* Color de fondo al pasar el mouse */
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  margin-bottom: 5px;
+}
+
 
 
   
