@@ -41,7 +41,7 @@ img{
   }
   
   .text.bajo {
-    top: 6cm;
+    top: 5.5cm;
     left: 1cm;
   }
   
@@ -54,9 +54,13 @@ img{
   
   .text.alto {
     left: 8cm;
-    top: 6cm;
+    top: 5.5cm;
   }
 
+  .text.nulo {
+    left: 45%;
+    top: 7.5cm;
+  }
   .textos{
     padding-left: 1.2cm;
   }
@@ -68,6 +72,7 @@ img{
   }
   
   .top-row {
+    padding-top: 1cm;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -34,49 +34,31 @@ export class SensacionComponent implements OnInit {
 
 
   cambiarImagenCuerpo(nuevaImagen: string) {
-    if (this.valorInapropiadoCuerpo) {
-      console.log("Checkbox inapropiado en Cuerpo seleccionado: true");
-      this.currentImageCuerpo= '../../assets/img/inicial.jpeg';
-    } else {
-      console.log("Checkbox inapropiado en Cuerpo seleccionado: false");
-      this.currentImageCuerpo = nuevaImagen;
-      this.seleccionCuerpo = nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5);
-    }
-    
+    this.currentImageCuerpo = nuevaImagen;
+    this.seleccionCuerpo = nuevaImagen.includes('inicial') ? 0  : (nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5));
   }
 
   cambiarImagenCarbonatacion(nuevaImagen: string) {
-
-    if (this.valorInapropiadoCarbonatacion) {
-      console.log("Checkbox inapropiado en Cuerpo seleccionado: true");
-      this.currentImageCarbonatacion= '../../assets/img/inicial.jpeg';
-
-    } else {
-      console.log("Checkbox inapropiado en Cuerpo seleccionado: false");
-      this.currentImageCarbonatacion = nuevaImagen;
-      this.seleccionCarbonatacion = nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5);
-    }
-
-    if (this.valorInapropiadoCarbonatacion) {
-      console.log("Checkbox inapropiado en Cuerpo seleccionado: true");
-      this.currentImageCarbonatacion= '../../assets/img/inicial.jpeg';}
+    this.currentImageCarbonatacion = nuevaImagen;
+    this.seleccionCarbonatacion = nuevaImagen.includes('inicial') ? 0  : (nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5));
   }
+
 
   cambiarImagenCalentamiento(nuevaImagen: string) {
     this.currentImageCalentamiento = nuevaImagen; 
-    this.seleccionCalentamiento = nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5);
+    this.seleccionCalentamiento = nuevaImagen.includes('inicial') ? 0  : (nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5));
     this.valorInapropiadoCalentamiento = false;
   }
 
   cambiarImagenCremosidad(nuevaImagen: string) {
     this.currentImageCremosidad = nuevaImagen; 
-    this.seleccionCremosidad = nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5);
+    this.seleccionCremosidad = nuevaImagen.includes('inicial') ? 0  : (nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5));
     this.valorInapropiadoCremosidad = false;
   }
 
   cambiarImagenAstringencia(nuevaImagen: string) {
     this.currentImageAstringencia = nuevaImagen; 
-    this.seleccionAstringencia = nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5);
+    this.seleccionAstringencia = nuevaImagen.includes('inicial') ? 0  : (nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5));
     this.valorInapropiadoAstringencia = false;
   }
 

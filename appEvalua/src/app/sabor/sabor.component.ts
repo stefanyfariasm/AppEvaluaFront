@@ -35,73 +35,38 @@ export class SaborComponent implements OnInit {
 
 
   cambiarImagenAmargor(nuevaImagen: string) {
-    if (this.valorInapropiadoAmargor) {
-      console.log("Checkbox inapropiado en Amargor seleccionado: true");
-      this.currentImageAmargor= '../../assets/img/inicial.jpeg';
-    } else {
-      console.log("Checkbox inapropiado en Amargor seleccionado: false");
       this.currentImageAmargor = nuevaImagen;
-      this.seleccionAmargor = nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5);
-    }
+      this.seleccionAmargor = nuevaImagen.includes('inicial') ? 0  : (nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5));
     
   }
 
   cambiarImagenEquilibrio(nuevaImagen: string) {
-
-    if (this.valorInapropiadoEquilibrio) {
-      console.log("Checkbox inapropiado en Amargor seleccionado: true");
-      this.currentImageEquilibrio= '../../assets/img/inicial.jpeg';
-
-    } else {
-      console.log("Checkbox inapropiado en Amargor seleccionado: false");
       this.currentImageEquilibrio = nuevaImagen;
-      this.seleccionEquilibrio = nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5);
+      this.seleccionEquilibrio = nuevaImagen.includes('inicial') ? 0  : (nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5));
     }
 
-    if (this.valorInapropiadoEquilibrio) {
-      console.log("Checkbox inapropiado en Amargor seleccionado: true");
-      this.currentImageEquilibrio= '../../assets/img/inicial.jpeg';}
-  }
 
   cambiarImagenRetrogusto(nuevaImagen: string) {
     this.currentImageRetrogusto = nuevaImagen; 
-    this.seleccionRetrogusto = nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5);
+    this.seleccionRetrogusto = nuevaImagen.includes('inicial') ? 0  : (nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5));
     this.valorInapropiadoRetrogusto = false;
   }
 
 
   cambiarImagenMalta(nuevaImagen: string) {
-    if (this.valorInapropiadoMalta) {
-      console.log("Checkbox inapropiado en Malta seleccionado: true");
-      this.currentImageMalta= '../../assets/img/inicial.jpeg';
-    } else {
-      console.log("Checkbox inapropiado en Malta seleccionado: false");
       this.currentImageMalta = nuevaImagen;
-      this.seleccionMalta = nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5);
-    }
-    
+      this.seleccionMalta = nuevaImagen.includes('inicial') ? 0  : (nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5));
   }
 
   cambiarImagenLupulos(nuevaImagen: string) {
 
-    if (this.valorInapropiadoLupulo) {
-      console.log("Checkbox inapropiado en Malta seleccionado: true");
-      this.currentImageLupulos= '../../assets/img/inicial.jpeg';
-
-    } else {
-      console.log("Checkbox inapropiado en Malta seleccionado: false");
       this.currentImageLupulos = nuevaImagen;
-      this.seleccionLupulos = nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5);
-    }
-
-    if (this.valorInapropiadoLupulo) {
-      console.log("Checkbox inapropiado en Malta seleccionado: true");
-      this.currentImageLupulos= '../../assets/img/inicial.jpeg';}
+      this.seleccionLupulos = nuevaImagen.includes('inicial') ? 0  : (nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5));
   }
 
   cambiarImagenFermen(nuevaImagen: string) {
     this.currentImageFermen = nuevaImagen; 
-    this.seleccionFermen = nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5);
+    this.seleccionFermen = nuevaImagen.includes('inicial') ? 0  : (nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5));
     this.valorInapropiadoFerme = false;
   }
 
