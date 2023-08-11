@@ -34,49 +34,31 @@ export class AparienciaComponent implements OnInit {
 
 
   cambiarImagenClaridad(nuevaImagen: string) {
-    if (this.valorInapropiadoClaridad) {
-      console.log("Checkbox inapropiado en Claridad seleccionado: true");
-      this.currentImageClaridad= '../../assets/img/inicial.jpeg';
-    } else {
-      console.log("Checkbox inapropiado en Claridad seleccionado: false");
       this.currentImageClaridad = nuevaImagen;
-      this.seleccionClaridad = nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5);
-    }
-    
+      this.seleccionClaridad = nuevaImagen.includes('inicial') ? 0  : (nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5));
   }
 
   cambiarImagenFormacion(nuevaImagen: string) {
-
-    if (this.valorInapropiadoFormacion) {
-      console.log("Checkbox inapropiado en Claridad seleccionado: true");
-      this.currentImageFormacion= '../../assets/img/inicial.jpeg';
-
-    } else {
-      console.log("Checkbox inapropiado en Claridad seleccionado: false");
       this.currentImageFormacion = nuevaImagen;
-      this.seleccionFormacion = nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5);
-    }
-
-    if (this.valorInapropiadoFormacion) {
-      console.log("Checkbox inapropiado en Claridad seleccionado: true");
-      this.currentImageFormacion= '../../assets/img/inicial.jpeg';}
+      this.seleccionFormacion =  nuevaImagen.includes('inicial') ? 0  : (nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5));
   }
 
   cambiarImagenRetencion(nuevaImagen: string) {
     this.currentImageRetencion = nuevaImagen; 
-    this.seleccionRetencion = nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5);
-    this.valorInapropiadoRetencion = false;
+    this.seleccionRetencion =  nuevaImagen.includes('inicial') ? 0  : (nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5));
   }
 
   cambiarImagenColor(nuevaImagen: string) {
     this.currentImageColor = nuevaImagen; 
-    this.seleccionColor = nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5);
+    this.seleccionColor =  nuevaImagen.includes('color') ? 0  : (nuevaImagen.includes('ambar') ? 1 : (nuevaImagen.includes('oro') ? 2 :
+    nuevaImagen.includes('amarillo') ? 3:nuevaImagen.includes('negro') ? 4: nuevaImagen.includes('marron') ? 5: 6))
     this.valorInapropiadoColor = false;
   }
 
   cambiarImagenColorEspuma(nuevaImagen: string) {
     this.currentImageColorEspuma = nuevaImagen; 
-    this.seleccionColorEspuma = nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5);
+    this.seleccionColorEspuma = nuevaImagen.includes('color') ? 0  : (nuevaImagen.includes('ambar') ? 1 : (nuevaImagen.includes('oro') ? 2 :
+    nuevaImagen.includes('amarillo') ? 3:nuevaImagen.includes('negro') ? 4: nuevaImagen.includes('marron') ? 5: 6))
     this.valorInapropiadoColorEspuma = false;
   }
 
