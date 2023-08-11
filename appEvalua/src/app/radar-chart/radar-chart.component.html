@@ -1,22 +1,8 @@
-<app-barra-superior></app-barra-superior>
-
-<div class="container">
-    <div class="titulo">
-        <app-titulo-flotante style="margin-left: 100px;"></app-titulo-flotante>
-    </div>
-
-    <div class="categorias">
-        <app-menu-categorias></app-menu-categorias>
-    </div>
-</div>
-
 <div id="grafico">
 <h2 id="titulo"style="text-align:center;">General</h2>
 <div id="radar"style="display: block">
   <canvas baseChart
-          [datasets]="demoradarChartData"
-          [labels]="demoradarChartLabels"
-          [type]="radarChartType"
+          
           (chartHover)="chartHovered($event)"
           (chartClick)="chartClicked($event)"></canvas>
 </div>

@@ -2,15 +2,18 @@
 
 
 .image-container {
-  display: flex;
-  justify-content: space-around;
-  background-color: #f5f5f5; /* Color de fondo de la barra */
-  padding: 10px; /* Espacio interno */
-  border-radius: 20px;
-  box-sizing: border-box; /* Incluye el padding en el ancho total */
-  overflow-x: auto;
-}
-
+    display: flex;
+    background-color: rgb(219, 219, 219);
+    border-radius: 40px;
+  }
+  
+  .image-wrapper {
+    width: 7%; /* Para obtener 3 imágenes por fila, puedes ajustar este valor según tus necesidades */
+    padding: 10px;
+    text-align: center;
+    padding-left: 2cm;
+  }
+  
 .container {
   width: 950px; /* O ajusta un ancho específico si lo deseas */
   padding: 10px; /* Ajusta el espacio interior si es necesario */

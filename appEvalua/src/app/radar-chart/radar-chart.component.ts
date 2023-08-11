@@ -1,6 +1,6 @@
 import { Component,  } from "@angular/core";
 import { ChartDataset, ChartOptions, ChartType } from 'chart.js';
-import { NgChartsModule } from 'ng2-charts'
+
 
 @Component({
   selector: 'app-radar-chart',

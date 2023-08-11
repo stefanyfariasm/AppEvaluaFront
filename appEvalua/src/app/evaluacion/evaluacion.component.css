@@ -4,7 +4,7 @@
     align-items: center;
     margin: auto;
     padding-top: 30px;
-
+    gap: 100px;
   }
   .titulo{
     padding-left: 100px;

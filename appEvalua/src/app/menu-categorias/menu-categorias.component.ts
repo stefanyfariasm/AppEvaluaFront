@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-menu-categorias',
@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu-categorias.component.css']
 })
 export class MenuCategoriasComponent implements OnInit {
+  message: string = "aroma";
+
+  @Output() messageEvent = new EventEmitter<string>();
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  pasarCategory(section: string){
+    this.message = section
+    this.messageEvent.emit(this.message);
+  }
 }
