@@ -10,6 +10,7 @@ import { FallasVistaComponent } from './fallas-vista/fallas-vista.component';
 import { SaborComponent } from './sabor/sabor.component';
 import { AparienciaComponent } from './apariencia/apariencia.component';
 import { SensacionComponent } from './sensacion/sensacion.component';
+import { AromaComponent } from './aroma/aroma.component';
 
 
 const routes: Routes = [
@@ -23,7 +24,9 @@ const routes: Routes = [
   {path:"fallas", component: FallasVistaComponent},
   {path: "sabor", component: SaborComponent},
   {path: "apariencia", component: AparienciaComponent},
-  {path: "sensacion", component: SensacionComponent}
+  {path: "sensacion", component: SensacionComponent},
+  {path: "aroma", component: AromaComponent},
+  
 ];
 
 @NgModule({
