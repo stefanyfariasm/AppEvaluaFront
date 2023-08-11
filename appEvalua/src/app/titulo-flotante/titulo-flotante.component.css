@@ -15,8 +15,12 @@
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
   }
+  #esquina-superior p {
+    max-width: 200px; /* Ajusta el valor según lo que necesites */
+ /* Agrega puntos suspensivos al final del texto que desborde */
+  }
   img{
-    width: 50px;
+    width: 30px;
   }
   .estilo-seleccion {
     display: flex;

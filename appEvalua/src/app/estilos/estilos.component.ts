@@ -20,6 +20,7 @@ item: string | undefined;
 
 estilos: any[]=[];
 lista: any[]=[];
+listaDescripcion: any[]=[];
 
   disableSelect: boolean = false;
   
@@ -32,9 +33,11 @@ lista: any[]=[];
 
   initializeData(): void {
     this.lista = this.estilos.map(estilo => estilo.nombre);
+    this.listaDescripcion=this.estilos.map(estilo=>estilo.descripcion )
     this.selectedOption = this.lista; // Establecer un valor predeterminado
     console.log(this.selectedOption)
     console.log("aaa",this.lista)
+    console.log("aaa",this.listaDescripcion)
   }
 
  
@@ -69,6 +72,7 @@ guardarDatos(): void {
   this.sharedDataService.titulo = this.titulo;
   this.sharedDataService.estilo = this.selectedOption;
   this.sharedDataService.data1=this.lista
+  this.sharedDataService.data2=this.listaDescripcion
 }
 esAlfanumerico(texto: string) {
   var patron = /^[a-zA-Z0-9]+$/;

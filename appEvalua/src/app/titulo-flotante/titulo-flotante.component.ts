@@ -9,7 +9,8 @@ import { SharedDataService } from '../serviciosGenerales/shared-data.service';
 export class TituloFlotanteComponent implements OnInit {
   showDropdown = false;
 
-  toggleDropdown() {
+  toggleDropdown(event: Event) {
+    event.stopPropagation(); // Detener la propagación del evento
     this.showDropdown = !this.showDropdown;
   }
 
@@ -19,7 +20,7 @@ data2=[  ]
  //estilo = ' ';
   nota = 'Nota';
   data1=this.sharedDataService.data1
-
+datadescripcion=this.sharedDataService.data2
   informacion: string[] | undefined;
   //public titulo: string | undefined;
   //public estilo: string | undefined;
@@ -34,22 +35,22 @@ disableSelect: boolean = false;
 
 onOptionSelect(): void {
   const posicionSeleccionada = this.data1.indexOf(this.selectedOption);
-  if (posicionSeleccionada !== -1 && posicionSeleccionada < this.data2.length) {
-    const informacion = this.data1[posicionSeleccionada][1];
-    console.log(informacion)
-    this.descripcionSeleccionada = informacion;
+  if (posicionSeleccionada !== -1 && posicionSeleccionada < this.datadescripcion.length) {
+    const descripcion = this.datadescripcion[posicionSeleccionada];
+    this.descripcionSeleccionada = descripcion;
   } else {
     this.descripcionSeleccionada = null;
   }
 }
-  ngOnInit(): void {
-    console.log("xxxxxxx",this.data1)
-    const posicionSeleccionada = this.sharedDataService.data1.indexOf(this.estilo);
-    if (posicionSeleccionada !== -1 && posicionSeleccionada < this.data1.length) {
-      this.informacion = this.data1[posicionSeleccionada];
-    } else {
-      this.informacion = undefined;
-    }
-  }
 
+ngOnInit(): void {
+  const posicionSeleccionada = this.sharedDataService.data1.indexOf(this.sharedDataService.estilo);
+  if (posicionSeleccionada !== -1 && posicionSeleccionada < this.sharedDataService.data1.length) {
+    this.informacion = this.sharedDataService.data1[posicionSeleccionada];
+  } else {
+    this.informacion = undefined;
+  }
 }
+}
+
+

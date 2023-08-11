@@ -22,10 +22,12 @@ h2, h4, p{
   position: relative;
   margin-bottom: 20px; /* Agregar margen en la parte inferior */
 }
-.required-asterisk {
+.required-asterisk::after {
+  content: 'obligatorio';
   color: red;
-  margin-left: 5px; /* Añade espacio entre el input y el asterisco */
+  margin-left: 5px;
 }
+
   img{
     width: 3cm;
     
