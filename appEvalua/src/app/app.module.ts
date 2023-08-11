@@ -22,7 +22,7 @@ import { TituloFlotanteComponent } from './titulo-flotante/titulo-flotante.compo
 import { MenuCategoriasComponent } from './menu-categorias/menu-categorias.component';
 import { AromaComponent } from './aroma/aroma.component';
 
-import { NgApexchartsModule } from 'ng-apexcharts';
+import { NgChartsModule } from 'ng2-charts';
 import { RadarChartComponent } from './radar-chart/radar-chart.component';
 import { FallasCardComponent } from './fallas-card/fallas-card.component';
 import { FallasVistaComponent } from './fallas-vista/fallas-vista.component';
@@ -59,7 +59,7 @@ import { MatMenuModule } from '@angular/material/menu';
   imports: [
     BrowserModule,
     MatIconModule,
-    MatMenuModule,
+    // MatMenuModule,
     AppRoutingModule,
     MatCheckboxModule,
     FormsModule,
@@ -68,8 +68,7 @@ import { MatMenuModule } from '@angular/material/menu';
     MatSelectModule,
     MatInputModule,
     MatIconModule,
-    NgApexchartsModule,
-       
+    NgChartsModule,       
     HttpClientModule,
 
   ],
