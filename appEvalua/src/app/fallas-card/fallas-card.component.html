@@ -1,0 +1,13 @@
+<div class="card-container">
+    <div class="pastel-green-card">
+      <h2>{{ title }}</h2>
+      <div class="checkboxes">
+        <label class="checkbox-label" *ngFor="let option of opciones; let i = index">
+          <input type="checkbox" [(ngModel)]="selectedOptions[i]" (click)="selectNivel(i)">
+          <span class="checkbox-custom" [class.checked]="selectedOptions[i]"></span>
+          {{ option }}
+        </label>
+      </div>
+    </div>
+  </div>
+  

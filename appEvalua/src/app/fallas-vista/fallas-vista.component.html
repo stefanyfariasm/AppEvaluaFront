@@ -1,0 +1,29 @@
+<app-barra-superior></app-barra-superior>
+
+<div class="container">
+    <div class="titulo">
+        <app-titulo-flotante style="margin-left: 100px;"></app-titulo-flotante>
+    </div>
+
+    <div class="categorias">
+        <app-menu-categorias></app-menu-categorias>
+    </div>
+</div>
+
+<h2>Fallas de estilo</h2>
+<p>Presione los botones para cambiarn entre presencia de defectos Baja, Media Alta</p>
+
+<div class="matriz-container">
+    <div class="row" *ngFor="let row of matriz">
+      <div class="column" *ngFor="let card of row">
+        <app-fallas-card
+          [title]="card.title"
+          [nivel]="card.nivel">
+        </app-fallas-card>
+      </div>
+    </div>
+  </div>
+  
+  <!-- <button (click)="guardarDatos()">Guardar Datos</button> -->
+  
+

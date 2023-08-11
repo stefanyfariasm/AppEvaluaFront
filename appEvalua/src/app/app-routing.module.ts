@@ -6,6 +6,7 @@ import { EstilosComponent } from './estilos/estilos.component';
 import { BarraSuperiorComponent } from './barra-superior/barra-superior.component';
 import { EvaluacionComponent } from './evaluacion/evaluacion.component';
 import { RadarChartComponent } from './radar-chart/radar-chart.component';
+import { FallasVistaComponent } from './fallas-vista/fallas-vista.component';
 
 const routes: Routes = [
   {path:"**", redirectTo:"principal"},
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path:"barra", component: BarraSuperiorComponent},
   {path:"evaluacion", component: EvaluacionComponent},
   {path:"radar-chart", component: RadarChartComponent},
+  {path:"fallas", component: FallasVistaComponent},
 ];
 
 @NgModule({

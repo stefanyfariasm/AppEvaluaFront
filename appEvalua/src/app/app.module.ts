@@ -27,6 +27,8 @@ import { AromaComponent } from './aroma/aroma.component';
 import { NgChartsModule } from 'ng2-charts';
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { RadarChartComponent } from './radar-chart/radar-chart.component';
+import { FallasCardComponent } from './fallas-card/fallas-card.component';
+import { FallasVistaComponent } from './fallas-vista/fallas-vista.component';
 
 /////////////////
 @NgModule({
@@ -41,7 +43,9 @@ import { RadarChartComponent } from './radar-chart/radar-chart.component';
     TituloFlotanteComponent,
     MenuCategoriasComponent,
     AromaComponent,
-    RadarChartComponent
+    RadarChartComponent,
+    FallasCardComponent,
+    FallasVistaComponent
   ],
   imports: [
     BrowserModule,
