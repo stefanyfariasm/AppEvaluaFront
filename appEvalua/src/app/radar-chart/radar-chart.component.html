@@ -1,12 +1,9 @@
+<div class="container-wrapper">
+    <section class="aroma">
+        <h2>General</h2>
 
-<div id="grafico">
-<h2 id="titulo"style="text-align:center;">General</h2>
-<div id="radar"style="display: block">
-  <canvas baseChart
-          [datasets]="demoradarChartData"
-          [labels]="demoradarChartLabels"
-          [type]="radarChartType"
-          (chartHover)="chartHovered($event)"
-          (chartClick)="chartClicked($event)"></canvas>
-</div>
+        <canvas baseChart [datasets]="demoradarChartData" [labels]="demoradarChartLabels" [type]="radarChartType"
+            (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+
+    </section>
 </div>

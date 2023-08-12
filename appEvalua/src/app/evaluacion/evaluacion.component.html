@@ -9,8 +9,12 @@
     <div class="categorias">
         <app-menu-categorias (messageEvent)="receiveMessage($event)" style="margin-right: 100px;"></app-menu-categorias>
     </div>
-</div>
 
+</div>
+<div class="botones">
+    <button (click)="finalizarEvaluacion()" style="background-color: rgb(84, 206, 159); color: white; font-family: 'Poppins', sans-serif;border: none; border-radius: 20px; margin-left: 190px;" >Finalizar</button>
+    <button (click)="guardar_cerrar()" style="background-color: rgb(84, 206, 159); color: white; font-family: 'Poppins', sans-serif;border: none; border-radius: 20px; margin-left: 10px;">Guardar y Cerrar</button>
+</div>
 <div>
     <app-aroma *ngIf="seccionActual === 'aroma'"></app-aroma>
     <app-apariencia *ngIf="seccionActual === 'apariencia'"></app-apariencia>

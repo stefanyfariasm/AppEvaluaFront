@@ -1,32 +1,13 @@
-#radar {
-    width: 550px;
-    height: 500;
-    margin: 35px auto;
-    left: 10; /* Ubicación en la parte izquierda */
-    top: 65%;
-    
-    
-    
-  }
 
-#titulo{
-  left: 5%; /* Ubicación en la parte izquierda */
-  top: 60%;
-}
-
-#grafico{
-  left: 5%; /* Ubicación en la parte izquierda */
-  top: 60%;
-  position: absolute;
-
-
-}
-.container {
+.container-wrapper {
   display: flex;
+  justify-content: center;
   align-items: center;
-  margin: auto;
-  padding-top: 100px;
-
+  height: 100vh;
+}
+h2{
+  font-family: 'Poppins', sans-serif;
+  font-size:xx-large ;
 }
 
 

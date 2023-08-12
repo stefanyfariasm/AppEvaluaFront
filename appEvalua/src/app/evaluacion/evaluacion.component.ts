@@ -26,7 +26,14 @@ export class EvaluacionComponent implements OnInit {
 
 
   seccionActual: string = 'aroma';
-  
+  finalizarEvaluacion(){
+    
+  }
+
+  guardar_cerrar(){
+
+  }
+
   siguienteSeccion() {
 
     if (this.seccionActual === 'aroma') {

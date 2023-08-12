@@ -14,7 +14,10 @@
 .narrow-select {
   width: 100px; 
 }
-
+.botones{
+  margin: auto;
+  gap: 100px;
+}
 
 .botonCambiar {
   position: absolute;
@@ -26,4 +29,5 @@
   border-radius: 20px;
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
+  
 }

@@ -12,10 +12,15 @@ import { NgChartsModule } from 'ng2-charts'
 export class RadarChartComponent {
   // Radar
   public demoradarChartLabels:string[] = ['Aroma', 'Apariencia', 'Sabor', 'Sensacion en boca', 'General'];
- 
+
+  valorAroma = localStorage.getItem("sumaAroma") ? localStorage.getItem("sumaAroma") : 0;
+  valorApariencia = localStorage.getItem("sumaApariencia") ? localStorage.getItem("sumaApariencia") : 0;
+  valorSabor = localStorage.getItem("sumaSabor") ? localStorage.getItem("sumaSabor") : 0;
+  valorSensacion = localStorage.getItem("sumaSensacion") ? localStorage.getItem("sumaSensacion") : 0;
+  valorGeneral = localStorage.getItem("sumaGeneral") ? localStorage.getItem("sumaGeneral") : 0;
+
   public demoradarChartData:any = [
-    {data: [20, 40, 15, 30, 12], label: 'Puntaje',},
-   
+    {data: [this.valorAroma, this.valorApariencia, this.valorSabor, this.valorSensacion, this.valorGeneral], label: 'Resultado',},
   ];
   public radarChartType: ChartType = 'radar';
  
