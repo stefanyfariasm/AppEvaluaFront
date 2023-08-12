@@ -13,7 +13,7 @@ import { SensacionComponent } from './sensacion/sensacion.component';
 import { AromaComponent } from './aroma/aroma.component';
 import { MisEvaluacionesComponent } from './mis-evaluaciones/mis-evaluaciones.component';
 
-
+import { NotasComponent } from './notas/notas.component';
 const routes: Routes = [
   {path:"**", redirectTo:"principal"},
   {path:"", component:PrincipalComponent},
@@ -28,6 +28,7 @@ const routes: Routes = [
   {path: "sensacion", component: SensacionComponent},
   {path: "aroma", component: AromaComponent},
   {path: "myevaluations", component: MisEvaluacionesComponent},
+  {path: "notas", component: NotasComponent},
 ];
 
 @NgModule({

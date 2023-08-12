@@ -1,0 +1,96 @@
+/* Estilos personalizados para el contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar verticalmente */
+    /* align-items: center; Centrar horizontalmente */
+    gap: 20px; /* Espacio entre los elementos */
+    margin: 0 200px; /* Márgenes izquierdo y derecho de 20px */
+  }
+  
+  /* Estilos personalizados para la tarjeta .custom-card */
+  .custom-card {
+    background-color: rgb(183, 253, 230); /* Fondo verde claro */
+    width: 600px; /* Ancho de la tarjeta */
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgb(183, 253, 230); /* Sombra */
+    margin-bottom: 20px; /* Espacio inferior */
+  }
+  
+  /* Estilos personalizados para la tarjeta .custom-card1 */
+  .custom-card1 {
+    background-color: lightgrey; /* Fondo gris claro */
+    width: 600px; /* Ancho de la tarjeta */
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  /* Estilos para el título */
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para las categorías dentro de .categories */
+  .categories {
+    display: flex; /* Mostrar las categorías en una fila */
+    gap: 10px; /* Espaciado entre las categorías */
+  }
+  
+  /* Estilos para los subtítulos de las categorías */
+  .subtitle {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  /* Estilos para los números debajo de las categorías */
+  .category-number {
+    font-size: 18px;
+    text-align: center; /* Centrar el número */
+    flex-basis: 20px; /* Ancho mínimo para los números */
+  }
+  .edit-button {
+    background-color: lightgrey; /* Color gris super claro */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }  
+
+  /* aroma(aqui varialuego) */
+  .aroma-card {
+    /* Fondo gris claro */
+    width: 300px; /* Ancho de la tarjeta */
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilos para el contenedor de Aroma */
+.aroma-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para el título Aroma */
+.aroma-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilos para el número Aroma */
+.aroma-number {
+    background-color: lightgrey;
+    font-size: 24px;
+}
+
+/* Estilos para colorear el número */
+.number-color {
+    background-color: rgba(200, 200, 200, 0.2); /* Color gris super claro */
+    padding: 5px 10px;
+    border-radius: 4px;
+}

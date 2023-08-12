@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { TipoBebidaComponent } from './tipo-bebida/tipo-bebida.component';
 import { EstilosComponent } from './estilos/estilos.component';
-
+import { NotasComponent } from './notas/notas.component';
 
 /////////////
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
@@ -32,9 +32,10 @@ import { SaborComponent } from './sabor/sabor.component';
 import { SensacionComponent } from './sensacion/sensacion.component';
 
 import { HttpClientModule } from '@angular/common/http';
-import { MatMenuModule } from '@angular/material/menu';
+//import { MatMenuModule } from '@angular/material/menu';
 import { MisEvaluacionesComponent } from './mis-evaluaciones/mis-evaluaciones.component';
 
+import { MatCardModule } from '@angular/material/card'; // Importa MatCardModule aquí
 
 /////////////////
 @NgModule({
@@ -55,10 +56,12 @@ import { MisEvaluacionesComponent } from './mis-evaluaciones/mis-evaluaciones.co
     AparienciaComponent,
     SaborComponent,
     SensacionComponent,
-    MisEvaluacionesComponent
+    MisEvaluacionesComponent,
+    NotasComponent
 
   ],
   imports: [
+    MatCardModule,
     BrowserModule,
     MatIconModule,
     // MatMenuModule,
@@ -72,6 +75,7 @@ import { MisEvaluacionesComponent } from './mis-evaluaciones/mis-evaluaciones.co
     MatIconModule,
     NgChartsModule,       
     HttpClientModule,
+    //NotasComponent
 
   ],
   providers: [],
