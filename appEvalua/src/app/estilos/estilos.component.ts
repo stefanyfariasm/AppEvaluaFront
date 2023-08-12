@@ -71,8 +71,10 @@ guardarDatos(): void {
   // Guardar los valores en el servicio
   this.sharedDataService.titulo = this.titulo;
   this.sharedDataService.estilo = this.selectedOption;
-  this.sharedDataService.data1=this.lista
-  this.sharedDataService.data2=this.listaDescripcion
+  this.sharedDataService.data1=this.lista;
+  this.sharedDataService.data2=this.listaDescripcion;
+  localStorage.setItem("titulo",this.titulo);
+  localStorage.setItem("estilo",this.selectedOption);
 }
 esAlfanumerico(texto: string) {
   var patron = /^[a-zA-Z0-9]+$/;

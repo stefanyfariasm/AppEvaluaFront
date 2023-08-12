@@ -25,8 +25,8 @@ datadescripcion=this.sharedDataService.data2
   //public titulo: string | undefined;
   //public estilo: string | undefined;
   constructor(private sharedDataService:SharedDataService) { }
-  titulo=this.sharedDataService.titulo 
- estilo=this.sharedDataService.estilo
+  titulo= localStorage.getItem("titulo")? localStorage.getItem("titulo") : this.sharedDataService.titulo;
+  estilo= localStorage.getItem("estilo")? localStorage.getItem("estilo") : this.sharedDataService.estilo;
  
 posicionSeleccionada = this.sharedDataService.data1.indexOf(this.estilo);
 selectedOption: any; // Agrega esta línea
