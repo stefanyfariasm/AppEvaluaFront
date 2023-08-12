@@ -37,24 +37,26 @@
   </div>
 </div>
  -->
- <div  id="esquina-superior">
+ <div id="esquina-superior">
   <h3>Título de cata: {{ titulo }}</h3>
-  <div *ngIf="informacion">
-    <div class="estilo-seleccion">
-      <h4>Estilo:</h4>
-      <div class="imagen-estilo"  (click)="toggleDropdown($event)">
-        <img src="../../assets/img/boton estilo.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300"><p> {{estilo}}</p>
-        <select class="narrow-select dropdown" *ngIf="showDropdown" [(ngModel)]="selectedOption" (ngModelChange)="onOptionSelect()">
-          <option *ngFor="let item of data1; let i = index" [value]="item">
-            {{ item }}
-          </option>
-        </select>
-      </div>
+  <div class="estilo-seleccion">
+    <h4>Estilo:</h4>
+    <div class="imagen-estilo">
+      <img src="../../assets/img/boton estilo.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300" (click)="toggleDropdown($event)">
+      <p>{{ estilo}}</p>
+      <select class="narrow-select dropdown" *ngIf="showDropdown" [(ngModel)]="selectedOption" (ngModelChange)="onOptionSelect()">
+        <option *ngFor="let item of data1; let i = index" [value]="item.nombre">
+          {{ item.nombre }}
+        </option>
+      </select>
     </div>
-    <h4>Descripcion:</h4><p>{{ descripcionSeleccionada }}</p>
-    <h5>Nota: 0</h5>
   </div>
+  <h4>Descripcion:</h4>
+  <p>{{ descripcionSeleccionada }}</p>
+  <h5>Nota: 0</h5>
 </div>
+
+
  
  <!-- <div>
     <div *ngIf="informacion">

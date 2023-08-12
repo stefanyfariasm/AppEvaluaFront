@@ -49,5 +49,6 @@ export class EvaluacionComponent implements OnInit {
     } else if (this.seccionActual === 'general') {
       this.router.navigate(['/myevaluations']);
     }
+    this.guardarDatos();
   }
 }

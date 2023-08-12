@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
 import { SharedDataService } from '../serviciosGenerales/shared-data.service';
 
 @Component({
@@ -8,49 +9,47 @@ import { SharedDataService } from '../serviciosGenerales/shared-data.service';
 })
 export class TituloFlotanteComponent implements OnInit {
   showDropdown = false;
+  data1: any[] = [];
+  titulo = '';
+  estilo = '';
+  selectedOption: any;
+  descripcionSeleccionada: string | null = '';
+
+  constructor(private apiService: ApiService, private sharedDataService: SharedDataService) {}
 
   toggleDropdown(event: Event) {
-    event.stopPropagation(); // Detener la propagación del evento
+    event.stopPropagation();
     this.showDropdown = !this.showDropdown;
   }
 
+  onOptionSelect(): void {
+    const posicionSeleccionada = this.data1.findIndex(item => item.nombre === this.selectedOption);
+    if (posicionSeleccionada !== -1 && posicionSeleccionada < this.data1.length) {
+      this.descripcionSeleccionada = this.data1[posicionSeleccionada].descripcion;
+    } else {
+      this.descripcionSeleccionada = '';
+    }
+  }
 
-data2=[  ]
-  //titulo :string | undefined;
- //estilo = ' ';
-  nota = 'Nota';
-  data1=this.sharedDataService.data1
-datadescripcion=this.sharedDataService.data2
-  informacion: string[] | undefined;
-  //public titulo: string | undefined;
-  //public estilo: string | undefined;
-  constructor(private sharedDataService:SharedDataService) { }
-  titulo= localStorage.getItem("titulo")? localStorage.getItem("titulo") : this.sharedDataService.titulo;
-  estilo= localStorage.getItem("estilo")? localStorage.getItem("estilo") : this.sharedDataService.estilo;
- 
-posicionSeleccionada = this.sharedDataService.data1.indexOf(this.estilo);
-selectedOption: any; // Agrega esta línea
-descripcionSeleccionada: string | null = null;
-disableSelect: boolean = false;
+  ngOnInit(): void {
+    this.apiService.getEstilos().subscribe(
+      (data) => {
+        this.data1 = data;
+        this.titulo = localStorage.getItem('titulo') || '';
+        this.estilo = localStorage.getItem('estilo') || '';
+        this.selectedOption = localStorage.getItem('selectedStyle') || this.data1[0].nombre;
+        this.onOptionSelect(); // Llamar a onOptionSelect() al inicio para cargar la descripción inicial
+        this.descripcionSeleccionada = ''; // Establecer la descripción en blanco al cargar el componente
+      },
+      (error) => {
+        console.error('Error al obtener datos de la API', error);
+      }
+    );
+  }
 
-onOptionSelect(): void {
-  const posicionSeleccionada = this.data1.indexOf(this.selectedOption);
-  if (posicionSeleccionada !== -1 && posicionSeleccionada < this.datadescripcion.length) {
-    const descripcion = this.datadescripcion[posicionSeleccionada];
-    this.descripcionSeleccionada = descripcion;
-  } else {
-    this.descripcionSeleccionada = null;
+  guardarDatos(): void {
+    localStorage.setItem('titulo', this.titulo);
+    localStorage.setItem('estilo', this.estilo);
+    localStorage.setItem('selectedStyle', this.selectedOption);
   }
 }
-
-ngOnInit(): void {
-  const posicionSeleccionada = this.sharedDataService.data1.indexOf(this.sharedDataService.estilo);
-  if (posicionSeleccionada !== -1 && posicionSeleccionada < this.sharedDataService.data1.length) {
-    this.informacion = this.sharedDataService.data1[posicionSeleccionada];
-  } else {
-    this.informacion = undefined;
-  }
-}
-}
-
-
