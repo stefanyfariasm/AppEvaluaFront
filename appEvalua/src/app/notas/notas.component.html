@@ -6,8 +6,8 @@
     <mat-card-content>
      
       <div class="categories1">
-        <div class="title">titulo</div>
-        <div class="title">Descripcion</div>
+        <div class="title">{{titulo}}</div>
+        <div class="title">{{estilo}}</div>
  
       </div>
     </mat-card-content>
@@ -21,40 +21,70 @@
         <div class="title">Mi Nota</div>
         <div class="category">
           <div class="category-title">Aroma</div>
-          <div class="category-number">6</div>
+          <div class="category-number">{{valorAroma}}</div>
         </div>
         <div class="category">
           <div class="category-title">Apariencia</div>
-          <div class="category-number">7</div>
+          <div class="category-number">{{valorApariencia}}</div>
         </div>
         <div class="category">
           <div class="category-title">Sabor</div>
-          <div class="category-number">8</div>
+          <div class="category-number">{{valorSabor}}</div>
         </div>
         <div class="category">
           <div class="category-title">Sensación de Boca</div>
-          <div class="category-number">9</div>
+          <div class="category-number">{{valorSensacion}}</div>
         </div>
         <div class="category">
           <div class="category-title">General</div>
          
-          <div class="category-number">10</div>
+          <div class="category-number">{{valorGeneral}}</div>
           
         </div>
-        <button class="edit-button">Editar</button>
+        <button (click)="volverEvaluar()" class="edit-button">Editar</button>
       </div>
     </mat-card-content>
     
   </mat-card>
  
   <mat-card class="aroma-card">
-  
     <mat-card-content>
-        <div class="aroma-container">
-            <div class="aroma-title">Aroma</div>
-            <div class="aroma-number">6/12</div>
-        </div>
+      <div class="aroma-container">
+        <div class="aroma-title">Aroma</div>
+        <div class="aroma-number">{{valorAroma}}</div>
+      </div>
     </mat-card-content>
-</mat-card>
-  
+  </mat-card>
+  <app-aroma></app-aroma>
+
+  <mat-card class="aroma-card">
+    <mat-card-content>
+      <div class="aroma-container">
+        <div class="aroma-title">Apariencia</div>
+        <div class="aroma-number">{{valorApariencia}}</div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <app-apariencia></app-apariencia>
+
+  <mat-card class="aroma-card">
+    <mat-card-content>
+      <div class="aroma-container">
+        <div class="aroma-title">Sabor</div>
+        <div class="aroma-number">{{valorSabor}}</div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <app-sabor></app-sabor>
+
+  <mat-card class="aroma-card">
+    <mat-card-content>
+      <div class="aroma-container">
+        <div class="aroma-title">Sensacion en boca</div>
+        <div class="aroma-number">{{valorSensacion}}</div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <app-sensacion></app-sensacion>
+
 </div>
