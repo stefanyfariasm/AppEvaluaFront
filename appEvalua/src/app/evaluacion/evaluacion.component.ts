@@ -27,11 +27,11 @@ export class EvaluacionComponent implements OnInit {
 
   seccionActual: string = 'aroma';
   finalizarEvaluacion(){
-    
+
   }
 
   guardar_cerrar(){
-
+    this.router.navigate(['/notas'])
   }
 
   siguienteSeccion() {

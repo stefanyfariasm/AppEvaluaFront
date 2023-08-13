@@ -2,8 +2,26 @@
     <section class="aroma">
         <h2>General</h2>
 
-        <canvas baseChart [datasets]="demoradarChartData" [labels]="demoradarChartLabels" [type]="radarChartType"
+        <canvas baseChart [datasets]="demoradarChartData" [options]="demoradarChartOptions" [labels]="demoradarChartLabels" [type]="radarChartType"
             (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
-
+            
+        <div class="sum-box">
+            <div class="top-row">
+                <h3>Devolución</h3>
+            </div>
+            <div class="bottom-row">
+                <input type="text" [(ngModel)]="devolucion" placeholder="Escribe aquí" class="descripcion">
+            </div>
+        </div>
+        <div class="sum-box">
+            <div class="top-row">
+                <h3>Nota general</h3>
+            </div>
+            <div class="bottom-row">
+                <div class="suma">{{total}}</div>
+            </div>
+            <button (click)="finalizarEvaluacion()" style="padding: 3px 10px; font-size: 18px; background-color: rgb(84, 206, 159); color: white; font-family: 'Poppins', sans-serif;border: none; border-radius: 20px; margin-left: 100px; margin-top: 10px;" >Finalizar</button>
+        </div>
+        
     </section>
 </div>
