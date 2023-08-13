@@ -13,5 +13,8 @@ export class ApiService {
   getEstilos(){
     return this.http.get<any>(this.URL+'/estilos/')
   }
+  getEvaluaciones(){
+    return this.http.get<any>(this.URL+'/evaluacion/')
+  }
   
 }
