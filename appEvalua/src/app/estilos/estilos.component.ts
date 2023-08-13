@@ -20,21 +20,26 @@ item: string | undefined;
 
 estilos: any[]=[];
 lista: any[]=[];
+listaDescripcion: any[]=[];
 
   disableSelect: boolean = false;
   
   selectedOption: any | undefined;
   constructor(private sharedDataService: SharedDataService,private apiService:ApiService) { 
-
+    this.estilos = [];
+    this.lista = [];
+    this.listaDescripcion = [];
   }
 
 
 
   initializeData(): void {
     this.lista = this.estilos.map(estilo => estilo.nombre);
-    this.selectedOption = this.lista; // Establecer un valor predeterminado
-    console.log(this.selectedOption)
+    this.listaDescripcion=this.estilos.map(estilo=>estilo.descripcion )
+   this.selectedOption = this.lista; // Establecer un valor predeterminado
+    console.log("hjgdacilus.g",this.selectedOption)
     console.log("aaa",this.lista)
+    console.log("aaa",this.listaDescripcion)
   }
 
  
@@ -61,14 +66,32 @@ formSubmitted = false;
   }
 
   get formularioValido(): boolean {
-    return this.titulo && this.selectedOption && this.informacion;
+    // console.log("titulo",this.titulo )
+    
+    // console.log("SelectioOpcion",this.selectedOption)
+
+    //  console.log("informacion",this.informacion)
+    //  console.log("truealgoooo",this.titulo && this.selectedOption && this.informacion)
+     if(this.titulo==null){
+      return false}
+      if(this.informacion==null){
+        return false}
+        if(this.informacion==null){
+          return false}
+    return true;
   }
+  
  
 guardarDatos(): void {
   // Guardar los valores en el servicio
   this.sharedDataService.titulo = this.titulo;
   this.sharedDataService.estilo = this.selectedOption;
-  this.sharedDataService.data1=this.lista
+  this.sharedDataService.data1=this.lista;
+  this.sharedDataService.data2=this.listaDescripcion;
+
+  localStorage.setItem("titulo",this.titulo);
+  localStorage.setItem("estilo",this.selectedOption);
+ 
 }
 esAlfanumerico(texto: string) {
   var patron = /^[a-zA-Z0-9]+$/;
@@ -76,18 +99,13 @@ esAlfanumerico(texto: string) {
 }
 
 verificarTitulo(): boolean {
-  if (this.titulo.length > 4 && this.titulo.length < 100 && this.esAlfanumerico(this.titulo)) {
-    return true;
-  }
-  return false;
+  return this.titulo.length >= 4 && this.titulo.length <= 100 && this.esAlfanumerico(this.titulo);
 }
 
 verificarInformacion(): boolean {
-  if (this.informacion.length > 4 && this.informacion.length < 300) {
-    return true;
-  }
-  return false;
+  return this.informacion.length >= 4 && this.informacion.length <= 300;
 }
+
 
 
 }

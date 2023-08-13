@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding-top: 100px;
+  
+  }
+  .matriz-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .column {
+    flex-basis: calc(33.33% - 10px); /* Ajusta el ancho de las columnas */
+    margin-bottom: 10px; /* Espacio inferior entre las filas */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Ajusta el espaciado de las tarjetas */
+  app-fallas-card {
+    margin-bottom: 0px; /* Espacio entre las tarjetas */
+  }
+  

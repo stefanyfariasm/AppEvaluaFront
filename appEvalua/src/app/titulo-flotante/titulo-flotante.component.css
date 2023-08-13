@@ -15,20 +15,19 @@
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
   }
+  #esquina-superior p {
+    max-width: 200px; /* Ajusta el valor según lo que necesites */
+ /* Agrega puntos suspensivos al final del texto que desborde */
+  }
   img{
-    width: 50px;
+    width: 30px;
   }
   .estilo-seleccion {
     display: flex;
     align-items: center;
   }
   
-  .imagen-estilo {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    position: relative;
-  }
+  
   
   .dropdown {
     position: absolute;
@@ -43,7 +42,20 @@
     font-family: 'Poppins', sans-serif;
     
   }
-  /* titulo-flotante.component.css */
+
+
+/* Ajustar la posición del desplegable debajo de la imagen */
+.imagen-estilo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
 .narrow-select {
-  width: 200px; /* Puedes ajustar el valor según el ancho deseado */
+  position: absolute;
+  top: 100%; /* Colocar debajo de la imagen */
+  left: 0;
+  z-index: 1; /* Asegura que el desplegable esté por encima del contenido */
+  width: 200px; /* Ajusta el ancho según lo que necesites */
 }

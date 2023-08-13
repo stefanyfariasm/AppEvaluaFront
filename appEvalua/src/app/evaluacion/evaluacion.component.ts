@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedDataService } from '../serviciosGenerales/shared-data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-evaluacion',
@@ -8,10 +9,14 @@ import { SharedDataService } from '../serviciosGenerales/shared-data.service';
 })
 export class EvaluacionComponent implements OnInit {
 
+  receiveMessage($event:any) {
+    this.seccionActual = $event;
+    console.log(this.seccionActual)
+  }
 
   public titulo: string | undefined;
   public estilo: string | undefined;
-  constructor(private sharedDataService:SharedDataService) { }
+  constructor(private sharedDataService:SharedDataService, private router: Router) { }
   guardarDatos(): void {
     this.sharedDataService.titulo = this.titulo;
     this.sharedDataService.estilo = this.estilo;
@@ -20,8 +25,15 @@ export class EvaluacionComponent implements OnInit {
   }
 
 
-  seccionActual: string = 'aroma'; 
-  
+  seccionActual: string = 'aroma';
+  finalizarEvaluacion(){
+
+  }
+
+  guardar_cerrar(){
+    this.router.navigate(['/notas'])
+  }
+
   siguienteSeccion() {
 
     if (this.seccionActual === 'aroma') {
@@ -30,6 +42,13 @@ export class EvaluacionComponent implements OnInit {
       this.seccionActual = 'sabor';
     } else if (this.seccionActual === 'sabor') {
       this.seccionActual = 'sensacion';
+    } else if (this.seccionActual === 'sensacion') {
+      this.seccionActual = 'fallas';
+    } else if (this.seccionActual === 'fallas') {
+      this.seccionActual = 'general';
+    } else if (this.seccionActual === 'general') {
+      this.router.navigate(['/myevaluations']);
     }
+    this.guardarDatos();
   }
 }

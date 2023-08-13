@@ -1,0 +1,17 @@
+<h2>Fallas de estilo</h2>
+<p>Presione los botones para cambiar entre presencia de defectos Baja, Media Alta</p>
+
+<div class="matriz-container">
+    <div class="row" *ngFor="let row of matriz">
+      <div class="column" *ngFor="let card of row">
+        <app-fallas-card
+          [title]="card.title"
+          [nivel]="card.nivel">
+        </app-fallas-card>
+      </div>
+    </div>
+  </div>
+  
+  <!-- <button (click)="guardarDatos()">Guardar Datos</button> -->
+  
+

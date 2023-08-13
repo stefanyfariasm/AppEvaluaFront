@@ -11,11 +11,11 @@ export class SensacionComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  currentImageCuerpo: string = '../../assets/img/grafica/inicial.jpeg';
-  currentImageCarbonatacion: string = '../../assets/img/grafica/inicial.jpeg';
-  currentImageCalentamiento: string = '../../assets/img/grafica/inicial.jpeg';
-  currentImageCremosidad: string = '../../assets/img/grafica/inicial.jpeg';
-  currentImageAstringencia: string = '../../assets/img/grafica/inicial.jpeg';
+  currentImageCuerpo: string | null = localStorage.getItem("imagen-sensacion-cuerpo") ? localStorage.getItem("imagen-sensacion-cuerpo") : '../../assets/img/grafica/inicial.jpeg';
+  currentImageCarbonatacion: string | null = localStorage.getItem("imagen-sensacion-carbonatacion") ? localStorage.getItem("imagen-sensacion-carbonatacion") : '../../assets/img/grafica/inicial.jpeg';
+  currentImageCalentamiento: string | null = localStorage.getItem("imagen-sensacion-calentamiento") ? localStorage.getItem("imagen-sensacion-calentamiento") : '../../assets/img/grafica/inicial.jpeg';
+  currentImageCremosidad: string | null = localStorage.getItem("imagen-sensacion-cremosidad") ? localStorage.getItem("imagen-sensacion-cremosidad") : '../../assets/img/grafica/inicial.jpeg';
+  currentImageAstringencia: string | null = localStorage.getItem("imagen-sensacion-astringencia") ? localStorage.getItem("imagen-sensacion-astringencia") : '../../assets/img/grafica/inicial.jpeg';
 
 
   seleccionCuerpo: number = 0;
@@ -36,31 +36,41 @@ export class SensacionComponent implements OnInit {
   cambiarImagenCuerpo(nuevaImagen: string) {
     this.currentImageCuerpo = nuevaImagen;
     this.seleccionCuerpo = nuevaImagen.includes('inicial') ? 0  : (nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5));
-  }
+    localStorage.setItem("imagen-sensacion-cuerpo",nuevaImagen)
+    localStorage.setItem("sumaSensacion",(this.seleccionCuerpo + this.seleccionCarbonatacion + this.seleccionCalentamiento + this.seleccionCremosidad +this.seleccionAstringencia).toString())
+}
 
   cambiarImagenCarbonatacion(nuevaImagen: string) {
     this.currentImageCarbonatacion = nuevaImagen;
     this.seleccionCarbonatacion = nuevaImagen.includes('inicial') ? 0  : (nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5));
-  }
+    localStorage.setItem("imagen-sensacion-carbonatacion",nuevaImagen)
+    localStorage.setItem("sumaSensacion",(this.seleccionCuerpo + this.seleccionCarbonatacion + this.seleccionCalentamiento + this.seleccionCremosidad +this.seleccionAstringencia).toString())
+}
 
 
   cambiarImagenCalentamiento(nuevaImagen: string) {
     this.currentImageCalentamiento = nuevaImagen; 
     this.seleccionCalentamiento = nuevaImagen.includes('inicial') ? 0  : (nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5));
     this.valorInapropiadoCalentamiento = false;
-  }
+    localStorage.setItem("imagen-sensacion-calentamiento",nuevaImagen)
+    localStorage.setItem("sumaSensacion",(this.seleccionCuerpo + this.seleccionCarbonatacion + this.seleccionCalentamiento + this.seleccionCremosidad +this.seleccionAstringencia).toString())
+}
 
   cambiarImagenCremosidad(nuevaImagen: string) {
     this.currentImageCremosidad = nuevaImagen; 
     this.seleccionCremosidad = nuevaImagen.includes('inicial') ? 0  : (nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5));
     this.valorInapropiadoCremosidad = false;
-  }
+    localStorage.setItem("imagen-sensacion-cremosidad",nuevaImagen)
+    localStorage.setItem("sumaSensacion",(this.seleccionCuerpo + this.seleccionCarbonatacion + this.seleccionCalentamiento + this.seleccionCremosidad +this.seleccionAstringencia).toString())
+}
 
   cambiarImagenAstringencia(nuevaImagen: string) {
     this.currentImageAstringencia = nuevaImagen; 
     this.seleccionAstringencia = nuevaImagen.includes('inicial') ? 0  : (nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5));
     this.valorInapropiadoAstringencia = false;
-  }
+    localStorage.setItem("imagen-sensacion-astringencia",nuevaImagen)
+    localStorage.setItem("sumaSensacion",(this.seleccionCuerpo + this.seleccionCarbonatacion + this.seleccionCalentamiento + this.seleccionCremosidad +this.seleccionAstringencia).toString())
+}
 
 
   checkboxChangedCuerpo(event: any) {
@@ -81,8 +91,8 @@ export class SensacionComponent implements OnInit {
     this.valorInapropiadoAstringencia = event.target.checked;
   }
 
-  sumarSeleccionesSensacion(): number {
-    return this.seleccionCuerpo + this.seleccionCarbonatacion + this.seleccionCalentamiento + this.seleccionCremosidad +this.seleccionAstringencia;
+  sumarSeleccionesSensacion(): any {
+    return localStorage.getItem("sumaSensacion") ? localStorage.getItem("sumaSensacion") : localStorage.setItem("sumaSensacion",(this.seleccionCuerpo + this.seleccionCarbonatacion + this.seleccionCalentamiento + this.seleccionCremosidad +this.seleccionAstringencia).toString());
   }
 
 }
