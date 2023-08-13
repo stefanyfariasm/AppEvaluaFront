@@ -25,14 +25,6 @@ export class AparienciaComponent implements OnInit {
   seleccionColorEspuma: number = 0;
 
 
-  valorInapropiadoClaridad: boolean = false;
-  valorInapropiadoFormacion: boolean = false;
-  valorInapropiadoRetencion: boolean = false;
-  valorInapropiadoColor: boolean = false;
-  valorInapropiadoColorEspuma: boolean = false;
-
-
-
   cambiarImagenClaridad(nuevaImagen: string) {
       this.currentImageClaridad = nuevaImagen;
       this.seleccionClaridad = nuevaImagen.includes('inicial') ? 0  : (nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5));
@@ -52,33 +44,12 @@ export class AparienciaComponent implements OnInit {
     this.currentImageColor = nuevaImagen; 
     this.seleccionColor =  nuevaImagen.includes('color') ? 0  : (nuevaImagen.includes('ambar') ? 1 : (nuevaImagen.includes('oro') ? 2 :
     nuevaImagen.includes('amarillo') ? 3:nuevaImagen.includes('negro') ? 4: nuevaImagen.includes('marron') ? 5: 6))
-    this.valorInapropiadoColor = false;
   }
 
   cambiarImagenColorEspuma(nuevaImagen: string) {
     this.currentImageColorEspuma = nuevaImagen; 
     this.seleccionColorEspuma = nuevaImagen.includes('color') ? 0  : (nuevaImagen.includes('ambar') ? 1 : (nuevaImagen.includes('oro') ? 2 :
     nuevaImagen.includes('amarillo') ? 3:nuevaImagen.includes('negro') ? 4: nuevaImagen.includes('marron') ? 5: 6))
-    this.valorInapropiadoColorEspuma = false;
-  }
-
-
-  checkboxChangedClaridad(event: any) {
-    this.valorInapropiadoClaridad = event.target.checked;
-  }
-
-  checkboxChangedFormacion(event: any) {
-    this.valorInapropiadoFormacion = event.target.checked;
-  }
-  checkboxChangedRetencion(event: any) {
-    this.valorInapropiadoRetencion = event.target.checked;
-  }
-
-  checkboxChangedColor(event: any) {
-    this.valorInapropiadoColor= event.target.checked;
-  }
-  checkboxChangedColorEspuma(event: any) {
-    this.valorInapropiadoColorEspuma = event.target.checked;
   }
 
   sumarSeleccionesApariencia(): number {
