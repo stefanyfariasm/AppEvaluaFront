@@ -50,7 +50,6 @@ export class AparienciaComponent implements OnInit {
     this.currentImageColor = nuevaImagen; 
     this.seleccionColor =  nuevaImagen.includes('color') ? 0  : (nuevaImagen.includes('ambar') ? 1 : (nuevaImagen.includes('oro') ? 2 :
     nuevaImagen.includes('amarillo') ? 3:nuevaImagen.includes('negro') ? 4: nuevaImagen.includes('marron') ? 5: 6))
-    this.valorInapropiadoColor = false;
     localStorage.setItem("imagen-apariencia-color",nuevaImagen)
     localStorage.setItem("sumaApariencia",(this.seleccionClaridad + this.seleccionFormacion + this.seleccionRetencion + this.seleccionColor +this.seleccionColorEspuma).toString())
 }
@@ -59,29 +58,10 @@ export class AparienciaComponent implements OnInit {
     this.currentImageColorEspuma = nuevaImagen; 
     this.seleccionColorEspuma = nuevaImagen.includes('color') ? 0  : (nuevaImagen.includes('ambar') ? 1 : (nuevaImagen.includes('oro') ? 2 :
     nuevaImagen.includes('amarillo') ? 3:nuevaImagen.includes('negro') ? 4: nuevaImagen.includes('marron') ? 5: 6))
-    this.valorInapropiadoColorEspuma = false;
     localStorage.setItem("imagen-apariencia-espuma",nuevaImagen)
     localStorage.setItem("sumaApariencia",(this.seleccionClaridad + this.seleccionFormacion + this.seleccionRetencion + this.seleccionColor +this.seleccionColorEspuma).toString())
 }
 
-
-  checkboxChangedClaridad(event: any) {
-    this.valorInapropiadoClaridad = event.target.checked;
-  }
-
-  checkboxChangedFormacion(event: any) {
-    this.valorInapropiadoFormacion = event.target.checked;
-  }
-  checkboxChangedRetencion(event: any) {
-    this.valorInapropiadoRetencion = event.target.checked;
-  }
-
-  checkboxChangedColor(event: any) {
-    this.valorInapropiadoColor= event.target.checked;
-  }
-  checkboxChangedColorEspuma(event: any) {
-    this.valorInapropiadoColorEspuma = event.target.checked;
-  }
 
   sumarSeleccionesApariencia(): any {
     return localStorage.getItem("sumaApariencia") ? localStorage.getItem("sumaApariencia") : localStorage.setItem("sumaApariencia",(this.seleccionClaridad + this.seleccionFormacion + this.seleccionRetencion + this.seleccionColor +this.seleccionColorEspuma).toString());
