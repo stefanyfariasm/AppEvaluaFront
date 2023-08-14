@@ -26,24 +26,18 @@
     display: flex;
     align-items: center;
   }
-  
-  
-  
   .dropdown {
     position: absolute;
     top: 100%;
     left: 0;
   }
   span {
-   
     padding: 10px;    
     color: #333;
     font-size: 16px; 
     font-family: 'Poppins', sans-serif;
     
   }
-
-
 /* Ajustar la posición del desplegable debajo de la imagen */
 .imagen-estilo {
   display: flex;
@@ -51,7 +45,6 @@
   cursor: pointer;
   position: relative;
 }
-
 .narrow-select {
   position: absolute;
   top: 100%; /* Colocar debajo de la imagen */
