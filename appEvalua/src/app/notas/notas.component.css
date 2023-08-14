@@ -1,41 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
 /* Estilos personalizados para el contenedor principal */
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centrar verticalmente */
-    /* align-items: center; Centrar horizontalmente */
-    gap: 20px; /* Espacio entre los elementos */
-    margin: 0 200px; /* Márgenes izquierdo y derecho de 20px */
+    padding-top: 1cm;
 
+  }
+
+  .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
   }
   
   /* Estilos personalizados para la tarjeta .custom-card */
   .custom-card {
-    background-color: rgb(183, 253, 230); /* Fondo verde claro */
-    width: 600px; /* Ancho de la tarjeta */
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(210, 246, 233); /* Fondo verde claro */
     padding: 16px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 4px rgb(183, 253, 230); /* Sombra */
+    border-radius:0px 0px 8px 8px ;
+    box-shadow: 2px 2px 4px rgb(186, 185, 194); /* Sombra */
     margin-bottom: 20px; /* Espacio inferior */
-    margin-left: 300px;
+    width: 75vw; 
+
   }
   
   /* Estilos personalizados para la tarjeta .custom-card1 */
   .custom-card1 {
-    background-color: lightgrey; /* Fondo gris claro */
-    width: 600px; /* Ancho de la tarjeta */
-    padding: 16px;
-    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(218, 220, 223); /* Fondo gris claro */
+    border-radius: 8px 8px 0px 0px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
-    margin-left: 300px;
     display: flex;
-    justify-content: center; /* Centrar verticalmente */
-    align-items: center; /* Centrar horizontalmente */
+    width: 75vw; 
+
   }
   
   /* Estilos para el título */
   .title {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
   }
@@ -43,7 +49,7 @@
   /* Estilos para las categorías dentro de .categories */
   .categories {
     display: flex; /* Mostrar las categorías en una fila */
-    gap: 10px; /* Espaciado entre las categorías */
+    gap: 80px; /* Espaciado entre las categorías */
   }
   
   /* Estilos para los subtítulos de las categorías */
@@ -59,11 +65,14 @@
     flex-basis: 20px; /* Ancho mínimo para los números */
   }
   .edit-button {
-    background-color: lightgrey; /* Color gris super claro */
+    right: 10px;
+    background-color: rgb(46, 48, 46);
+    color: white;
+    padding: 1px 20px;
     border: none;
-    padding: 5px 10px;
-    border-radius: 4px;
+    border-radius: 50px;
     cursor: pointer;
+    font-family: 'Poppins', sans-serif;
   }  
 
   /* aroma(aqui varialuego) */
