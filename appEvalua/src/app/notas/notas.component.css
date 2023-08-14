@@ -1,13 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
 /* Estilos personalizados para el contenedor principal */
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centrar verticalmente */
-    padding-top: 1cm;
 
-  }
 
   .info {
     display: flex;
@@ -49,7 +43,7 @@
   /* Estilos para las categorías dentro de .categories */
   .categories {
     display: flex; /* Mostrar las categorías en una fila */
-    gap: 80px; /* Espaciado entre las categorías */
+    gap: 70px; /* Espaciado entre las categorías */
   }
   
   /* Estilos para los subtítulos de las categorías */
@@ -75,15 +69,23 @@
     font-family: 'Poppins', sans-serif;
   }  
 
+
+  .categorias {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
   /* aroma(aqui varialuego) */
   .aroma-card {
+    font-family: 'Poppins', sans-serif;
     /* Fondo gris claro */
-    width: auto; /* Ancho de la tarjeta */
+     /* Ancho de la tarjeta */
+    width: 88vw; 
     height: auto;
-    padding: 16px;
+    padding: 30px;
     border-radius: 8px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
-    margin-left: 100px;
 }
 
 /* Estilos para el contenedor de Aroma */
@@ -103,15 +105,11 @@
 /* Estilos para el número Aroma */
 .aroma-number {
     background-color: lightgrey;
+    padding: 15px 15px;
+    border-radius: 10px;
     font-size: 24px;
 }
 
-/* Estilos para colorear el número */
-.number-color {
-    background-color: rgba(200, 200, 200, 0.2); /* Color gris super claro */
-    padding: 5px 10px;
-    border-radius: 4px;
-}
 
 img{
   width: 6cm;
@@ -158,7 +156,7 @@ h1, input, label, h3 {
 }
 
 .text.medio {
-  top: 12%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding-top: 0.5cm;
@@ -171,7 +169,12 @@ h1, input, label, h3 {
 
 .text.nulo {
   left: 45%;
-  top: 7.5cm;
+  top: 8cm;
+}
+
+.text.inapropiado {
+  left: 37%;
+  top: 8cm;
 }
 
 .textos{
