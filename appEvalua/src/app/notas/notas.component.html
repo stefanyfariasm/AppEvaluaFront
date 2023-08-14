@@ -1,14 +1,12 @@
 <div class="container">
-    <app-barra-superior></app-barra-superior>
+  <app-barra-superior></app-barra-superior>
 
     <div class="info">
 <mat-card class="custom-card1">
     <mat-card-content>
-     
       <div class="categories1">
         <div class="title">{{titulo}}</div>
         <div class="title">{{estilo}}</div>
- 
       </div>
     </mat-card-content>
   </mat-card>
@@ -36,9 +34,7 @@
         </div>
         <div class="category">
           <div class="category-title">General</div>
-         
           <div class="category-number">{{valorGeneral}}</div>
-          
         </div>
         <button (click)="volverEvaluar()" class="edit-button">Editar</button>
       </div>
@@ -54,9 +50,50 @@
         <div class="aroma-number">{{valorAroma}}</div>
       </div>
     </mat-card-content>
-  </mat-card>
-  <app-aroma></app-aroma>
+    <div class="container-wrapper">
+      <div class="otras">
+      <div class="malta">
+        <h1>Malta</h1>
+        <div class="image">
+          <img [src]="imageMalta" alt="Imagen">
+        </div>
+        <div class="textos">
+          <p class="text bajo">Bajo</p>
+          <p class="text medio">Medio</p>
+          <p class="text alto">Alto</p>
+          <p class="text nulo">Nulo</p>
+        </div>
+      </div>
 
+      <div class="lupulos">
+        <h1>Lúpulos</h1>
+        <div class="image">
+          <img [src]="imageLupulos" alt="Imagen">
+        </div>
+        <div class="textos">
+          <p class="text bajo">Bajo</p>
+          <p class="text medio">Medio</p>
+          <p class="text alto">Alto</p>
+          <p class="text nulo">Nulo</p>
+        </div>
+      </div>
+
+      <div class="fermentacion">
+        <h1>Fermentación</h1>
+        <div class="image">
+          <img [src]="imageFermen" alt="Imagen">
+        </div>
+        <div class="textos">
+          <p class="text bajo">Bajo</p>
+          <p class="text medio">Medio</p>
+          <p class="text alto">Alto</p>
+          <p class="text nulo">Nulo</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </mat-card>
+  <!--Apariencia-->
   <mat-card class="aroma-card">
     <mat-card-content>
       <div class="aroma-container">
@@ -64,9 +101,83 @@
         <div class="aroma-number">{{valorApariencia}}</div>
       </div>
     </mat-card-content>
+    <div class="container-wrapper">
+      <div class="otras">
+        <div class="color">
+          <h1>Color</h1>
+          <div class="image">
+            <img [src]="imageColor" alt="Imagen">
+          </div>
+          <div class="textos">
+            <p class="text ambar">Ambar</p>
+            <p class="text oro">Oro</p>
+            <p class="text amarillo">Amarillo</p>
+            <p class="text negro">Negro</p>
+            <p class="text marron">Marron</p>
+            <p class="text cobre">Cobre</p>
+            <p class="text inapropiado">Inapropiado</p>
+          </div>
+        </div>
+        <div class="claridad">
+          <h1>Claridad</h1>
+          <div class="image">
+            <img [src]="imageClaridad" alt="Imagen">
+          </div>
+          <div class="textos">
+            <p class="text bajo">Turbio</p>
+            <p class="text medio">Opaco</p>
+            <p class="text alto">Brillante</p>
+            <p class="text nulo">Nulo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="otras">
+    <div class="espuma">
+      <h2>Espuma</h2>
+      <div class="colorEspuma">
+        <h1>Color Espuma</h1>
+        <div class="image">
+          <img [src]="imageColorEspuma" alt="Imagen">
+        </div>
+        <div class="textos">
+          <p class="text ambar">Ambar</p>
+          <p class="text oro">Oro</p>
+          <p class="text amarillo">Amarillo</p>
+          <p class="text negro">Negro</p>
+          <p class="text marron">Marron</p>
+          <p class="text cobre">Cobre</p>
+          <p class="text inapropiado">Inapropiado</p>
+        </div>
+      </div>
+      <div class="formacion">
+        <h1>Formación de espuma</h1>
+        <div class="image">
+          <img [src]="imageFormacion" alt="Imagen">
+        </div>
+        <div class="textos">
+          <p class="text bajo">Turbio</p>
+          <p class="text medio">Opaco</p>
+          <p class="text alto">Brillante</p>
+          <p class="text nulo">Nulo</p>
+        </div>
+      </div>
+      <div class="retencion">
+        <h1>Retención</h1>
+        <div class="image">
+          <img [src]="imageRetencion" alt="Imagen">
+        </div>
+        <div class="textos">
+          <p class="text bajo">Turbio</p>
+          <p class="text medio">Opaco</p>
+          <p class="text alto">Brillante</p>
+          <p class="text nulo">Nulo</p>
+        </div>
+      </div>
+    </div>
+    </div>
   </mat-card>
-  <app-apariencia></app-apariencia>
-
+  <!--Sabor-->
   <mat-card class="aroma-card">
     <mat-card-content>
       <div class="aroma-container">
@@ -74,9 +185,90 @@
         <div class="aroma-number">{{valorSabor}}</div>
       </div>
     </mat-card-content>
+    <div class="container-wrapper">
+      <div class="otras">
+      <div class="malta">
+        <h1>Malta</h1>
+        <div class="image">
+          <img [src]="imageMalta1" alt="Imagen">
+        </div>
+        <div class="textos">
+          <p class="text bajo">Bajo</p>
+          <p class="text medio">Medio</p>
+          <p class="text alto">Alto</p>
+          <p class="text nulo">Nulo</p>
+        </div>
+      </div>
+  
+      <div class="lupulos">
+        <h1>Lúpulos</h1>
+        <div class="image">
+          <img [src]="imageLupulos1" alt="Imagen">
+        </div>
+        <div class="textos">
+          <p class="text bajo">Bajo</p>
+          <p class="text medio">Medio</p>
+          <p class="text alto">Alto</p>
+          <p class="text nulo">Nulo</p>
+        </div>
+      </div>
+  
+      <div class="fermentacion">
+        <h1>Fermentación</h1>
+        <div class="image">
+          <img [src]="imageFermen1" alt="Imagen">
+        </div>
+        <div class="textos">
+          <p class="text bajo">Bajo</p>
+          <p class="text medio">Medio</p>
+          <p class="text alto">Alto</p>
+          <p class="text nulo">Nulo</p>
+        </div>
+      </div>
+    </div>
+      <div class="otras">
+        <div class="amargor">
+          <h1>Amargor</h1>
+          <div class="image">
+            <img [src]="imageAmargor1" alt="Imagen">
+          </div>
+          <div class="textos">
+            <p class="text bajo">Bajo</p>
+            <p class="text medio">Medio</p>
+            <p class="text alto">Alto</p>
+            <p class="text nulo">Nulo</p>
+          </div>
+        </div>
+  
+        <div class="equilibrio">
+          <h1>Equilibrio</h1>
+          <div class="image">
+            <img [src]="imageEquilibrio1" alt="Imagen">
+          </div>
+          <div class="textos">
+            <p class="text bajo">Bajo</p>
+            <p class="text medio">Medio</p>
+            <p class="text alto">Alto</p>
+            <p class="text nulo">Nulo</p>
+          </div>
+        </div>
+  
+        <div class="retrogusto">
+          <h1>Retrogusto</h1>
+          <div class="image">
+            <img [src]="imageRetrogusto1" alt="Imagen">
+          </div>
+          <div class="textos">
+            <p class="text bajo">Bajo</p>
+            <p class="text medio">Medio</p>
+            <p class="text alto">Alto</p>
+            <p class="text nulo">Nulo</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </mat-card>
-  <app-sabor></app-sabor>
-
+  <!--Sensacion en boca-->
   <mat-card class="aroma-card">
     <mat-card-content>
       <div class="aroma-container">
@@ -84,7 +276,69 @@
         <div class="aroma-number">{{valorSensacion}}</div>
       </div>
     </mat-card-content>
+    <div class="container-wrapper">
+      <div class="cuerpo">
+        <h1>Cuerpo</h1>
+        <div class="image">
+          <img [src]="imageCuerpo" alt="Imagen">
+        </div>
+        <div class="textos">
+          <p class="text bajo">Delgado</p>
+          <p class="text medio">Medio</p>
+          <p class="text alto">Lleno</p>
+          <p class="text nulo">Nulo</p>
+        </div>
+      </div>
+      <div class="carbonatacion">
+        <h1>Carbonatación</h1>
+        <div class="image">
+          <img [src]="imageCarbonatacion" alt="Imagen">
+        </div>
+        <div class="textos">
+          <p class="text bajo">Bajo</p>
+          <p class="text medio">Medio</p>
+          <p class="text alto">Alto</p>
+          <p class="text nulo">Nulo</p>
+        </div>
+      </div>
+      <div class="calentamiento">
+        <h1>Calentamiento</h1>
+        <div class="image">
+          <img [src]="imageCalentamiento" alt="Imagen">
+        </div>
+        <div class="textos">
+          <p class="text bajo">Bajo</p>
+          <p class="text medio">Medio</p>
+          <p class="text alto">Alto</p>
+          <p class="text nulo">Nulo</p>
+        </div>
+      </div>
+      <div class="otras">
+        <div class="cremosidad">
+          <h1>Cremosidad</h1>
+          <div class="image">
+            <img [src]="imageCremosidad" alt="Imagen">
+          </div>
+          <div class="textos">
+            <p class="text bajo">Bajo</p>
+            <p class="text medio">Medio</p>
+            <p class="text alto">Alto</p>
+            <p class="text nulo">Nulo</p>
+          </div>
+        </div>
+        <div class="astringencia">
+          <h1>Astringencia</h1>
+          <div class="image">
+            <img [src]="imageAstringencia" alt="Imagen">
+          </div>
+          <div class="textos">
+            <p class="text bajo">Bajo</p>
+            <p class="text medio">Medio</p>
+            <p class="text alto">Alto</p>
+            <p class="text nulo">Nulo</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </mat-card>
-  <app-sensacion></app-sensacion>
-
 </div>
