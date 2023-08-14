@@ -22,6 +22,7 @@
     <app-sensacion *ngIf="seccionActual === 'sensacion'"></app-sensacion>
     <app-fallas-vista *ngIf="seccionActual === 'fallas'"></app-fallas-vista>
     <app-radar-chart *ngIf="seccionActual === 'general'"></app-radar-chart>
+    
   </div>
 
   <button *ngIf="seccionActual != 'general'" (click)="siguienteSeccion()" class="botonCambiar">Siguiente Sección</button>

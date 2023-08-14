@@ -26,13 +26,6 @@ export class SaborComponent implements OnInit {
   seleccionLupulos: number = 0;
   seleccionFermen: number = 0;
 
-  valorInapropiadoAmargor: boolean = false;
-  valorInapropiadoEquilibrio: boolean = false;
-  valorInapropiadoRetrogusto: boolean = false;
-  valorInapropiadoMalta: boolean = false;
-  valorInapropiadoLupulo: boolean = false;
-  valorInapropiadoFerme: boolean = false;
-
 
   cambiarImagenAmargor(nuevaImagen: string) {
       this.currentImageAmargor = nuevaImagen;
@@ -52,7 +45,6 @@ export class SaborComponent implements OnInit {
   cambiarImagenRetrogusto(nuevaImagen: string) {
     this.currentImageRetrogusto = nuevaImagen; 
     this.seleccionRetrogusto = nuevaImagen.includes('inicial') ? 0  : (nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5));
-    this.valorInapropiadoRetrogusto = false;
     localStorage.setItem("imagen-sabor-retrogusto",nuevaImagen)
     localStorage.setItem("sumaSabor",(this.seleccionAmargor + this.seleccionEquilibrio + this.seleccionRetrogusto + this.seleccionMalta + this.seleccionLupulos + this.seleccionFermen).toString())
 }
@@ -74,35 +66,9 @@ export class SaborComponent implements OnInit {
   cambiarImagenFermen(nuevaImagen: string) {
     this.currentImageFermen = nuevaImagen; 
     this.seleccionFermen = nuevaImagen.includes('inicial') ? 0  : (nuevaImagen.includes('bajo') ? 1 : (nuevaImagen.includes('medio') ? 3 : 5));
-    this.valorInapropiadoFerme = false;
     localStorage.setItem("imagen-sabor-fermen",nuevaImagen)
     localStorage.setItem("sumaSabor",(this.seleccionAmargor + this.seleccionEquilibrio + this.seleccionRetrogusto + this.seleccionMalta + this.seleccionLupulos + this.seleccionFermen).toString())
 }
-
-
-
-  checkboxChangedAmargor(event: any) {
-    this.valorInapropiadoAmargor = event.target.checked;
-  }
-
-  checkboxChangedEquilibrio(event: any) {
-    this.valorInapropiadoEquilibrio = event.target.checked;
-  }
-  checkboxChangedRetrogusto(event: any) {
-    this.valorInapropiadoRetrogusto = event.target.checked;
-  }
-
-  checkboxChangedMalta(event: any) {
-    this.valorInapropiadoMalta = event.target.checked;
-  }
-
-  checkboxChangedLupulo(event: any) {
-    this.valorInapropiadoLupulo = event.target.checked;
-  }
-  checkboxChangedFerme(event: any) {
-    this.valorInapropiadoFerme = event.target.checked;
-  }
-
 
 
   sumarSeleccionesSabor(): any {

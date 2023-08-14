@@ -1,121 +1,181 @@
 <?xml version="1.0"?>
-<testsuite name="Chrome 115.0.0.0 (Windows 10)" package="" timestamp="2023-08-14T17:45:02" id="0" hostname="DESKTOP-94FDGB6" tests="25" errors="0" failures="6" time="0.645">
+<testsuite name="Chrome 115.0.0.0 (Windows 10)" package="" timestamp="2023-08-14T18:04:55" id="0" hostname="DESKTOP-94FDGB6" tests="53" errors="0" failures="5" time="0.724">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"/>
   </properties>
-  <testcase name="TituloFlotanteComponent should create" time="0.216" classname="Chrome_115_0_0_0_(Windows_10).TituloFlotanteComponent"/>
-  <testcase name="TituloFlotanteComponent should toggle dropdown" time="0.007" classname="Chrome_115_0_0_0_(Windows_10).TituloFlotanteComponent"/>
+  <testcase name="NotasComponent should create" time="0.095" classname="Chrome_115_0_0_0_(Windows_10).NotasComponent"/>
+  <testcase name="RadarChartComponent should create" time="0.034" classname="Chrome_115_0_0_0_(Windows_10).RadarChartComponent"/>
+  <testcase name="MisEvaluacionesComponent should create" time="0.016" classname="Chrome_115_0_0_0_(Windows_10).MisEvaluacionesComponent">
+    <failure type="">NullInjectorError: R3InjectorError(DynamicTestModule)[ApiService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'ApiService', 'HttpClient', 'HttpClient' ] })
+    at NullInjector.get (node_modules/@angular/core/fesm2020/core.mjs:8191:27)
+    at R3Injector.get (node_modules/@angular/core/fesm2020/core.mjs:8618:33)
+    at R3Injector.get (node_modules/@angular/core/fesm2020/core.mjs:8618:33)
+    at injectInjectorOnly (node_modules/@angular/core/fesm2020/core.mjs:4782:33)
+    at ɵɵinject (node_modules/@angular/core/fesm2020/core.mjs:4786:12)
+    at Object.factory (ng:///ApiService/ɵfac.js:4:38)
+    at R3Injector.hydrate (node_modules/@angular/core/fesm2020/core.mjs:8719:35)
+    at R3Injector.get (node_modules/@angular/core/fesm2020/core.mjs:8607:33)
+    at ChainedInjector.get (node_modules/@angular/core/fesm2020/core.mjs:13811:36)
+    at lookupTokenUsingModuleInjector (node_modules/@angular/core/fesm2020/core.mjs:3293:39)
+</failure>
+  </testcase>
+  <testcase name="TipoBebidaComponent should create" time="0.011" classname="Chrome_115_0_0_0_(Windows_10).TipoBebidaComponent">
+    <failure type="">NullInjectorError: R3InjectorError(DynamicTestModule)[ApiService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'ApiService', 'HttpClient', 'HttpClient' ] })
+    at NullInjector.get (node_modules/@angular/core/fesm2020/core.mjs:8191:27)
+    at R3Injector.get (node_modules/@angular/core/fesm2020/core.mjs:8618:33)
+    at R3Injector.get (node_modules/@angular/core/fesm2020/core.mjs:8618:33)
+    at injectInjectorOnly (node_modules/@angular/core/fesm2020/core.mjs:4782:33)
+    at ɵɵinject (node_modules/@angular/core/fesm2020/core.mjs:4786:12)
+    at Object.factory (ng:///ApiService/ɵfac.js:4:38)
+    at R3Injector.hydrate (node_modules/@angular/core/fesm2020/core.mjs:8719:35)
+    at R3Injector.get (node_modules/@angular/core/fesm2020/core.mjs:8607:33)
+    at ChainedInjector.get (node_modules/@angular/core/fesm2020/core.mjs:13811:36)
+    at lookupTokenUsingModuleInjector (node_modules/@angular/core/fesm2020/core.mjs:3293:39)
+</failure>
+  </testcase>
+  <testcase name="PrincipalComponent should create" time="0.01" classname="Chrome_115_0_0_0_(Windows_10).PrincipalComponent"/>
+  <testcase name="SharedDataService should be created" time="0.002" classname="Chrome_115_0_0_0_(Windows_10).SharedDataService"/>
+  <testcase name="SensacionComponent should calculate correct sum of selections" time="0.056" classname="Chrome_115_0_0_0_(Windows_10).SensacionComponent">
+    <failure type="">Expected '0' to be '5'.
+    at &lt;Jasmine&gt;
+    at UserContext.apply (src/app/sensacion/sensacion.component.spec.ts:77:51)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:26)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:39)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:371:52)
+</failure>
+  </testcase>
+  <testcase name="SensacionComponent should change currentImageCuerpo and seleccionCuerpo on cambiarImagenCuerpo" time="0.007" classname="Chrome_115_0_0_0_(Windows_10).SensacionComponent"/>
+  <testcase name="SensacionComponent should change currentImageCremosidad and seleccionCremosidad on cambiarImagenCremosidad" time="0.005" classname="Chrome_115_0_0_0_(Windows_10).SensacionComponent"/>
+  <testcase name="SensacionComponent should change currentImageCarbonatacion and seleccionCarbonatacion on cambiarImagenCarbonatacion" time="0.008" classname="Chrome_115_0_0_0_(Windows_10).SensacionComponent"/>
+  <testcase name="SensacionComponent should initialize variables correctly" time="0.004" classname="Chrome_115_0_0_0_(Windows_10).SensacionComponent"/>
+  <testcase name="SensacionComponent should change currentImageCalentamiento and seleccionCalentamiento on cambiarImagenCalentamiento" time="0.006" classname="Chrome_115_0_0_0_(Windows_10).SensacionComponent"/>
+  <testcase name="SensacionComponent should change currentImageAstringencia and seleccionAstringencia on cambiarImagenAstringencia" time="0.004" classname="Chrome_115_0_0_0_(Windows_10).SensacionComponent"/>
+  <testcase name="SensacionComponent should create" time="0.005" classname="Chrome_115_0_0_0_(Windows_10).SensacionComponent"/>
+  <testcase name="SaborComponent should change currentImageMalta and seleccionMalta on cambiarImagenMalta" time="0.018" classname="Chrome_115_0_0_0_(Windows_10).SaborComponent"/>
+  <testcase name="SaborComponent should change currentImageRetrogusto and seleccionRetrogusto on cambiarImagenRetrogusto" time="0.006" classname="Chrome_115_0_0_0_(Windows_10).SaborComponent"/>
+  <testcase name="SaborComponent should initialize variables correctly" time="0.008" classname="Chrome_115_0_0_0_(Windows_10).SaborComponent"/>
+  <testcase name="SaborComponent should create" time="0.006" classname="Chrome_115_0_0_0_(Windows_10).SaborComponent"/>
+  <testcase name="SaborComponent should update currentImageFermen and seleccionFermen on cambiarImagenFermen" time="0.014" classname="Chrome_115_0_0_0_(Windows_10).SaborComponent"/>
+  <testcase name="SaborComponent should update currentImageLupulos and seleccionLupulos on cambiarImagenLupulos" time="0.005" classname="Chrome_115_0_0_0_(Windows_10).SaborComponent"/>
+  <testcase name="SaborComponent should change currentImageEquilibrio and seleccionEquilibrio on cambiarImagenEquilibrio" time="0.007" classname="Chrome_115_0_0_0_(Windows_10).SaborComponent"/>
+  <testcase name="SaborComponent should change currentImageAmargor and seleccionAmargor on cambiarImagenAmargor" time="0.003" classname="Chrome_115_0_0_0_(Windows_10).SaborComponent"/>
+  <testcase name="SaborComponent should calculate correct sum of selections" time="0.007" classname="Chrome_115_0_0_0_(Windows_10).SaborComponent"/>
+  <testcase name="TituloFlotanteComponent should create" time="0.028" classname="Chrome_115_0_0_0_(Windows_10).TituloFlotanteComponent"/>
+  <testcase name="TituloFlotanteComponent should toggle dropdown" time="0.005" classname="Chrome_115_0_0_0_(Windows_10).TituloFlotanteComponent"/>
   <testcase name="TituloFlotanteComponent should update descripcionSeleccionada when an option is selected" time="0.006" classname="Chrome_115_0_0_0_(Windows_10).TituloFlotanteComponent"/>
-  <testcase name="FallasVistaComponent should create" time="0.017" classname="Chrome_115_0_0_0_(Windows_10).FallasVistaComponent"/>
-  <testcase name="EstilosComponent should have valid form when formularioValido is true" time="0.032" classname="Chrome_115_0_0_0_(Windows_10).EstilosComponent"/>
-  <testcase name="EstilosComponent Revisar titulo" time="0.019" classname="Chrome_115_0_0_0_(Windows_10).EstilosComponent"/>
-  <testcase name="EstilosComponent should initialize data on ngOnInit" time="0.014" classname="Chrome_115_0_0_0_(Windows_10).EstilosComponent"/>
-  <testcase name="EstilosComponent Revisar Imformacion" time="0.014" classname="Chrome_115_0_0_0_(Windows_10).EstilosComponent"/>
-  <testcase name="EstilosComponent should create" time="0.011" classname="Chrome_115_0_0_0_(Windows_10).EstilosComponent"/>
-  <testcase name="MisEvaluacionesComponent should create" time="0.036" classname="Chrome_115_0_0_0_(Windows_10).MisEvaluacionesComponent">
-    <failure type="">NullInjectorError: R3InjectorError(DynamicTestModule)[ApiService -&gt; HttpClient -&gt; HttpClient]: 
-  NullInjectorError: No provider for HttpClient!
-error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'ApiService', 'HttpClient', 'HttpClient' ] })
-    at NullInjector.get (node_modules/@angular/core/fesm2020/core.mjs:8191:27)
-    at R3Injector.get (node_modules/@angular/core/fesm2020/core.mjs:8618:33)
-    at R3Injector.get (node_modules/@angular/core/fesm2020/core.mjs:8618:33)
-    at injectInjectorOnly (node_modules/@angular/core/fesm2020/core.mjs:4782:33)
-    at ɵɵinject (node_modules/@angular/core/fesm2020/core.mjs:4786:12)
-    at Object.factory (ng:///ApiService/ɵfac.js:4:38)
-    at R3Injector.hydrate (node_modules/@angular/core/fesm2020/core.mjs:8719:35)
-    at R3Injector.get (node_modules/@angular/core/fesm2020/core.mjs:8607:33)
-    at ChainedInjector.get (node_modules/@angular/core/fesm2020/core.mjs:13811:36)
-    at lookupTokenUsingModuleInjector (node_modules/@angular/core/fesm2020/core.mjs:3293:39)
-</failure>
-  </testcase>
-  <testcase name="EvaluacionComponent should create" time="0.025" classname="Chrome_115_0_0_0_(Windows_10).EvaluacionComponent"/>
-  <testcase name="NotasComponent should create" time="0.021" classname="Chrome_115_0_0_0_(Windows_10).NotasComponent"/>
-  <testcase name="MenuCategoriasComponent should create" time="0.018" classname="Chrome_115_0_0_0_(Windows_10).MenuCategoriasComponent"/>
-  <testcase name="RadarChartComponent should create" time="0.014" classname="Chrome_115_0_0_0_(Windows_10).RadarChartComponent"/>
-  <testcase name="SaborComponent should create" time="0.046" classname="Chrome_115_0_0_0_(Windows_10).SaborComponent">
-    <failure type="">Error: NG0100: ExpressionChangedAfterItHasBeenCheckedError: Expression has changed after it was checked. Previous value: 'undefined'. Current value: '0'. Find more at https://angular.io/errors/NG0100
-error properties: Object({ code: -100 })
-    at throwErrorIfNoChangesMode (node_modules/@angular/core/fesm2020/core.mjs:9307:11)
-    at bindingUpdated (node_modules/@angular/core/fesm2020/core.mjs:14468:17)
-    at interpolation1 (node_modules/@angular/core/fesm2020/core.mjs:14575:23)
-    at ɵɵtextInterpolate1 (node_modules/@angular/core/fesm2020/core.mjs:17869:26)
-    at ɵɵtextInterpolate (node_modules/@angular/core/fesm2020/core.mjs:17845:5)
-    at templateFn (ng:///SaborComponent.js:221:9)
-    at executeTemplate (node_modules/@angular/core/fesm2020/core.mjs:12126:9)
-    at refreshView (node_modules/@angular/core/fesm2020/core.mjs:12011:13)
-    at refreshComponent (node_modules/@angular/core/fesm2020/core.mjs:13085:13)
-    at refreshChildComponents (node_modules/@angular/core/fesm2020/core.mjs:11801:9)
-</failure>
-  </testcase>
-  <testcase name="PrincipalComponent should create" time="0.013" classname="Chrome_115_0_0_0_(Windows_10).PrincipalComponent"/>
-  <testcase name="TipoBebidaComponent should create" time="0.015" classname="Chrome_115_0_0_0_(Windows_10).TipoBebidaComponent">
-    <failure type="">NullInjectorError: R3InjectorError(DynamicTestModule)[ApiService -&gt; HttpClient -&gt; HttpClient]: 
-  NullInjectorError: No provider for HttpClient!
-error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'ApiService', 'HttpClient', 'HttpClient' ] })
-    at NullInjector.get (node_modules/@angular/core/fesm2020/core.mjs:8191:27)
-    at R3Injector.get (node_modules/@angular/core/fesm2020/core.mjs:8618:33)
-    at R3Injector.get (node_modules/@angular/core/fesm2020/core.mjs:8618:33)
-    at injectInjectorOnly (node_modules/@angular/core/fesm2020/core.mjs:4782:33)
-    at ɵɵinject (node_modules/@angular/core/fesm2020/core.mjs:4786:12)
-    at Object.factory (ng:///ApiService/ɵfac.js:4:38)
-    at R3Injector.hydrate (node_modules/@angular/core/fesm2020/core.mjs:8719:35)
-    at R3Injector.get (node_modules/@angular/core/fesm2020/core.mjs:8607:33)
-    at ChainedInjector.get (node_modules/@angular/core/fesm2020/core.mjs:13811:36)
-    at lookupTokenUsingModuleInjector (node_modules/@angular/core/fesm2020/core.mjs:3293:39)
-</failure>
-  </testcase>
-  <testcase name="AromaComponent should create" time="0.031" classname="Chrome_115_0_0_0_(Windows_10).AromaComponent">
-    <failure type="">Error: NG0100: ExpressionChangedAfterItHasBeenCheckedError: Expression has changed after it was checked. Previous value: 'undefined'. Current value: '0'. Find more at https://angular.io/errors/NG0100
-error properties: Object({ code: -100 })
-    at throwErrorIfNoChangesMode (node_modules/@angular/core/fesm2020/core.mjs:9307:11)
-    at bindingUpdated (node_modules/@angular/core/fesm2020/core.mjs:14468:17)
-    at interpolation1 (node_modules/@angular/core/fesm2020/core.mjs:14575:23)
-    at ɵɵtextInterpolate1 (node_modules/@angular/core/fesm2020/core.mjs:17869:26)
-    at ɵɵtextInterpolate (node_modules/@angular/core/fesm2020/core.mjs:17845:5)
-    at templateFn (ng:///AromaComponent.js:124:9)
-    at executeTemplate (node_modules/@angular/core/fesm2020/core.mjs:12126:9)
-    at refreshView (node_modules/@angular/core/fesm2020/core.mjs:12011:13)
-    at refreshComponent (node_modules/@angular/core/fesm2020/core.mjs:13085:13)
-    at refreshChildComponents (node_modules/@angular/core/fesm2020/core.mjs:11801:9)
-</failure>
-  </testcase>
+  <testcase name="FallasVistaComponent should create" time="0.008" classname="Chrome_115_0_0_0_(Windows_10).FallasVistaComponent"/>
+  <testcase name="MenuCategoriasComponent should create" time="0.027" classname="Chrome_115_0_0_0_(Windows_10).MenuCategoriasComponent"/>
+  <testcase name="FallasCardComponent should create" time="0.017" classname="Chrome_115_0_0_0_(Windows_10).FallasCardComponent"/>
   <testcase name="BarraSuperiorComponent should create" time="0.01" classname="Chrome_115_0_0_0_(Windows_10).BarraSuperiorComponent"/>
-  <testcase name="SensacionComponent should create" time="0.023" classname="Chrome_115_0_0_0_(Windows_10).SensacionComponent">
-    <failure type="">Error: NG0100: ExpressionChangedAfterItHasBeenCheckedError: Expression has changed after it was checked. Previous value: 'undefined'. Current value: '0'. Find more at https://angular.io/errors/NG0100
-error properties: Object({ code: -100 })
-    at throwErrorIfNoChangesMode (node_modules/@angular/core/fesm2020/core.mjs:9307:11)
-    at bindingUpdated (node_modules/@angular/core/fesm2020/core.mjs:14468:17)
-    at interpolation1 (node_modules/@angular/core/fesm2020/core.mjs:14575:23)
-    at ɵɵtextInterpolate1 (node_modules/@angular/core/fesm2020/core.mjs:17869:26)
-    at ɵɵtextInterpolate (node_modules/@angular/core/fesm2020/core.mjs:17845:5)
-    at templateFn (ng:///SensacionComponent.js:189:9)
-    at executeTemplate (node_modules/@angular/core/fesm2020/core.mjs:12126:9)
-    at refreshView (node_modules/@angular/core/fesm2020/core.mjs:12011:13)
-    at refreshComponent (node_modules/@angular/core/fesm2020/core.mjs:13085:13)
-    at refreshChildComponents (node_modules/@angular/core/fesm2020/core.mjs:11801:9)
+  <testcase name="EstilosComponent should initialize data on ngOnInit" time="0.019" classname="Chrome_115_0_0_0_(Windows_10).EstilosComponent"/>
+  <testcase name="EstilosComponent should have valid form when formularioValido is true" time="0.015" classname="Chrome_115_0_0_0_(Windows_10).EstilosComponent"/>
+  <testcase name="EstilosComponent Revisar Imformacion" time="0.014" classname="Chrome_115_0_0_0_(Windows_10).EstilosComponent"/>
+  <testcase name="EstilosComponent should create" time="0.014" classname="Chrome_115_0_0_0_(Windows_10).EstilosComponent"/>
+  <testcase name="EstilosComponent Revisar titulo" time="0.014" classname="Chrome_115_0_0_0_(Windows_10).EstilosComponent"/>
+  <testcase name="AparienciaComponent should create" time="0.071" classname="Chrome_115_0_0_0_(Windows_10).AparienciaComponent"/>
+  <testcase name="AparienciaComponent should initialize variables correctly" time="0.009" classname="Chrome_115_0_0_0_(Windows_10).AparienciaComponent"/>
+  <testcase name="AparienciaComponent should change currentImageClaridad and seleccionClaridad on cambiarImagenClaridad" time="0.007" classname="Chrome_115_0_0_0_(Windows_10).AparienciaComponent"/>
+  <testcase name="AparienciaComponent should change currentImageFormacion and seleccionFormacion on cambiarImagenFormacion" time="0.008" classname="Chrome_115_0_0_0_(Windows_10).AparienciaComponent"/>
+  <testcase name="AparienciaComponent should change currentImageRetencion and seleccionRetencion on cambiarImagenRetencion" time="0.005" classname="Chrome_115_0_0_0_(Windows_10).AparienciaComponent"/>
+  <testcase name="AparienciaComponent should change currentImageColorEspuma and seleccionColorEspuma on cambiarImagenColorEspuma" time="0.005" classname="Chrome_115_0_0_0_(Windows_10).AparienciaComponent"/>
+  <testcase name="AparienciaComponent should change currentImageColor and seleccionColor on cambiarImagenColor" time="0.008" classname="Chrome_115_0_0_0_(Windows_10).AparienciaComponent"/>
+  <testcase name="AparienciaComponent should calculate correct sum of selections" time="0.021" classname="Chrome_115_0_0_0_(Windows_10).AparienciaComponent">
+    <failure type="">Expected '6' to be '5'.
+    at &lt;Jasmine&gt;
+    at UserContext.apply (src/app/apariencia/apariencia.component.spec.ts:76:52)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:26)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:39)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:371:52)
 </failure>
   </testcase>
-  <testcase name="AparienciaComponent should create" time="0.022" classname="Chrome_115_0_0_0_(Windows_10).AparienciaComponent">
-    <failure type="">Error: NG0100: ExpressionChangedAfterItHasBeenCheckedError: Expression has changed after it was checked. Previous value: 'undefined'. Current value: '0'. Find more at https://angular.io/errors/NG0100
-error properties: Object({ code: -100 })
-    at throwErrorIfNoChangesMode (node_modules/@angular/core/fesm2020/core.mjs:9307:11)
-    at bindingUpdated (node_modules/@angular/core/fesm2020/core.mjs:14468:17)
-    at interpolation1 (node_modules/@angular/core/fesm2020/core.mjs:14575:23)
-    at ɵɵtextInterpolate1 (node_modules/@angular/core/fesm2020/core.mjs:17869:26)
-    at ɵɵtextInterpolate (node_modules/@angular/core/fesm2020/core.mjs:17845:5)
-    at templateFn (ng:///AparienciaComponent.js:231:9)
-    at executeTemplate (node_modules/@angular/core/fesm2020/core.mjs:12126:9)
-    at refreshView (node_modules/@angular/core/fesm2020/core.mjs:12011:13)
-    at refreshComponent (node_modules/@angular/core/fesm2020/core.mjs:13085:13)
-    at refreshChildComponents (node_modules/@angular/core/fesm2020/core.mjs:11801:9)
+  <testcase name="EvaluacionComponent should create" time="0.01" classname="Chrome_115_0_0_0_(Windows_10).EvaluacionComponent">
+    <failure type="">NullInjectorError: R3InjectorError(DynamicTestModule)[ApiService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'ApiService', 'HttpClient', 'HttpClient' ] })
+    at NullInjector.get (node_modules/@angular/core/fesm2020/core.mjs:8191:27)
+    at R3Injector.get (node_modules/@angular/core/fesm2020/core.mjs:8618:33)
+    at R3Injector.get (node_modules/@angular/core/fesm2020/core.mjs:8618:33)
+    at injectInjectorOnly (node_modules/@angular/core/fesm2020/core.mjs:4782:33)
+    at ɵɵinject (node_modules/@angular/core/fesm2020/core.mjs:4786:12)
+    at Object.factory (ng:///ApiService/ɵfac.js:4:38)
+    at R3Injector.hydrate (node_modules/@angular/core/fesm2020/core.mjs:8719:35)
+    at R3Injector.get (node_modules/@angular/core/fesm2020/core.mjs:8607:33)
+    at ChainedInjector.get (node_modules/@angular/core/fesm2020/core.mjs:13811:36)
+    at lookupTokenUsingModuleInjector (node_modules/@angular/core/fesm2020/core.mjs:3293:39)
 </failure>
   </testcase>
-  <testcase name="SharedDataService should be created" time="0.004" classname="Chrome_115_0_0_0_(Windows_10).SharedDataService"/>
-  <testcase name="AppComponent should create the app" time="0.005" classname="Chrome_115_0_0_0_(Windows_10).AppComponent"/>
+  <testcase name="AppComponent should create the app" time="0.006" classname="Chrome_115_0_0_0_(Windows_10).AppComponent"/>
   <testcase name="AppComponent should have as title 'appEvalua'" time="0.003" classname="Chrome_115_0_0_0_(Windows_10).AppComponent"/>
-  <testcase name="FallasCardComponent should create" time="0.023" classname="Chrome_115_0_0_0_(Windows_10).FallasCardComponent"/>
+  <testcase name="AromaComponent should create" time="0.016" classname="Chrome_115_0_0_0_(Windows_10).AromaComponent"/>
+  <testcase name="AromaComponent should change currentImageFermen and seleccionFermen on cambiarImagenFermen" time="0.006" classname="Chrome_115_0_0_0_(Windows_10).AromaComponent"/>
+  <testcase name="AromaComponent should initialize variables correctly" time="0.008" classname="Chrome_115_0_0_0_(Windows_10).AromaComponent"/>
+  <testcase name="AromaComponent should change currentImageLupulos and seleccionLupulos on cambiarImagenLupulos" time="0.006" classname="Chrome_115_0_0_0_(Windows_10).AromaComponent"/>
+  <testcase name="AromaComponent should change currentImageMalta and seleccionMalta on cambiarImagenMalta" time="0.006" classname="Chrome_115_0_0_0_(Windows_10).AromaComponent"/>
+  <testcase name="AromaComponent should update valorInapropiadoMalta on checkboxChangedMalta" time="0.007" classname="Chrome_115_0_0_0_(Windows_10).AromaComponent"/>
+  <testcase name="AromaComponent should calculate correct sum of selections" time="0.008" classname="Chrome_115_0_0_0_(Windows_10).AromaComponent"/>
   <system-out>
-    <![CDATA[Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-fallas-card' is not a known element (used in the 'FallasVistaComponent' component template):
+    <![CDATA[Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-barra-superior' is not a known element (used in the 'NotasComponent' component template):
+1. If 'app-barra-superior' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'app-barra-superior' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element (used in the 'NotasComponent' component template):
+1. If 'mat-card' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-content' is not a known element (used in the 'NotasComponent' component template):
+1. If 'mat-card-content' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card-content' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element (used in the 'NotasComponent' component template):
+1. If 'mat-card' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-content' is not a known element (used in the 'NotasComponent' component template):
+1. If 'mat-card-content' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card-content' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element (used in the 'NotasComponent' component template):
+1. If 'mat-card' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-content' is not a known element (used in the 'NotasComponent' component template):
+1. If 'mat-card-content' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card-content' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element (used in the 'NotasComponent' component template):
+1. If 'mat-card' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-content' is not a known element (used in the 'NotasComponent' component template):
+1. If 'mat-card-content' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card-content' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element (used in the 'NotasComponent' component template):
+1. If 'mat-card' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-content' is not a known element (used in the 'NotasComponent' component template):
+1. If 'mat-card-content' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card-content' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element (used in the 'NotasComponent' component template):
+1. If 'mat-card' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-content' is not a known element (used in the 'NotasComponent' component template):
+1. If 'mat-card-content' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-card-content' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'datasets' since it isn't a known property of 'canvas' (used in the 'RadarChartComponent' component template).
+1. If 'canvas' is an Angular component and it has the 'datasets' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'options' since it isn't a known property of 'canvas' (used in the 'RadarChartComponent' component template).
+1. If 'canvas' is an Angular component and it has the 'options' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'labels' since it isn't a known property of 'canvas' (used in the 'RadarChartComponent' component template).
+1. If 'canvas' is an Angular component and it has the 'labels' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'type' since it isn't a known property of 'canvas' (used in the 'RadarChartComponent' component template).
+1. If 'canvas' is an Angular component and it has the 'type' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'input' (used in the 'RadarChartComponent' component template).
+1. If 'input' is an Angular component and it has the 'ngModel' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-barra-superior' is not a known element (used in the 'PrincipalComponent' component template):
+1. If 'app-barra-superior' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'app-barra-superior' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-fallas-card' is not a known element (used in the 'FallasVistaComponent' component template):
 1. If 'app-fallas-card' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
 2. If 'app-fallas-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'nivel' since it isn't a known property of 'app-fallas-card' (used in the 'FallasVistaComponent' component template).
@@ -166,240 +226,6 @@ error properties: Object({ code: -100 })
 1. If 'app-fallas-card' is an Angular component and it has the 'nivel' input, then verify that it is a part of an @NgModule where this component is declared.
 2. If 'app-fallas-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
 3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-barra-superior' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'app-barra-superior' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'app-barra-superior' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) LOG: 'hjgdacilus.g', []
-,Chrome 115.0.0.0 (Windows 10) LOG: 'aaa', []
-,Chrome 115.0.0.0 (Windows 10) LOG: 'aaa', []
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'input' (used in the 'EstilosComponent' component template).
-1. If 'input' is an Angular component and it has the 'ngModel' input, then verify that it is a part of an @NgModule where this component is declared.
-2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea' (used in the 'EstilosComponent' component template).
-1. If 'textarea' is an Angular component and it has the 'ngModel' input, then verify that it is a part of an @NgModule where this component is declared.
-2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-barra-superior' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'app-barra-superior' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'app-barra-superior' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) LOG: 'hjgdacilus.g', []
-,Chrome 115.0.0.0 (Windows 10) LOG: 'aaa', []
-,Chrome 115.0.0.0 (Windows 10) LOG: 'aaa', []
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'input' (used in the 'EstilosComponent' component template).
-1. If 'input' is an Angular component and it has the 'ngModel' input, then verify that it is a part of an @NgModule where this component is declared.
-2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea' (used in the 'EstilosComponent' component template).
-1. If 'textarea' is an Angular component and it has the 'ngModel' input, then verify that it is a part of an @NgModule where this component is declared.
-2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-barra-superior' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'app-barra-superior' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'app-barra-superior' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) LOG: 'hjgdacilus.g', []
-,Chrome 115.0.0.0 (Windows 10) LOG: 'aaa', []
-,Chrome 115.0.0.0 (Windows 10) LOG: 'aaa', []
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'input' (used in the 'EstilosComponent' component template).
-1. If 'input' is an Angular component and it has the 'ngModel' input, then verify that it is a part of an @NgModule where this component is declared.
-2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea' (used in the 'EstilosComponent' component template).
-1. If 'textarea' is an Angular component and it has the 'ngModel' input, then verify that it is a part of an @NgModule where this component is declared.
-2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
-,Chrome 115.0.0.0 (Windows 10) LOG: 'hjgdacilus.g', []
-,Chrome 115.0.0.0 (Windows 10) LOG: 'aaa', []
-,Chrome 115.0.0.0 (Windows 10) LOG: 'aaa', []
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-barra-superior' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'app-barra-superior' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'app-barra-superior' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) LOG: 'hjgdacilus.g', []
-,Chrome 115.0.0.0 (Windows 10) LOG: 'aaa', []
-,Chrome 115.0.0.0 (Windows 10) LOG: 'aaa', []
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'input' (used in the 'EstilosComponent' component template).
-1. If 'input' is an Angular component and it has the 'ngModel' input, then verify that it is a part of an @NgModule where this component is declared.
-2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea' (used in the 'EstilosComponent' component template).
-1. If 'textarea' is an Angular component and it has the 'ngModel' input, then verify that it is a part of an @NgModule where this component is declared.
-2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-barra-superior' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'app-barra-superior' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'app-barra-superior' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EstilosComponent' component template):
-1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) LOG: 'hjgdacilus.g', []
-,Chrome 115.0.0.0 (Windows 10) LOG: 'aaa', []
-,Chrome 115.0.0.0 (Windows 10) LOG: 'aaa', []
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'input' (used in the 'EstilosComponent' component template).
-1. If 'input' is an Angular component and it has the 'ngModel' input, then verify that it is a part of an @NgModule where this component is declared.
-2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea' (used in the 'EstilosComponent' component template).
-1. If 'textarea' is an Angular component and it has the 'ngModel' input, then verify that it is a part of an @NgModule where this component is declared.
-2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-barra-superior' is not a known element (used in the 'EvaluacionComponent' component template):
-1. If 'app-barra-superior' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'app-barra-superior' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-titulo-flotante' is not a known element (used in the 'EvaluacionComponent' component template):
-1. If 'app-titulo-flotante' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'app-titulo-flotante' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-menu-categorias' is not a known element (used in the 'EvaluacionComponent' component template):
-1. If 'app-menu-categorias' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'app-menu-categorias' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-aroma' is not a known element (used in the 'EvaluacionComponent' component template):
-1. If 'app-aroma' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'app-aroma' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-barra-superior' is not a known element (used in the 'NotasComponent' component template):
-1. If 'app-barra-superior' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'app-barra-superior' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element (used in the 'NotasComponent' component template):
-1. If 'mat-card' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-content' is not a known element (used in the 'NotasComponent' component template):
-1. If 'mat-card-content' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-card-content' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element (used in the 'NotasComponent' component template):
-1. If 'mat-card' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-content' is not a known element (used in the 'NotasComponent' component template):
-1. If 'mat-card-content' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-card-content' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element (used in the 'NotasComponent' component template):
-1. If 'mat-card' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-content' is not a known element (used in the 'NotasComponent' component template):
-1. If 'mat-card-content' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-card-content' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-aroma' is not a known element (used in the 'NotasComponent' component template):
-1. If 'app-aroma' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'app-aroma' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element (used in the 'NotasComponent' component template):
-1. If 'mat-card' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-content' is not a known element (used in the 'NotasComponent' component template):
-1. If 'mat-card-content' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-card-content' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-apariencia' is not a known element (used in the 'NotasComponent' component template):
-1. If 'app-apariencia' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'app-apariencia' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element (used in the 'NotasComponent' component template):
-1. If 'mat-card' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-content' is not a known element (used in the 'NotasComponent' component template):
-1. If 'mat-card-content' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-card-content' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-sabor' is not a known element (used in the 'NotasComponent' component template):
-1. If 'app-sabor' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'app-sabor' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element (used in the 'NotasComponent' component template):
-1. If 'mat-card' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-content' is not a known element (used in the 'NotasComponent' component template):
-1. If 'mat-card-content' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'mat-card-content' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-sensacion' is not a known element (used in the 'NotasComponent' component template):
-1. If 'app-sensacion' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'app-sensacion' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'datasets' since it isn't a known property of 'canvas' (used in the 'RadarChartComponent' component template).
-1. If 'canvas' is an Angular component and it has the 'datasets' input, then verify that it is a part of an @NgModule where this component is declared.
-2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'options' since it isn't a known property of 'canvas' (used in the 'RadarChartComponent' component template).
-1. If 'canvas' is an Angular component and it has the 'options' input, then verify that it is a part of an @NgModule where this component is declared.
-2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'labels' since it isn't a known property of 'canvas' (used in the 'RadarChartComponent' component template).
-1. If 'canvas' is an Angular component and it has the 'labels' input, then verify that it is a part of an @NgModule where this component is declared.
-2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'type' since it isn't a known property of 'canvas' (used in the 'RadarChartComponent' component template).
-1. If 'canvas' is an Angular component and it has the 'type' input, then verify that it is a part of an @NgModule where this component is declared.
-2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'input' (used in the 'RadarChartComponent' component template).
-1. If 'input' is an Angular component and it has the 'ngModel' input, then verify that it is a part of an @NgModule where this component is declared.
-2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
-,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-barra-superior' is not a known element (used in the 'PrincipalComponent' component template):
-1. If 'app-barra-superior' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
-2. If 'app-barra-superior' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'input' (used in the 'FallasCardComponent' component template).
 1. If 'input' is an Angular component and it has the 'ngModel' input, then verify that it is a part of an @NgModule where this component is declared.
 2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
@@ -411,6 +237,159 @@ error properties: Object({ code: -100 })
 2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
 ,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'input' (used in the 'FallasCardComponent' component template).
 1. If 'input' is an Angular component and it has the 'ngModel' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-barra-superior' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'app-barra-superior' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'app-barra-superior' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) LOG: 'hjgdacilus.g', []
+,Chrome 115.0.0.0 (Windows 10) LOG: 'aaa', []
+,Chrome 115.0.0.0 (Windows 10) LOG: 'aaa', []
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'input' (used in the 'EstilosComponent' component template).
+1. If 'input' is an Angular component and it has the 'ngModel' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea' (used in the 'EstilosComponent' component template).
+1. If 'textarea' is an Angular component and it has the 'ngModel' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 115.0.0.0 (Windows 10) LOG: 'hjgdacilus.g', []
+,Chrome 115.0.0.0 (Windows 10) LOG: 'aaa', []
+,Chrome 115.0.0.0 (Windows 10) LOG: 'aaa', []
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-barra-superior' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'app-barra-superior' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'app-barra-superior' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) LOG: 'hjgdacilus.g', []
+,Chrome 115.0.0.0 (Windows 10) LOG: 'aaa', []
+,Chrome 115.0.0.0 (Windows 10) LOG: 'aaa', []
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'input' (used in the 'EstilosComponent' component template).
+1. If 'input' is an Angular component and it has the 'ngModel' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea' (used in the 'EstilosComponent' component template).
+1. If 'textarea' is an Angular component and it has the 'ngModel' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-barra-superior' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'app-barra-superior' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'app-barra-superior' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) LOG: 'hjgdacilus.g', []
+,Chrome 115.0.0.0 (Windows 10) LOG: 'aaa', []
+,Chrome 115.0.0.0 (Windows 10) LOG: 'aaa', []
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'input' (used in the 'EstilosComponent' component template).
+1. If 'input' is an Angular component and it has the 'ngModel' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea' (used in the 'EstilosComponent' component template).
+1. If 'textarea' is an Angular component and it has the 'ngModel' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-barra-superior' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'app-barra-superior' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'app-barra-superior' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) LOG: 'hjgdacilus.g', []
+,Chrome 115.0.0.0 (Windows 10) LOG: 'aaa', []
+,Chrome 115.0.0.0 (Windows 10) LOG: 'aaa', []
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'input' (used in the 'EstilosComponent' component template).
+1. If 'input' is an Angular component and it has the 'ngModel' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea' (used in the 'EstilosComponent' component template).
+1. If 'textarea' is an Angular component and it has the 'ngModel' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'app-barra-superior' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'app-barra-superior' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'app-barra-superior' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'mat-form-field' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-label' is not a known element (used in the 'EstilosComponent' component template):
+1. If 'mat-label' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'mat-label' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 115.0.0.0 (Windows 10) LOG: 'hjgdacilus.g', []
+,Chrome 115.0.0.0 (Windows 10) LOG: 'aaa', []
+,Chrome 115.0.0.0 (Windows 10) LOG: 'aaa', []
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'input' (used in the 'EstilosComponent' component template).
+1. If 'input' is an Angular component and it has the 'ngModel' input, then verify that it is a part of an @NgModule where this component is declared.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome 115.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea' (used in the 'EstilosComponent' component template).
+1. If 'textarea' is an Angular component and it has the 'ngModel' input, then verify that it is a part of an @NgModule where this component is declared.
 2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
 
 ]]>
