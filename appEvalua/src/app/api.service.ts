@@ -16,5 +16,7 @@ export class ApiService {
   getEvaluaciones(){
     return this.http.get<any>(this.URL+'/evaluacion/')
   }
-  
+  postEvaluaciones(token:any){
+    return this.http.post<any>(this.URL + '/evaluacion/',token)
+  }
 }

@@ -37,7 +37,7 @@ export class NotasComponent implements OnInit {
   imageCalentamiento = localStorage.getItem("imagen-sensacion-calentamiento") ? localStorage.getItem("imagen-sensacion-calentamiento") : '../../assets/img/grafica/inicial.jpeg';
   imageCremosidad = localStorage.getItem("imagen-sensacion-cremosidad") ? localStorage.getItem("imagen-sensacion-cremosidad") : '../../assets/img/grafica/inicial.jpeg';
   imageAstringencia = localStorage.getItem("imagen-sensacion-astringencia") ? localStorage.getItem("imagen-sensacion-astringencia") : '../../assets/img/grafica/inicial.jpeg';
-
+  
   ngOnInit(): void {
   }
   volverEvaluar(){
