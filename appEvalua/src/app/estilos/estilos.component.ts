@@ -91,6 +91,7 @@ guardarDatos(): void {
 
   localStorage.setItem("titulo",this.titulo);
   localStorage.setItem("estilo",this.selectedOption);
+  localStorage.setItem("info", this.informacion);
  
 }
 esAlfanumerico(texto: string) {
