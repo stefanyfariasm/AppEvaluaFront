@@ -20,7 +20,6 @@ export class TipoBebidaComponent implements AfterViewInit {
       res=>{res.forEach((element: any) => {
         this.alimentos.push(element)
       });
-        //console.log(JSON.parse(this.alimentos[0]).nombre)
         console.log(this.alimentos[0].nombre)
         this.tipo1=this.alimentos[0].nombre
         this.tipo2=this.alimentos[1].nombre
@@ -32,6 +31,4 @@ export class TipoBebidaComponent implements AfterViewInit {
       err =>console.log(err)
     )
   }
-
-
 }
