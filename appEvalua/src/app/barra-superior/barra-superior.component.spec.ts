@@ -20,4 +20,28 @@ describe('BarraSuperiorComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+
+  it('should initialize variables correctly', () => {
+    expect(component.titulo).toBeUndefined();
+    expect(component.estilo).toBeUndefined();
+  });
+
+
+  it('should render the correct title', () => {
+    const title = 'Lenin Maingón ';
+    component.titulo = title;
+    fixture.detectChanges();
+    const titleElement = fixture.nativeElement.querySelector('h2');
+    expect(titleElement.textContent).toContain(title);
+  });
+
+
+  it('should render icons', () => {
+    const icons = fixture.nativeElement.querySelectorAll('svg.bi');
+    expect(icons.length).toBe(3); 
+  });
+
+  
+
 });

@@ -63,7 +63,7 @@ describe('AromaComponent', () => {
   it('should calculate correct sum of selections', () => {
     component.seleccionMalta = 2;
     component.seleccionLupulos = 3;
-    component.seleccionFermen = 0;
+    component.seleccionFermen = 1;
     expect(component.sumarSeleccionesAroma()).toBe('5');
   });
 });

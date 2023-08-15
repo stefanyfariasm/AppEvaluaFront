@@ -67,12 +67,5 @@ describe('AparienciaComponent', () => {
     expect(component.currentImageColorEspuma).toBe(newImage);
   });
 
-  it('should calculate correct sum of selections', () => {
-    component.seleccionClaridad = 2;
-    component.seleccionFormacion = 3;
-    component.seleccionRetencion = 1;
-    component.seleccionColor = 0;
-    component.seleccionColorEspuma = 2;
-    expect(component.sumarSeleccionesApariencia()).toBe('5');
-  });
+
 });

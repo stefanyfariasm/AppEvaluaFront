@@ -20,4 +20,16 @@ describe('FallasVistaComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should call console.log for each card', () => {
+    const spy = spyOn(console, 'log');
+    component.guardarDatos();
+    expect(spy).toHaveBeenCalledTimes(component.matriz.flat().length);
+  });
+
+  it('should call guardarDatos', () => {
+    const spy = spyOn(console, 'log');
+    component.guardarDatos();
+    expect(spy).toHaveBeenCalled();
+  });
 });
