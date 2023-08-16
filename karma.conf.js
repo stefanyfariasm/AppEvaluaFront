@@ -2,7 +2,7 @@
 
 module.exports = function (config) {
   config.set({
-    singleRun: true,
+    //singleRun: true,
     basePath: '',
     frameworks: ['jasmine', '@angular-devkit/build-angular'],
     plugins: [
@@ -34,7 +34,7 @@ module.exports = function (config) {
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['Chrome'],
-    singleRun: true,
+    singleRun: false,
     restartOnFileChange: true
   });
 };
