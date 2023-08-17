@@ -55,3 +55,167 @@ a {
   color: black; 
   text-decoration: none; 
 }
+
+
+
+.categorias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* aroma(aqui varialuego) */
+.aroma-card {
+font-family: 'Poppins', sans-serif;
+/* Fondo gris claro */
+ /* Ancho de la tarjeta */
+width: 88vw; 
+height: auto;
+padding: 30px;
+border-radius: 8px;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilos para el contenedor de Aroma */
+.aroma-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+/* Estilos para el título Aroma */
+.aroma-title {
+font-size: 24px;
+font-weight: bold;
+}
+
+/* Estilos para el número Aroma */
+.aroma-number {
+background-color: lightgrey;
+padding: 15px 15px;
+border-radius: 10px;
+font-size: 24px;
+}
+
+
+img{
+width: 6cm;
+height: 6cm;
+}
+
+.malta, .lupulos, .fermentacion {
+padding-right:2cm;
+padding-left:2cm;
+position: relative;
+display: inline-block;
+}
+.claridad, .formacion, .retencion, .color, .colorEspuma{
+padding-right:2cm;
+padding-left:2cm;
+position: relative;
+display: inline-block;
+}
+.cuerpo, .carbonatacion, .calentamiento, .cremosidad, .astringencia{
+padding-right:2cm;
+padding-left:2cm;
+position: relative;
+display: inline-block;
+}
+.malta, .lupulos, .fermentacion, .amargor, .equilibrio, .retrogusto{
+padding-right:2cm;
+padding-left:2cm;
+position: relative;
+display: inline-block;
+}
+h1, input, label, h3 {
+font-family: 'Poppins', sans-serif;
+text-align: center;
+}
+
+.text{
+font-family: 'Poppins', sans-serif;
+position: absolute;
+}
+
+.text.bajo {
+top: 5.5cm;
+left: 1cm;
+}
+
+.text.medio {
+top: 20%;
+left: 50%;
+transform: translate(-50%, -50%);
+padding-top: 0.5cm;
+}
+
+.text.alto {
+left: 8cm;
+top: 5.5cm;
+}
+
+.text.nulo {
+left: 45%;
+top: 8cm;
+}
+
+.text.inapropiado {
+left: 37%;
+top: 8cm;
+}
+
+.textos{
+padding-left: 1.2cm;
+}
+.text.ambar {
+top: 7cm;
+left: 1.5cm;
+}
+
+.text.oro {
+top: 4.5cm;
+left: 1cm;
+}
+
+.text.amarillo {
+top: 22%;
+left: 20%;
+transform: translate(-50%, -50%);
+padding-top: 0.5cm;
+}
+
+.text.negro {
+left: 7cm;
+top: 2cm;
+}
+
+.text.marron {
+left: 8cm;
+top: 4.5cm;
+}
+
+
+.text.cobre {
+left: 7cm;
+top: 7cm;
+}
+
+.otras{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.botonRegresar {
+  position: absolute;
+  right: 10px;
+  background-color: rgb(84, 206, 159);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  
+}

@@ -22,8 +22,7 @@ export class EvaluacionComponent implements OnInit {
     this.sharedDataService.titulo = this.titulo;
     this.sharedDataService.estilo = this.estilo;
   }
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
   valorAroma=localStorage.getItem("sumaAroma");
   valorApariencia=localStorage.getItem("sumaApariencia");
   valorGeneral= localStorage.getItem("sumaGeneral");
@@ -54,6 +53,11 @@ export class EvaluacionComponent implements OnInit {
       imageCalentamiento: localStorage.getItem("imagen-sensacion-calentamiento"),
       imageCremosidad: localStorage.getItem("imagen-sensacion-cremosidad"),
       imageAstringencia: localStorage.getItem("imagen-sensacion-astringencia"),
+      valorAroma:localStorage.getItem("sumaAroma"),
+      valorApariencia:localStorage.getItem("sumaApariencia"),
+      valorGeneral: localStorage.getItem("sumaGeneral"),
+      valorSabor: localStorage.getItem("sumaSabor"),
+      valorSensacion: localStorage.getItem("sumaSensacion"),
     },
     informacion: localStorage.getItem("info")
   }
@@ -65,7 +69,6 @@ export class EvaluacionComponent implements OnInit {
       .subscribe(
         (response: any) => {
           // Manejar la respuesta exitosa aquí
-          localStorage.clear()
           console.log('Respuesta:', response);
         },
         (error: any) => {
