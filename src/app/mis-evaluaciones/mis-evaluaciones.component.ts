@@ -75,11 +75,11 @@ export class MisEvaluacionesComponent implements OnInit {
       else if( elemento == "imageAstringencia") this.imageAstringencia = evaluacion.notas[elemento] ? evaluacion.notas[elemento] : '../../assets/img/grafica/inicial.jpeg';
       else if( elemento == "imageCalentamiento") this.imageCalentamiento = evaluacion.notas[elemento] ? evaluacion.notas[elemento] : '../../assets/img/grafica/inicial.jpeg';
       else if( elemento == "imageCarbonatacion") this.imageCarbonatacion = evaluacion.notas[elemento] ? evaluacion.notas[elemento] : '../../assets/img/grafica/inicial.jpeg';
-      else if( elemento == "sumaAroma") this.valorAroma = evaluacion.notas[elemento] ? evaluacion.notas[elemento] : 0;
-      else if( elemento == "sumaApariencia") this.valorApariencia = evaluacion.notas[elemento] ? evaluacion.notas[elemento] : 0;
-      else if( elemento == "sumaGeneral") this.valorGeneral = evaluacion.notas[elemento] ? evaluacion.notas[elemento] : 0;
-      else if( elemento == "sumaSabor") this.valorSabor = evaluacion.notas[elemento] ? evaluacion.notas[elemento] : 0;
-      else if( elemento == "sumaSensacion") this.valorSensacion = evaluacion.notas[elemento] ? evaluacion.notas[elemento] : 0;  
+      else if( elemento == "valorAroma") this.valorAroma = evaluacion.notas[elemento] ? evaluacion.notas[elemento] : 0;
+      else if( elemento == "valorApariencia") this.valorApariencia = evaluacion.notas[elemento] ? evaluacion.notas[elemento] : 0;
+      else if( elemento == "valorGeneral") this.valorGeneral = evaluacion.notas[elemento] ? evaluacion.notas[elemento] : 0;
+      else if( elemento == "valorSabor") this.valorSabor = evaluacion.notas[elemento] ? evaluacion.notas[elemento] : 0;
+      else if( elemento == "valorSensacion") this.valorSensacion = evaluacion.notas[elemento] ? evaluacion.notas[elemento] : 0;  
     }
     localStorage.clear()
     this.seleccion = true;
