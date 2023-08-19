@@ -1,0 +1,464 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "navegacion-de-la-pagina;cargar-la-página-principal",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Cargar la página principal",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "estoy en la página principal",
+            "match": {
+              "location": "src\\features\\test.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2203515300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "debería ver el título AppEvalua",
+            "match": {
+              "location": "src\\features\\test.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30969400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 32233999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "navegacion-de-la-pagina;hacer-clic-en-empezar-ahora",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Hacer clic en Empezar ahora",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "estoy en la página Evalua",
+            "match": {
+              "location": "src\\features\\test.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1319605700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "hago clic en el botón Empezar ahora",
+            "match": {
+              "location": "src\\features\\test.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 146277699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "debería estar en la página de destino",
+            "match": {
+              "location": "src\\features\\test.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1226475799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 25178600
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "navegacion-de-la-pagina;hacer-clic-en-aroma",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Hacer clic en Aroma",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "estoy en la página Evaluacion",
+            "match": {
+              "location": "src\\features\\test.steps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 977038699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "hago clic en el botón Aroma",
+            "match": {
+              "location": "src\\features\\test.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 166297800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "debería estar en la página de Aroma",
+            "match": {
+              "location": "src\\features\\test.steps.ts:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32492100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 24686599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "navegacion-de-la-pagina;hacer-clic-en-apariencia",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Hacer clic en Apariencia",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "estoy en la página Evaluacion 2",
+            "match": {
+              "location": "src\\features\\test.steps.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1335832299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "hago clic en el botón Apariencia",
+            "match": {
+              "location": "src\\features\\test.steps.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 229799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "debería estar en la página Apariencia",
+            "match": {
+              "location": "src\\features\\test.steps.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24357200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 12783999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "navegacion-de-la-pagina;hacer-clic-en-sabor",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Hacer clic en Sabor",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "estoy en la página Evaluacion 3",
+            "match": {
+              "location": "src\\features\\test.steps.ts:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1180758100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "hago clic en el botón Sabor",
+            "match": {
+              "location": "src\\features\\test.steps.ts:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 154799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "debería estar en la página Sabor",
+            "match": {
+              "location": "src\\features\\test.steps.ts:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25420900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 15398299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "navegacion-de-la-pagina;hacer-clic-en-sensacion",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Hacer clic en Sensacion",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 28,
+            "name": "estoy en la página Evaluacion 4",
+            "match": {
+              "location": "src\\features\\test.steps.ts:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 849158300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 29,
+            "name": "hago clic en el botón Sensacion",
+            "match": {
+              "location": "src\\features\\test.steps.ts:80"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 133000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "debería estar en la página Sensacion",
+            "match": {
+              "location": "src\\features\\test.steps.ts:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26444499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 14376199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "navegacion-de-la-pagina;hacer-clic-en-fallas",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "Hacer clic en Fallas",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 33,
+            "name": "estoy en la página Evaluacion 5",
+            "match": {
+              "location": "src\\features\\test.steps.ts:91"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 796316900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 34,
+            "name": "hago clic en el botón Fallas",
+            "match": {
+              "location": "src\\features\\test.steps.ts:95"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 217400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "debería estar en la página Fallas",
+            "match": {
+              "location": "src\\features\\test.steps.ts:100"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 178703900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 18602900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "navegacion-de-la-pagina;hacer-clic-en-general",
+        "keyword": "Scenario",
+        "line": 37,
+        "name": "Hacer clic en General",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 38,
+            "name": "estoy en la página Evaluacion 6",
+            "match": {
+              "location": "src\\features\\test.steps.ts:106"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 819245300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "hago clic en el botón General",
+            "match": {
+              "location": "src\\features\\test.steps.ts:110"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 214799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "debería estar en la página General",
+            "match": {
+              "location": "src\\features\\test.steps.ts:115"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22938899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 25705999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "navegacion-de-la-pagina",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Navegacion de la pagina",
+    "tags": [],
+    "uri": "src\\features\\test.feature"
+  }
+]

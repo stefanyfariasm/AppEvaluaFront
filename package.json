@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "precucumber": "webdriver-manager update",
+    "cucumber": "protractor ./cucumber.conf.js"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +25,7 @@
     "bootstrap": "^5.3.0-alpha1",
     "bootstrap-icons": "^1.10.5",
     "chart.js": "^3.4.0",
+    "jasmine-spec-reporter": "^7.0.0",
     "ng2-charts": "^3.1.2",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
@@ -32,7 +35,13 @@
     "@angular-devkit/build-angular": "^14.1.3",
     "@angular/cli": "~14.1.3",
     "@angular/compiler-cli": "^14.1.0",
+    "@cucumber/cucumber": "^9.4.0",
     "@types/jasmine": "~4.0.0",
+    "@wdio/schematics": "^1.2.1",
+    "chai": "^4.3.7",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^6.0.7",
+    "cucumber-html-reporter": "^7.1.1",
     "jasmine-core": "~4.2.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.0",
@@ -40,6 +49,9 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
     "karma-junit-reporter": "^2.0.1",
+    "protractor": "^7.0.0",
+    "protractor-cucumber-framework": "^9.6.0",
+    "ts-node": "^10.9.1",
     "typescript": "~4.7.2"
   }
 }
